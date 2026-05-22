@@ -1,0 +1,106 @@
+{
+  "UCI": {
+    "dataset": "UCI",
+    "n_test_windows": 4674,
+    "test_anomaly_rate": 0.3169,
+    "feature_aucs": {
+      "Cont-degree": 0.5,
+      "Cont-mono": 0.4858,
+      "Cont-L1": 0.4752,
+      "Cont-entropy": 0.568,
+      "Cont-std": 0.4019,
+      "Cont-range": 0.3759,
+      "Q25-degree": 0.4807,
+      "Q25-mono": 0.3876,
+      "Q25-L1": 0.5309,
+      "Q25-entropy": 0.3686,
+      "Q25-std": 0.5021,
+      "Q25-range": 0.5058,
+      "Q50-degree": 0.3976,
+      "Q50-mono": 0.4709,
+      "Q50-L1": 0.5983,
+      "Q50-entropy": 0.4509,
+      "Q50-std": 0.575,
+      "Q50-range": 0.5728,
+      "Q75-degree": 0.3881,
+      "Q75-mono": 0.6042,
+      "Q75-L1": 0.6576,
+      "Q75-entropy": 0.5948,
+      "Q75-std": 0.5806,
+      "Q75-range": 0.5799,
+      "Q90-degree": 0.5246,
+      "Q90-mono": 0.65,
+      "Q90-L1": 0.6675,
+      "Q90-entropy": 0.6234,
+      "Q90-std": 0.5884,
+      "Q90-range": 0.5885,
+      "Q95-degree": 0.562,
+      "Q95-mono": 0.6407,
+      "Q95-L1": 0.6498,
+      "Q95-entropy": 0.6073,
+      "Q95-std": 0.5686,
+      "Q95-range": 0.5691
+    },
+    "top5_features": [
+      "Q90-L1",
+      "Q75-L1",
+      "Q90-mono",
+      "Q95-L1",
+      "Q95-mono"
+    ],
+    "top5_composite_auc": 0.674,
+    "all36_composite_auc": 0.6027,
+    "anomaly_rate_sweep_std": [
+      {
+        "percentile": 90,
+        "anomaly_rate": 0.3802,
+        "PBP_std_auc": 0.8971
+      },
+      {
+        "percentile": 91,
+        "anomaly_rate": 0.3591,
+        "PBP_std_auc": 0.9035
+      },
+      {
+        "percentile": 92,
+        "anomaly_rate": 0.3382,
+        "PBP_std_auc": 0.9035
+      },
+      {
+        "percentile": 93,
+        "anomaly_rate": 0.3091,
+        "PBP_std_auc": 0.9113
+      },
+      {
+        "percentile": 94,
+        "anomaly_rate": 0.2784,
+        "PBP_std_auc": 0.9112
+      },
+      {
+        "percentile": 95,
+        "anomaly_rate": 0.2449,
+        "PBP_std_auc": 0.921
+      },
+      {
+        "percentile": 96,
+        "anomaly_rate": 0.2078,
+        "PBP_std_auc": 0.9157
+      },
+      {
+        "percentile": 97,
+        "anomaly_rate": 0.171,
+        "PBP_std_auc": 0.9073
+      },
+      {
+        "percentile": 98,
+        "anomaly_rate": 0.1247,
+        "PBP_std_auc": 0.9029
+      },
+      {
+        "percentile": 99,
+        "anomaly_rate": 0.0678,
+        "PBP_std_auc": 0.8871
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+dataset,sensor_1,sensor_2,interaction_type,auc
+UCI Air Quality (Italy),NMHC,O3,hydrocarbon-oxidant,0.8837
+UCI Air Quality (Italy),CO,NMHC,combustion-hydrocarbon,0.8575
+UCI Air Quality (Italy),CO,O3,combustion-oxidant,0.8493
+UCI Air Quality (Italy),NO2,O3,oxidant-oxidant,0.8348
+UCI Air Quality (Italy),NMHC,RH,hydrocarbon-meteorological,0.8053
+UCI Air Quality (Italy),O3,RH,meteorological-oxidant,0.8043
+UCI Air Quality (Italy),NMHC,NO2,hydrocarbon-oxidant,0.802
+UCI Air Quality (Italy),CO,NO2,combustion-oxidant,0.7923
+UCI Air Quality (Italy),NO2,NOx,oxidant-oxidant,0.7769
+UCI Air Quality (Italy),NOx,Temp,meteorological-oxidant,0.7724
+São Paulo (CAMS),CO,O3,combustion-oxidant,0.9064
+São Paulo (CAMS),O3,PM10,oxidant-particulate,0.9007
+São Paulo (CAMS),O3,PM2.5,oxidant-particulate,0.9001
+São Paulo (CAMS),NO2,O3,oxidant-oxidant,0.8973
+São Paulo (CAMS),O3,SO2,combustion-oxidant,0.8811
+São Paulo (CAMS),CO,NO2,combustion-oxidant,0.807
+São Paulo (CAMS),NO2,SO2,combustion-oxidant,0.7877
+São Paulo (CAMS),PM10,SO2,combustion-particulate,0.784
+São Paulo (CAMS),PM2.5,SO2,combustion-particulate,0.7835
+São Paulo (CAMS),CO,SO2,combustion-combustion,0.7755
+Cape Town (CAMS),O3,PM2.5,oxidant-particulate,0.9261
+Cape Town (CAMS),O3,PM10,oxidant-particulate,0.9243
+Cape Town (CAMS),PM10,SO2,combustion-particulate,0.9148
+Cape Town (CAMS),PM2.5,SO2,combustion-particulate,0.9146
+Cape Town (CAMS),CO,O3,combustion-oxidant,0.9095
+Cape Town (CAMS),CO,PM10,combustion-particulate,0.9082
+Cape Town (CAMS),CO,PM2.5,combustion-particulate,0.9068
+Cape Town (CAMS),O3,SO2,combustion-oxidant,0.9026
+Cape Town (CAMS),NO2,O3,oxidant-oxidant,0.8967
+Cape Town (CAMS),NO2,PM2.5,oxidant-particulate,0.8948
+Beijing Multi-Site (Dongsi),O3,PM10,oxidant-particulate,0.8286
+Beijing Multi-Site (Dongsi),NO2,O3,oxidant-oxidant,0.8186
+Beijing Multi-Site (Dongsi),CO,O3,combustion-oxidant,0.8178
+Beijing Multi-Site (Dongsi),O3,PM2.5,oxidant-particulate,0.8038
+Beijing Multi-Site (Dongsi),PM10,SO2,combustion-particulate,0.7932
+Beijing Multi-Site (Dongsi),O3,SO2,combustion-oxidant,0.7889
+Beijing Multi-Site (Dongsi),PM10,Temp,meteorological-particulate,0.7856
+Beijing Multi-Site (Dongsi),NO2,SO2,combustion-oxidant,0.7761
+Beijing Multi-Site (Dongsi),PM2.5,SO2,combustion-particulate,0.7715
+Beijing Multi-Site (Dongsi),CO,PM10,combustion-particulate,0.7709
+"EPA AQS (LA, 2023)",CO,O3,combustion-oxidant,0.8609
+"EPA AQS (LA, 2023)",NO2,O3,oxidant-oxidant,0.8538
+"EPA AQS (LA, 2023)",CO,SO2,combustion-combustion,0.838
+"EPA AQS (LA, 2023)",NO2,SO2,combustion-oxidant,0.8315
+"EPA AQS (LA, 2023)",O3,SO2,combustion-oxidant,0.8141
+"EPA AQS (LA, 2023)",CO,NO2,combustion-oxidant,0.7657

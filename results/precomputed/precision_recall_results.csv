@@ -1,0 +1,17 @@
+dataset,method,pr_auc,precision_at_recall90,roc_auc
+UCI,PBP std,0.7618,0.4345,0.8607
+UCI,Best baseline (IF),0.7207,0.4575,0.8486
+UCI,Exc. count,0.613,0.3997,0.7815
+UCI,PBP all-36,0.6788,0.4296,0.8321
+Beijing,PBP std,0.8217,0.607,0.9213
+Beijing,Best baseline (OC-SVM),0.8526,0.569,0.923
+Beijing,Exc. count,0.8447,0.5952,0.9296
+Beijing,PBP all-36,0.7366,0.4452,0.8636
+SaoPaulo,PBP std,0.4354,0.2519,0.7106
+SaoPaulo,Best baseline (IF),0.7899,0.4785,0.893
+SaoPaulo,Exc. count,0.881,0.6592,0.9531
+SaoPaulo,PBP all-36,0.7186,0.4684,0.8736
+CapeTown,PBP std,0.787,0.5515,0.9443
+CapeTown,Best baseline (LOF),0.9704,0.895,0.9915
+CapeTown,Exc. count,0.9106,0.717,0.9752
+CapeTown,PBP all-36,0.722,0.4896,0.9124

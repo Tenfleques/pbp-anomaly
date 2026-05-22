@@ -1,0 +1,82 @@
+{
+  "ORD": {
+    "station": "Chicago O'Hare",
+    "climate": "Continental",
+    "auc_top5": 0.8854,
+    "auc_all36": 0.6041,
+    "delta": 0.2814,
+    "cost_pct": 31.8,
+    "delong_z": 53.7814,
+    "delong_p": 0.0,
+    "significant_bonferroni": 1,
+    "n_test": 8748,
+    "test_anom_frac": 0.4198,
+    "top5_indices": [
+      34,
+      31,
+      28,
+      25,
+      4
+    ]
+  },
+  "MIA": {
+    "station": "Miami International",
+    "climate": "Tropical",
+    "auc_top5": 0.8597,
+    "auc_all36": 0.6667,
+    "delta": 0.193,
+    "cost_pct": 22.4,
+    "delong_z": 40.9193,
+    "delong_p": 0.0,
+    "significant_bonferroni": 1,
+    "n_test": 8741,
+    "test_anom_frac": 0.5226,
+    "top5_indices": [
+      31,
+      34,
+      28,
+      25,
+      4
+    ]
+  },
+  "SFO": {
+    "station": "San Francisco International",
+    "climate": "Maritime",
+    "auc_top5": 0.8535,
+    "auc_all36": 0.6223,
+    "delta": 0.2312,
+    "cost_pct": 27.1,
+    "delong_z": 43.9299,
+    "delong_p": 0.0,
+    "significant_bonferroni": 1,
+    "n_test": 8746,
+    "test_anom_frac": 0.5199,
+    "top5_indices": [
+      34,
+      31,
+      28,
+      25,
+      4
+    ]
+  },
+  "FAI": {
+    "station": "Fairbanks International",
+    "climate": "Subarctic",
+    "auc_top5": 0.8266,
+    "auc_all36": 0.5467,
+    "delta": 0.2799,
+    "cost_pct": 33.9,
+    "delong_z": 51.3708,
+    "delong_p": 0.0,
+    "significant_bonferroni": 1,
+    "n_test": 8619,
+    "test_anom_frac": 0.4851,
+    "top5_indices": [
+      34,
+      31,
+      28,
+      25,
+      4
+    ]
+  }
+}

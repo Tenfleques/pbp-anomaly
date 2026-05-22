@@ -1,0 +1,966 @@
+{
+  "ORD": {
+    "station": "Chicago O'Hare",
+    "code": "ORD",
+    "climate": "Continental",
+    "n_readings": 17506,
+    "date_range": [
+      "2022-01-01 00:00:00",
+      "2023-12-31 23:00:00"
+    ],
+    "sensor_stats": {
+      "Temp": {
+        "min": -22.2,
+        "max": 37.8,
+        "mean": 11.5
+      },
+      "DewP": {
+        "min": -27.2,
+        "max": 26.7,
+        "mean": 4.5
+      },
+      "Pres": {
+        "min": 984.2,
+        "max": 1039.7,
+        "mean": 1016.0
+      },
+      "Wind": {
+        "min": 0.0,
+        "max": 15.4,
+        "mean": 4.3
+      },
+      "Vis": {
+        "min": 201.0,
+        "max": 16093.0,
+        "mean": 14976.4
+      },
+      "Ceil": {
+        "min": 30.0,
+        "max": 22000.0,
+        "mean": 10364.6
+      }
+    },
+    "one_tailed": {
+      "anomaly_frac": 0.2694,
+      "pbp_std": {
+        "method": "PBP std",
+        "precision": 0.9309,
+        "recall": 1.0,
+        "f1": 0.9642,
+        "auc_roc": 0.9838,
+        "ci_95": [
+          0.9821,
+          0.9855
+        ]
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.5635,
+        "recall": 0.7938,
+        "f1": 0.6591,
+        "auc_roc": 0.877,
+        "ci_95": [
+          0.872,
+          0.8817
+        ]
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.5463,
+          "recall": 0.5463,
+          "f1": 0.5463,
+          "auc_roc": 0.8126
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.6348,
+          "recall": 0.6348,
+          "f1": 0.6348,
+          "auc_roc": 0.8664
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.6049,
+          "recall": 0.6049,
+          "f1": 0.6049,
+          "auc_roc": 0.829
+        }
+      }
+    },
+    "two_tailed": {
+      "anomaly_frac": 0.4194,
+      "pbp_std": {
+        "method": "PBP std",
+        "precision": 0.7391,
+        "recall": 0.7391,
+        "f1": 0.7391,
+        "auc_roc": 0.893,
+        "ci_95": [
+          0.8878,
+          0.8976
+        ]
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.694,
+        "recall": 0.694,
+        "f1": 0.694,
+        "auc_roc": 0.7734,
+        "ci_95": [
+          0.7657,
+          0.7805
+        ]
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.7828,
+          "recall": 0.7828,
+          "f1": 0.7828,
+          "auc_roc": 0.9
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.8165,
+          "recall": 0.8165,
+          "f1": 0.8165,
+          "auc_roc": 0.923
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.7324,
+          "recall": 0.7324,
+          "f1": 0.7324,
+          "auc_roc": 0.8572
+        }
+      },
+      "pair_ranking": [
+        {
+          "pair": "DewP\u2013Vis",
+          "auc": 0.7701
+        },
+        {
+          "pair": "Temp\u2013Vis",
+          "auc": 0.7623
+        },
+        {
+          "pair": "Pres\u2013Vis",
+          "auc": 0.7435
+        },
+        {
+          "pair": "Wind\u2013Vis",
+          "auc": 0.6931
+        },
+        {
+          "pair": "Temp\u2013DewP",
+          "auc": 0.6921
+        },
+        {
+          "pair": "DewP\u2013Wind",
+          "auc": 0.6844
+        },
+        {
+          "pair": "Pres\u2013Wind",
+          "auc": 0.6793
+        },
+        {
+          "pair": "Temp\u2013Wind",
+          "auc": 0.6787
+        },
+        {
+          "pair": "Vis\u2013Ceil",
+          "auc": 0.6657
+        },
+        {
+          "pair": "Pres\u2013Ceil",
+          "auc": 0.6527
+        },
+        {
+          "pair": "Temp\u2013Pres",
+          "auc": 0.6503
+        },
+        {
+          "pair": "DewP\u2013Pres",
+          "auc": 0.6498
+        },
+        {
+          "pair": "Wind\u2013Ceil",
+          "auc": 0.6297
+        },
+        {
+          "pair": "DewP\u2013Ceil",
+          "auc": 0.6057
+        },
+        {
+          "pair": "Temp\u2013Ceil",
+          "auc": 0.5809
+        }
+      ]
+    },
+    "temporal_split": {
+      "train_anom_frac": 0.4353,
+      "test_anom_frac": 0.4198,
+      "pbp_std": {
+        "method": "PBP std",
+        "precision": 0.7337,
+        "recall": 0.7337,
+        "f1": 0.7337,
+        "auc_roc": 0.8854
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.6196,
+        "recall": 0.6196,
+        "f1": 0.6196,
+        "auc_roc": 0.7276
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.7898,
+          "recall": 0.7898,
+          "f1": 0.7898,
+          "auc_roc": 0.8991
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.79,
+          "recall": 0.79,
+          "f1": 0.79,
+          "auc_roc": 0.9038
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.643,
+          "recall": 0.643,
+          "f1": 0.643,
+          "auc_roc": 0.7576
+        }
+      }
+    }
+  },
+  "MIA": {
+    "station": "Miami International",
+    "code": "MIA",
+    "climate": "Tropical",
+    "n_readings": 17491,
+    "date_range": [
+      "2022-01-01 00:00:00",
+      "2023-12-31 23:00:00"
+    ],
+    "sensor_stats": {
+      "Temp": {
+        "min": 5.6,
+        "max": 36.1,
+        "mean": 26.0
+      },
+      "DewP": {
+        "min": -6.7,
+        "max": 26.7,
+        "mean": 20.4
+      },
+      "Pres": {
+        "min": 1001.4,
+        "max": 1028.1,
+        "mean": 1016.6
+      },
+      "Wind": {
+        "min": 0.0,
+        "max": 15.4,
+        "mean": 3.3
+      },
+      "Vis": {
+        "min": 402.0,
+        "max": 16093.0,
+        "mean": 15812.2
+      },
+      "Ceil": {
+        "min": 30.0,
+        "max": 22000.0,
+        "mean": 13062.9
+      }
+    },
+    "one_tailed": {
+      "anomaly_frac": 0.3068,
+      "pbp_std": {
+        "method": "PBP std",
+        "precision": 0.9247,
+        "recall": 1.0,
+        "f1": 0.9609,
+        "auc_roc": 0.9882,
+        "ci_95": [
+          0.9869,
+          0.9895
+        ]
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.7204,
+        "recall": 0.781,
+        "f1": 0.7495,
+        "auc_roc": 0.9208,
+        "ci_95": [
+          0.917,
+          0.9245
+        ]
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.5978,
+          "recall": 0.5978,
+          "f1": 0.5978,
+          "auc_roc": 0.8092
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.6142,
+          "recall": 0.6142,
+          "f1": 0.6142,
+          "auc_roc": 0.8258
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.5592,
+          "recall": 0.5592,
+          "f1": 0.5592,
+          "auc_roc": 0.7771
+        }
+      }
+    },
+    "two_tailed": {
+      "anomaly_frac": 0.521,
+      "pbp_std": {
+        "method": "PBP std",
+        "precision": 0.7658,
+        "recall": 0.7658,
+        "f1": 0.7658,
+        "auc_roc": 0.8756,
+        "ci_95": [
+          0.8707,
+          0.8804
+        ]
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.7347,
+        "recall": 0.7348,
+        "f1": 0.7348,
+        "auc_roc": 0.8064,
+        "ci_95": [
+          0.8001,
+          0.8125
+        ]
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.7678,
+          "recall": 0.7678,
+          "f1": 0.7678,
+          "auc_roc": 0.8423
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.8337,
+          "recall": 0.8337,
+          "f1": 0.8337,
+          "auc_roc": 0.9122
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.7733,
+          "recall": 0.7733,
+          "f1": 0.7733,
+          "auc_roc": 0.8599
+        }
+      },
+      "pair_ranking": [
+        {
+          "pair": "Temp\u2013Vis",
+          "auc": 0.7627
+        },
+        {
+          "pair": "Pres\u2013Vis",
+          "auc": 0.7402
+        },
+        {
+          "pair": "DewP\u2013Vis",
+          "auc": 0.7397
+        },
+        {
+          "pair": "Temp\u2013Wind",
+          "auc": 0.6824
+        },
+        {
+          "pair": "Vis\u2013Ceil",
+          "auc": 0.6766
+        },
+        {
+          "pair": "DewP\u2013Ceil",
+          "auc": 0.6734
+        },
+        {
+          "pair": "Temp\u2013DewP",
+          "auc": 0.6702
+        },
+        {
+          "pair": "Wind\u2013Ceil",
+          "auc": 0.6624
+        },
+        {
+          "pair": "Temp\u2013Pres",
+          "auc": 0.6616
+        },
+        {
+          "pair": "DewP\u2013Wind",
+          "auc": 0.6608
+        },
+        {
+          "pair": "Pres\u2013Wind",
+          "auc": 0.6579
+        },
+        {
+          "pair": "Temp\u2013Ceil",
+          "auc": 0.6489
+        },
+        {
+          "pair": "Wind\u2013Vis",
+          "auc": 0.6487
+        },
+        {
+          "pair": "DewP\u2013Pres",
+          "auc": 0.643
+        },
+        {
+          "pair": "Pres\u2013Ceil",
+          "auc": 0.6401
+        }
+      ]
+    },
+    "temporal_split": {
+      "train_anom_frac": 0.5233,
+      "test_anom_frac": 0.5226,
+      "pbp_std": {
+        "method": "PBP std",
+        "precision": 0.7238,
+        "recall": 0.7239,
+        "f1": 0.7239,
+        "auc_roc": 0.8597
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.7213,
+        "recall": 0.7213,
+        "f1": 0.7213,
+        "auc_roc": 0.7854
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.7342,
+          "recall": 0.7342,
+          "f1": 0.7342,
+          "auc_roc": 0.8038
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.8078,
+          "recall": 0.8078,
+          "f1": 0.8078,
+          "auc_roc": 0.8904
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.7542,
+          "recall": 0.7542,
+          "f1": 0.7542,
+          "auc_roc": 0.8329
+        }
+      }
+    }
+  },
+  "SFO": {
+    "station": "San Francisco International",
+    "code": "SFO",
+    "climate": "Maritime",
+    "n_readings": 17501,
+    "date_range": [
+      "2022-01-01 00:00:00",
+      "2023-12-31 23:00:00"
+    ],
+    "sensor_stats": {
+      "Temp": {
+        "min": 2.2,
+        "max": 36.7,
+        "mean": 14.5
+      },
+      "DewP": {
+        "min": -8.9,
+        "max": 20.0,
+        "mean": 9.1
+      },
+      "Pres": {
+        "min": 985.3,
+        "max": 1031.5,
+        "mean": 1016.7
+      },
+      "Wind": {
+        "min": 0.0,
+        "max": 22.1,
+        "mean": 4.7
+      },
+      "Vis": {
+        "min": 0.0,
+        "max": 16093.0,
+        "mean": 15643.5
+      },
+      "Ceil": {
+        "min": 61.0,
+        "max": 22000.0,
+        "mean": 14270.4
+      }
+    },
+    "one_tailed": {
+      "anomaly_frac": 0.2921,
+      "pbp_std": {
+        "method": "PBP std",
+        "precision": 0.9204,
+        "recall": 1.0,
+        "f1": 0.9585,
+        "auc_roc": 0.9803,
+        "ci_95": [
+          0.9784,
+          0.9822
+        ]
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.6387,
+        "recall": 0.7933,
+        "f1": 0.7077,
+        "auc_roc": 0.903,
+        "ci_95": [
+          0.8986,
+          0.907
+        ]
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.6209,
+          "recall": 0.6209,
+          "f1": 0.6209,
+          "auc_roc": 0.8407
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.6912,
+          "recall": 0.6912,
+          "f1": 0.6912,
+          "auc_roc": 0.8783
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.5982,
+          "recall": 0.5982,
+          "f1": 0.5982,
+          "auc_roc": 0.809
+        }
+      }
+    },
+    "two_tailed": {
+      "anomaly_frac": 0.5364,
+      "pbp_std": {
+        "method": "PBP std",
+        "precision": 0.7553,
+        "recall": 0.7553,
+        "f1": 0.7553,
+        "auc_roc": 0.8283,
+        "ci_95": [
+          0.8221,
+          0.834
+        ]
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.727,
+        "recall": 0.727,
+        "f1": 0.727,
+        "auc_roc": 0.7752,
+        "ci_95": [
+          0.7683,
+          0.782
+        ]
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.782,
+          "recall": 0.782,
+          "f1": 0.782,
+          "auc_roc": 0.8461
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.8376,
+          "recall": 0.8376,
+          "f1": 0.8376,
+          "auc_roc": 0.909
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.7706,
+          "recall": 0.7706,
+          "f1": 0.7706,
+          "auc_roc": 0.8397
+        }
+      },
+      "pair_ranking": [
+        {
+          "pair": "DewP\u2013Vis",
+          "auc": 0.7419
+        },
+        {
+          "pair": "Temp\u2013Vis",
+          "auc": 0.7344
+        },
+        {
+          "pair": "Temp\u2013DewP",
+          "auc": 0.6795
+        },
+        {
+          "pair": "Wind\u2013Vis",
+          "auc": 0.6737
+        },
+        {
+          "pair": "Pres\u2013Vis",
+          "auc": 0.6709
+        },
+        {
+          "pair": "DewP\u2013Pres",
+          "auc": 0.6592
+        },
+        {
+          "pair": "Pres\u2013Wind",
+          "auc": 0.6443
+        },
+        {
+          "pair": "DewP\u2013Wind",
+          "auc": 0.6431
+        },
+        {
+          "pair": "Temp\u2013Wind",
+          "auc": 0.6346
+        },
+        {
+          "pair": "Temp\u2013Pres",
+          "auc": 0.6338
+        },
+        {
+          "pair": "Temp\u2013Ceil",
+          "auc": 0.6098
+        },
+        {
+          "pair": "Pres\u2013Ceil",
+          "auc": 0.6048
+        },
+        {
+          "pair": "Wind\u2013Ceil",
+          "auc": 0.5932
+        },
+        {
+          "pair": "DewP\u2013Ceil",
+          "auc": 0.5917
+        },
+        {
+          "pair": "Vis\u2013Ceil",
+          "auc": 0.5764
+        }
+      ]
+    },
+    "temporal_split": {
+      "train_anom_frac": 0.5292,
+      "test_anom_frac": 0.5199,
+      "pbp_std": {
+        "method": "PBP std",
+        "precision": 0.7638,
+        "recall": 0.7638,
+        "f1": 0.7638,
+        "auc_roc": 0.8535
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.7315,
+        "recall": 0.7315,
+        "f1": 0.7315,
+        "auc_roc": 0.7891
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.753,
+          "recall": 0.753,
+          "f1": 0.753,
+          "auc_roc": 0.828
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.8093,
+          "recall": 0.8093,
+          "f1": 0.8093,
+          "auc_roc": 0.892
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.7431,
+          "recall": 0.7431,
+          "f1": 0.7431,
+          "auc_roc": 0.8012
+        }
+      }
+    }
+  },
+  "FAI": {
+    "station": "Fairbanks International",
+    "code": "FAI",
+    "climate": "Subarctic",
+    "n_readings": 17247,
+    "date_range": [
+      "2022-01-01 00:00:00",
+      "2023-12-31 23:00:00"
+    ],
+    "sensor_stats": {
+      "Temp": {
+        "min": -34.4,
+        "max": 31.1,
+        "mean": -0.6
+      },
+      "DewP": {
+        "min": -40.0,
+        "max": 17.8,
+        "mean": -6.6
+      },
+      "Pres": {
+        "min": 967.5,
+        "max": 1054.8,
+        "mean": 1010.3
+      },
+      "Wind": {
+        "min": 0.0,
+        "max": 11.8,
+        "mean": 1.8
+      },
+      "Vis": {
+        "min": 201.0,
+        "max": 16093.0,
+        "mean": 14500.0
+      },
+      "Ceil": {
+        "min": 0.0,
+        "max": 22000.0,
+        "mean": 7665.2
+      }
+    },
+    "one_tailed": {
+      "anomaly_frac": 0.258,
+      "pbp_std": {
+        "method": "PBP std",
+        "precision": 0.9104,
+        "recall": 1.0,
+        "f1": 0.9531,
+        "auc_roc": 0.9852,
+        "ci_95": [
+          0.9837,
+          0.9866
+        ]
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.6547,
+        "recall": 0.6584,
+        "f1": 0.6565,
+        "auc_roc": 0.9132,
+        "ci_95": [
+          0.9092,
+          0.9171
+        ]
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.5936,
+          "recall": 0.5936,
+          "f1": 0.5936,
+          "auc_roc": 0.8405
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.7289,
+          "recall": 0.7289,
+          "f1": 0.7289,
+          "auc_roc": 0.9195
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.6008,
+          "recall": 0.6008,
+          "f1": 0.6008,
+          "auc_roc": 0.8262
+        }
+      }
+    },
+    "two_tailed": {
+      "anomaly_frac": 0.4784,
+      "pbp_std": {
+        "method": "PBP std",
+        "precision": 0.7021,
+        "recall": 0.7021,
+        "f1": 0.7021,
+        "auc_roc": 0.8365,
+        "ci_95": [
+          0.8306,
+          0.8423
+        ]
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.7391,
+        "recall": 0.7391,
+        "f1": 0.7391,
+        "auc_roc": 0.7961,
+        "ci_95": [
+          0.7898,
+          0.8027
+        ]
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.7755,
+          "recall": 0.7755,
+          "f1": 0.7755,
+          "auc_roc": 0.8661
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.8366,
+          "recall": 0.8366,
+          "f1": 0.8366,
+          "auc_roc": 0.9171
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.7208,
+          "recall": 0.7208,
+          "f1": 0.7208,
+          "auc_roc": 0.8141
+        }
+      },
+      "pair_ranking": [
+        {
+          "pair": "Temp\u2013Vis",
+          "auc": 0.7537
+        },
+        {
+          "pair": "Pres\u2013Vis",
+          "auc": 0.7412
+        },
+        {
+          "pair": "DewP\u2013Vis",
+          "auc": 0.7398
+        },
+        {
+          "pair": "Wind\u2013Vis",
+          "auc": 0.7176
+        },
+        {
+          "pair": "Vis\u2013Ceil",
+          "auc": 0.6818
+        },
+        {
+          "pair": "Temp\u2013DewP",
+          "auc": 0.6656
+        },
+        {
+          "pair": "DewP\u2013Wind",
+          "auc": 0.6434
+        },
+        {
+          "pair": "Temp\u2013Wind",
+          "auc": 0.6433
+        },
+        {
+          "pair": "Temp\u2013Pres",
+          "auc": 0.6289
+        },
+        {
+          "pair": "Pres\u2013Wind",
+          "auc": 0.6264
+        },
+        {
+          "pair": "DewP\u2013Pres",
+          "auc": 0.6241
+        },
+        {
+          "pair": "Wind\u2013Ceil",
+          "auc": 0.5894
+        },
+        {
+          "pair": "Temp\u2013Ceil",
+          "auc": 0.5818
+        },
+        {
+          "pair": "DewP\u2013Ceil",
+          "auc": 0.5679
+        },
+        {
+          "pair": "Pres\u2013Ceil",
+          "auc": 0.5609
+        }
+      ]
+    },
+    "temporal_split": {
+      "train_anom_frac": 0.452,
+      "test_anom_frac": 0.4851,
+      "pbp_std": {
+        "method": "PBP std",
+        "precision": 0.6898,
+        "recall": 0.6898,
+        "f1": 0.6898,
+        "auc_roc": 0.8266
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.7106,
+        "recall": 0.7106,
+        "f1": 0.7106,
+        "auc_roc": 0.7884
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.7845,
+          "recall": 0.7845,
+          "f1": 0.7845,
+          "auc_roc": 0.8705
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.8319,
+          "recall": 0.8319,
+          "f1": 0.8319,
+          "auc_roc": 0.9101
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.6984,
+          "recall": 0.6984,
+          "f1": 0.6984,
+          "auc_roc": 0.7733
+        }
+      }
+    }
+  }
+}

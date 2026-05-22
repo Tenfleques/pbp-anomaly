@@ -1,0 +1,1153 @@
+{
+  "datasets": [
+    {
+      "dataset": "UCI Air Quality (Italy)",
+      "n_windows": 6936,
+      "n_sensors": 8,
+      "anomaly_fraction": 0.2984,
+      "full_data_results": {
+        "PBP Q90-L1 (single)": {
+          "method": "PBP best single",
+          "precision": 0.5306,
+          "recall": 0.8135,
+          "f1": 0.6423,
+          "auc_roc": 0.8267
+        },
+        "PBP composite": {
+          "method": "PBP composite (5 feats)",
+          "precision": 0.6821,
+          "recall": 0.6831,
+          "f1": 0.6826,
+          "auc_roc": 0.824
+        },
+        "PBP pair (single)": {
+          "method": "PBP pair best single",
+          "precision": 0.731,
+          "recall": 0.8401,
+          "f1": 0.7817,
+          "auc_roc": 0.8837
+        },
+        "PBP pair composite": {
+          "method": "PBP pair composite (5 feats)",
+          "precision": 0.7499,
+          "recall": 0.7966,
+          "f1": 0.7725,
+          "auc_roc": 0.8896,
+          "ci_95": [
+            0.8806,
+            0.8986
+          ]
+        },
+        "Isolation Forest": {
+          "method": "Isolation Forest",
+          "precision": 0.6531,
+          "recall": 0.6531,
+          "f1": 0.6531,
+          "auc_roc": 0.855,
+          "time_s": 0.21,
+          "training": "Yes"
+        },
+        "One-Class SVM": {
+          "method": "One-Class SVM",
+          "precision": 0.6749,
+          "recall": 0.6749,
+          "f1": 0.6749,
+          "auc_roc": 0.8765,
+          "time_s": 1.32,
+          "training": "Yes"
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.6739,
+          "recall": 0.6739,
+          "f1": 0.6739,
+          "auc_roc": 0.8701,
+          "time_s": 0.44,
+          "training": "Yes"
+        }
+      },
+      "temporal_split_results": {
+        "PBP Q90-L1 (single)": {
+          "method": "PBP best single",
+          "precision": 0.6966,
+          "recall": 0.7587,
+          "f1": 0.7263,
+          "auc_roc": 0.8475
+        },
+        "PBP composite": {
+          "method": "PBP composite (5 feats)",
+          "precision": 0.7191,
+          "recall": 0.7219,
+          "f1": 0.7205,
+          "auc_roc": 0.8607
+        },
+        "PBP pair (single)": {
+          "method": "PBP pair best single",
+          "precision": 0.6109,
+          "recall": 0.8837,
+          "f1": 0.7224,
+          "auc_roc": 0.875
+        },
+        "PBP pair composite": {
+          "method": "PBP pair composite (5 feats)",
+          "precision": 0.6656,
+          "recall": 0.8198,
+          "f1": 0.7347,
+          "auc_roc": 0.8829
+        },
+        "Isolation Forest": {
+          "method": "Isolation Forest",
+          "precision": 0.6967,
+          "recall": 0.6967,
+          "f1": 0.6967,
+          "auc_roc": 0.8778,
+          "time_s": 0.13,
+          "training": "Yes"
+        },
+        "One-Class SVM": {
+          "method": "One-Class SVM",
+          "precision": 0.625,
+          "recall": 0.625,
+          "f1": 0.625,
+          "auc_roc": 0.8328,
+          "time_s": 0.25,
+          "training": "Yes"
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.4777,
+          "recall": 0.4777,
+          "f1": 0.4777,
+          "auc_roc": 0.7077,
+          "time_s": 0.06,
+          "training": "Yes"
+        }
+      },
+      "pair_ranking": [
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            1,
+            4
+          ],
+          "best_auc": 0.8837
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S2(NMHC)"
+          ],
+          "pair_idx": [
+            0,
+            1
+          ],
+          "best_auc": 0.8575
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            0,
+            4
+          ],
+          "best_auc": 0.8493
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            3,
+            4
+          ],
+          "best_auc": 0.8348
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "RH"
+          ],
+          "pair_idx": [
+            1,
+            6
+          ],
+          "best_auc": 0.8053
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "RH"
+          ],
+          "pair_idx": [
+            4,
+            6
+          ],
+          "best_auc": 0.8043
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            1,
+            3
+          ],
+          "best_auc": 0.802
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            0,
+            3
+          ],
+          "best_auc": 0.7923
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            2,
+            3
+          ],
+          "best_auc": 0.7769
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "T"
+          ],
+          "pair_idx": [
+            2,
+            5
+          ],
+          "best_auc": 0.7724
+        }
+      ],
+      "pbp_time_s": 70.19,
+      "pair_time_s": 473.16
+    },
+    {
+      "dataset": "S\u00e3o Paulo (CAMS)",
+      "n_windows": 8755,
+      "n_sensors": 6,
+      "anomaly_fraction": 0.2214,
+      "full_data_results": {
+        "PBP Q90-L1 (single)": {
+          "method": "PBP best single",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc_roc": 1.0
+        },
+        "PBP composite": {
+          "method": "PBP composite (5 feats)",
+          "precision": 0.7228,
+          "recall": 0.7642,
+          "f1": 0.7429,
+          "auc_roc": 0.9638
+        },
+        "PBP pair (single)": {
+          "method": "PBP pair best single",
+          "precision": 0.6458,
+          "recall": 0.952,
+          "f1": 0.7696,
+          "auc_roc": 0.9064
+        },
+        "PBP pair composite": {
+          "method": "PBP pair composite (5 feats)",
+          "precision": 0.7001,
+          "recall": 0.9045,
+          "f1": 0.7893,
+          "auc_roc": 0.9302,
+          "ci_95": [
+            0.9247,
+            0.9357
+          ]
+        },
+        "Isolation Forest": {
+          "method": "Isolation Forest",
+          "precision": 0.7461,
+          "recall": 0.7461,
+          "f1": 0.7461,
+          "auc_roc": 0.9517,
+          "time_s": 0.14,
+          "training": "Yes"
+        },
+        "One-Class SVM": {
+          "method": "One-Class SVM",
+          "precision": 0.8695,
+          "recall": 0.8695,
+          "f1": 0.8695,
+          "auc_roc": 0.9863,
+          "time_s": 0.78,
+          "training": "Yes"
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.7709,
+          "recall": 0.7709,
+          "f1": 0.7709,
+          "auc_roc": 0.9368,
+          "time_s": 0.27,
+          "training": "Yes"
+        }
+      },
+      "temporal_split_results": {
+        "PBP Q90-L1 (single)": {
+          "method": "PBP best single",
+          "precision": 0.2519,
+          "recall": 1.0,
+          "f1": 0.4024,
+          "auc_roc": 0.6824
+        },
+        "PBP composite": {
+          "method": "PBP composite (5 feats)",
+          "precision": 0.5064,
+          "recall": 0.686,
+          "f1": 0.5827,
+          "auc_roc": 0.8826
+        },
+        "PBP pair (single)": {
+          "method": "PBP pair best single",
+          "precision": 0.4671,
+          "recall": 0.5862,
+          "f1": 0.5199,
+          "auc_roc": 0.6834
+        },
+        "PBP pair composite": {
+          "method": "PBP pair composite (5 feats)",
+          "precision": 0.452,
+          "recall": 0.5517,
+          "f1": 0.4969,
+          "auc_roc": 0.6817
+        },
+        "Isolation Forest": {
+          "method": "Isolation Forest",
+          "precision": 0.6878,
+          "recall": 0.6878,
+          "f1": 0.6878,
+          "auc_roc": 0.8944,
+          "time_s": 0.1,
+          "training": "Yes"
+        },
+        "One-Class SVM": {
+          "method": "One-Class SVM",
+          "precision": 0.6198,
+          "recall": 0.6198,
+          "f1": 0.6198,
+          "auc_roc": 0.8023,
+          "time_s": 0.35,
+          "training": "Yes"
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.5463,
+          "recall": 0.5463,
+          "f1": 0.5463,
+          "auc_roc": 0.7967,
+          "time_s": 0.06,
+          "training": "Yes"
+        }
+      },
+      "pair_ranking": [
+        {
+          "pair": [
+            "CO",
+            "O3"
+          ],
+          "pair_idx": [
+            2,
+            5
+          ],
+          "best_auc": 0.9064
+        },
+        {
+          "pair": [
+            "PM10",
+            "O3"
+          ],
+          "pair_idx": [
+            0,
+            5
+          ],
+          "best_auc": 0.9007
+        },
+        {
+          "pair": [
+            "PM2.5",
+            "O3"
+          ],
+          "pair_idx": [
+            1,
+            5
+          ],
+          "best_auc": 0.9001
+        },
+        {
+          "pair": [
+            "NO2",
+            "O3"
+          ],
+          "pair_idx": [
+            3,
+            5
+          ],
+          "best_auc": 0.8973
+        },
+        {
+          "pair": [
+            "SO2",
+            "O3"
+          ],
+          "pair_idx": [
+            4,
+            5
+          ],
+          "best_auc": 0.8811
+        },
+        {
+          "pair": [
+            "CO",
+            "NO2"
+          ],
+          "pair_idx": [
+            2,
+            3
+          ],
+          "best_auc": 0.807
+        },
+        {
+          "pair": [
+            "NO2",
+            "SO2"
+          ],
+          "pair_idx": [
+            3,
+            4
+          ],
+          "best_auc": 0.7877
+        },
+        {
+          "pair": [
+            "PM10",
+            "SO2"
+          ],
+          "pair_idx": [
+            0,
+            4
+          ],
+          "best_auc": 0.784
+        },
+        {
+          "pair": [
+            "PM2.5",
+            "SO2"
+          ],
+          "pair_idx": [
+            1,
+            4
+          ],
+          "best_auc": 0.7835
+        },
+        {
+          "pair": [
+            "CO",
+            "SO2"
+          ],
+          "pair_idx": [
+            2,
+            4
+          ],
+          "best_auc": 0.7755
+        }
+      ],
+      "pbp_time_s": 60.3,
+      "pair_time_s": 306.19
+    },
+    {
+      "dataset": "Cape Town (CAMS)",
+      "n_windows": 8755,
+      "n_sensors": 6,
+      "anomaly_fraction": 0.221,
+      "full_data_results": {
+        "PBP Q90-L1 (single)": {
+          "method": "PBP best single",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc_roc": 1.0
+        },
+        "PBP composite": {
+          "method": "PBP composite (5 feats)",
+          "precision": 0.8574,
+          "recall": 0.9354,
+          "f1": 0.8947,
+          "auc_roc": 0.9916
+        },
+        "PBP pair (single)": {
+          "method": "PBP pair best single",
+          "precision": 0.7339,
+          "recall": 0.7339,
+          "f1": 0.7339,
+          "auc_roc": 0.9261
+        },
+        "PBP pair composite": {
+          "method": "PBP pair composite (5 feats)",
+          "precision": 0.8279,
+          "recall": 0.8279,
+          "f1": 0.8279,
+          "auc_roc": 0.9666,
+          "ci_95": [
+            0.9627,
+            0.9705
+          ]
+        },
+        "Isolation Forest": {
+          "method": "Isolation Forest",
+          "precision": 0.8553,
+          "recall": 0.8553,
+          "f1": 0.8553,
+          "auc_roc": 0.9831,
+          "time_s": 0.12,
+          "training": "Yes"
+        },
+        "One-Class SVM": {
+          "method": "One-Class SVM",
+          "precision": 0.9333,
+          "recall": 0.9333,
+          "f1": 0.9333,
+          "auc_roc": 0.9962,
+          "time_s": 0.83,
+          "training": "Yes"
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.8129,
+          "recall": 0.8129,
+          "f1": 0.8129,
+          "auc_roc": 0.9549,
+          "time_s": 0.12,
+          "training": "Yes"
+        }
+      },
+      "temporal_split_results": {
+        "PBP Q90-L1 (single)": {
+          "method": "PBP best single",
+          "precision": 0.7138,
+          "recall": 0.7755,
+          "f1": 0.7434,
+          "auc_roc": 0.9471
+        },
+        "PBP composite": {
+          "method": "PBP composite (5 feats)",
+          "precision": 0.77,
+          "recall": 0.8199,
+          "f1": 0.7942,
+          "auc_roc": 0.9729
+        },
+        "PBP pair (single)": {
+          "method": "PBP pair best single",
+          "precision": 0.7201,
+          "recall": 0.9328,
+          "f1": 0.8128,
+          "auc_roc": 0.9365
+        },
+        "PBP pair composite": {
+          "method": "PBP pair composite (5 feats)",
+          "precision": 0.7207,
+          "recall": 0.9292,
+          "f1": 0.8117,
+          "auc_roc": 0.9705
+        },
+        "Isolation Forest": {
+          "method": "Isolation Forest",
+          "precision": 0.8055,
+          "recall": 0.8055,
+          "f1": 0.8055,
+          "auc_roc": 0.9749,
+          "time_s": 0.1,
+          "training": "Yes"
+        },
+        "One-Class SVM": {
+          "method": "One-Class SVM",
+          "precision": 0.8992,
+          "recall": 0.8992,
+          "f1": 0.8992,
+          "auc_roc": 0.9918,
+          "time_s": 0.27,
+          "training": "Yes"
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.9088,
+          "recall": 0.9088,
+          "f1": 0.9088,
+          "auc_roc": 0.9934,
+          "time_s": 0.07,
+          "training": "Yes"
+        }
+      },
+      "pair_ranking": [
+        {
+          "pair": [
+            "PM2.5",
+            "O3"
+          ],
+          "pair_idx": [
+            1,
+            5
+          ],
+          "best_auc": 0.9261
+        },
+        {
+          "pair": [
+            "PM10",
+            "O3"
+          ],
+          "pair_idx": [
+            0,
+            5
+          ],
+          "best_auc": 0.9243
+        },
+        {
+          "pair": [
+            "PM10",
+            "SO2"
+          ],
+          "pair_idx": [
+            0,
+            4
+          ],
+          "best_auc": 0.9148
+        },
+        {
+          "pair": [
+            "PM2.5",
+            "SO2"
+          ],
+          "pair_idx": [
+            1,
+            4
+          ],
+          "best_auc": 0.9146
+        },
+        {
+          "pair": [
+            "CO",
+            "O3"
+          ],
+          "pair_idx": [
+            2,
+            5
+          ],
+          "best_auc": 0.9095
+        },
+        {
+          "pair": [
+            "PM10",
+            "CO"
+          ],
+          "pair_idx": [
+            0,
+            2
+          ],
+          "best_auc": 0.9082
+        },
+        {
+          "pair": [
+            "PM2.5",
+            "CO"
+          ],
+          "pair_idx": [
+            1,
+            2
+          ],
+          "best_auc": 0.9068
+        },
+        {
+          "pair": [
+            "SO2",
+            "O3"
+          ],
+          "pair_idx": [
+            4,
+            5
+          ],
+          "best_auc": 0.9026
+        },
+        {
+          "pair": [
+            "NO2",
+            "O3"
+          ],
+          "pair_idx": [
+            3,
+            5
+          ],
+          "best_auc": 0.8967
+        },
+        {
+          "pair": [
+            "PM2.5",
+            "NO2"
+          ],
+          "pair_idx": [
+            1,
+            3
+          ],
+          "best_auc": 0.8948
+        }
+      ],
+      "pbp_time_s": 59.16,
+      "pair_time_s": 298.06
+    },
+    {
+      "dataset": "Beijing Multi-Site (Dongsi)",
+      "n_windows": 30397,
+      "n_sensors": 10,
+      "anomaly_fraction": 0.2883,
+      "full_data_results": {
+        "PBP Q90-L1 (single)": {
+          "method": "PBP best single",
+          "precision": 0.5756,
+          "recall": 1.0,
+          "f1": 0.7306,
+          "auc_roc": 0.9329
+        },
+        "PBP composite": {
+          "method": "PBP composite (5 feats)",
+          "precision": 0.8062,
+          "recall": 0.8173,
+          "f1": 0.8117,
+          "auc_roc": 0.9587
+        },
+        "PBP pair (single)": {
+          "method": "PBP pair best single",
+          "precision": 0.7168,
+          "recall": 0.776,
+          "f1": 0.7452,
+          "auc_roc": 0.8286
+        },
+        "PBP pair composite": {
+          "method": "PBP pair composite (5 feats)",
+          "precision": 0.7314,
+          "recall": 0.7615,
+          "f1": 0.7462,
+          "auc_roc": 0.9023,
+          "ci_95": [
+            0.8989,
+            0.9059
+          ]
+        },
+        "Isolation Forest": {
+          "method": "Isolation Forest",
+          "precision": 0.7589,
+          "recall": 0.7589,
+          "f1": 0.7589,
+          "auc_roc": 0.927,
+          "time_s": 0.26,
+          "training": "Yes"
+        },
+        "One-Class SVM": {
+          "method": "One-Class SVM",
+          "precision": 0.8189,
+          "recall": 0.8189,
+          "f1": 0.8189,
+          "auc_roc": 0.9522,
+          "time_s": 14.52,
+          "training": "Yes"
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.7531,
+          "recall": 0.7531,
+          "f1": 0.7531,
+          "auc_roc": 0.9136,
+          "time_s": 3.6,
+          "training": "Yes"
+        }
+      },
+      "temporal_split_results": {
+        "PBP Q90-L1 (single)": {
+          "method": "PBP best single",
+          "precision": 0.4765,
+          "recall": 0.9309,
+          "f1": 0.6303,
+          "auc_roc": 0.8813
+        },
+        "PBP composite": {
+          "method": "PBP composite (5 feats)",
+          "precision": 0.7615,
+          "recall": 0.7675,
+          "f1": 0.7645,
+          "auc_roc": 0.9318
+        },
+        "PBP pair (single)": {
+          "method": "PBP pair best single",
+          "precision": 0.7057,
+          "recall": 0.8049,
+          "f1": 0.752,
+          "auc_roc": 0.8423
+        },
+        "PBP pair composite": {
+          "method": "PBP pair composite (5 feats)",
+          "precision": 0.7043,
+          "recall": 0.7283,
+          "f1": 0.7161,
+          "auc_roc": 0.9059
+        },
+        "Isolation Forest": {
+          "method": "Isolation Forest",
+          "precision": 0.7633,
+          "recall": 0.7633,
+          "f1": 0.7633,
+          "auc_roc": 0.9313,
+          "time_s": 0.19,
+          "training": "Yes"
+        },
+        "One-Class SVM": {
+          "method": "One-Class SVM",
+          "precision": 0.8047,
+          "recall": 0.8047,
+          "f1": 0.8047,
+          "auc_roc": 0.9386,
+          "time_s": 4.49,
+          "training": "Yes"
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.7234,
+          "recall": 0.7234,
+          "f1": 0.7234,
+          "auc_roc": 0.8978,
+          "time_s": 0.22,
+          "training": "Yes"
+        }
+      },
+      "pair_ranking": [
+        {
+          "pair": [
+            "PM10",
+            "O3"
+          ],
+          "pair_idx": [
+            1,
+            5
+          ],
+          "best_auc": 0.8286
+        },
+        {
+          "pair": [
+            "NO2",
+            "O3"
+          ],
+          "pair_idx": [
+            3,
+            5
+          ],
+          "best_auc": 0.8186
+        },
+        {
+          "pair": [
+            "CO",
+            "O3"
+          ],
+          "pair_idx": [
+            4,
+            5
+          ],
+          "best_auc": 0.8178
+        },
+        {
+          "pair": [
+            "PM2.5",
+            "O3"
+          ],
+          "pair_idx": [
+            0,
+            5
+          ],
+          "best_auc": 0.8038
+        },
+        {
+          "pair": [
+            "PM10",
+            "SO2"
+          ],
+          "pair_idx": [
+            1,
+            2
+          ],
+          "best_auc": 0.7932
+        },
+        {
+          "pair": [
+            "SO2",
+            "O3"
+          ],
+          "pair_idx": [
+            2,
+            5
+          ],
+          "best_auc": 0.7889
+        },
+        {
+          "pair": [
+            "PM10",
+            "TEMP"
+          ],
+          "pair_idx": [
+            1,
+            6
+          ],
+          "best_auc": 0.7856
+        },
+        {
+          "pair": [
+            "SO2",
+            "NO2"
+          ],
+          "pair_idx": [
+            2,
+            3
+          ],
+          "best_auc": 0.7761
+        },
+        {
+          "pair": [
+            "PM2.5",
+            "SO2"
+          ],
+          "pair_idx": [
+            0,
+            2
+          ],
+          "best_auc": 0.7715
+        },
+        {
+          "pair": [
+            "PM10",
+            "CO"
+          ],
+          "pair_idx": [
+            1,
+            4
+          ],
+          "best_auc": 0.7709
+        }
+      ],
+      "pbp_time_s": 214.34,
+      "pair_time_s": 3973.83
+    },
+    {
+      "dataset": "EPA AQS (LA, 2023)",
+      "n_windows": 8419,
+      "n_sensors": 4,
+      "anomaly_fraction": 0.2933,
+      "full_data_results": {
+        "PBP Q90-L1 (single)": {
+          "method": "PBP best single",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc_roc": 1.0
+        },
+        "PBP composite": {
+          "method": "PBP composite (5 feats)",
+          "precision": 0.8685,
+          "recall": 0.9068,
+          "f1": 0.8873,
+          "auc_roc": 0.9843
+        },
+        "PBP pair (single)": {
+          "method": "PBP pair best single",
+          "precision": 0.675,
+          "recall": 0.8898,
+          "f1": 0.7676,
+          "auc_roc": 0.8609
+        },
+        "PBP pair composite": {
+          "method": "PBP pair composite (5 feats)",
+          "precision": 0.7236,
+          "recall": 0.8323,
+          "f1": 0.7742,
+          "auc_roc": 0.942,
+          "ci_95": [
+            0.9372,
+            0.9464
+          ]
+        },
+        "Isolation Forest": {
+          "method": "Isolation Forest",
+          "precision": 0.7736,
+          "recall": 0.7736,
+          "f1": 0.7736,
+          "auc_roc": 0.9254,
+          "time_s": 0.12,
+          "training": "Yes"
+        },
+        "One-Class SVM": {
+          "method": "One-Class SVM",
+          "precision": 0.8631,
+          "recall": 0.8631,
+          "f1": 0.8631,
+          "auc_roc": 0.9731,
+          "time_s": 0.5,
+          "training": "Yes"
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.791,
+          "recall": 0.791,
+          "f1": 0.791,
+          "auc_roc": 0.9353,
+          "time_s": 0.2,
+          "training": "Yes"
+        }
+      },
+      "temporal_split_results": {
+        "PBP Q90-L1 (single)": {
+          "method": "PBP best single",
+          "precision": 0.6506,
+          "recall": 1.0,
+          "f1": 0.7883,
+          "auc_roc": 0.9313
+        },
+        "PBP composite": {
+          "method": "PBP composite (5 feats)",
+          "precision": 0.7821,
+          "recall": 0.7872,
+          "f1": 0.7847,
+          "auc_roc": 0.9335
+        },
+        "PBP pair (single)": {
+          "method": "PBP pair best single",
+          "precision": 0.5325,
+          "recall": 0.9245,
+          "f1": 0.6758,
+          "auc_roc": 0.786
+        },
+        "PBP pair composite": {
+          "method": "PBP pair composite (5 feats)",
+          "precision": 0.6265,
+          "recall": 0.8066,
+          "f1": 0.7052,
+          "auc_roc": 0.858
+        },
+        "Isolation Forest": {
+          "method": "Isolation Forest",
+          "precision": 0.7484,
+          "recall": 0.7484,
+          "f1": 0.7484,
+          "auc_roc": 0.9004,
+          "time_s": 0.08,
+          "training": "Yes"
+        },
+        "One-Class SVM": {
+          "method": "One-Class SVM",
+          "precision": 0.8799,
+          "recall": 0.8799,
+          "f1": 0.8799,
+          "auc_roc": 0.9779,
+          "time_s": 0.22,
+          "training": "Yes"
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.8922,
+          "recall": 0.8922,
+          "f1": 0.8922,
+          "auc_roc": 0.9805,
+          "time_s": 0.04,
+          "training": "Yes"
+        }
+      },
+      "pair_ranking": [
+        {
+          "pair": [
+            "O3",
+            "CO"
+          ],
+          "pair_idx": [
+            0,
+            2
+          ],
+          "best_auc": 0.8609
+        },
+        {
+          "pair": [
+            "O3",
+            "NO2"
+          ],
+          "pair_idx": [
+            0,
+            3
+          ],
+          "best_auc": 0.8538
+        },
+        {
+          "pair": [
+            "SO2",
+            "CO"
+          ],
+          "pair_idx": [
+            1,
+            2
+          ],
+          "best_auc": 0.838
+        },
+        {
+          "pair": [
+            "SO2",
+            "NO2"
+          ],
+          "pair_idx": [
+            1,
+            3
+          ],
+          "best_auc": 0.8315
+        },
+        {
+          "pair": [
+            "O3",
+            "SO2"
+          ],
+          "pair_idx": [
+            0,
+            1
+          ],
+          "best_auc": 0.8141
+        },
+        {
+          "pair": [
+            "CO",
+            "NO2"
+          ],
+          "pair_idx": [
+            2,
+            3
+          ],
+          "best_auc": 0.7657
+        }
+      ],
+      "pbp_time_s": 52.85,
+      "pair_time_s": 106.03
+    }
+  ],
+  "cross_environment": {
+    "note": "Need at least 2 datasets for cross-environment analysis"
+  }
+}

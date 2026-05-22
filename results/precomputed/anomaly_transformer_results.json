@@ -1,0 +1,58 @@
+{
+  "UCI": {
+    "dataset": "UCI Air Quality (Italy)",
+    "auc": 0.502,
+    "ci_95": [
+      0.479,
+      0.5224
+    ],
+    "training_time_s": 83.0,
+    "inference_time_per_window_ms": 0.507,
+    "device": "mps",
+    "n_train_windows": 2443,
+    "n_test_windows": 3466,
+    "test_anomaly_frac": 0.2977,
+    "model_params": 68430,
+    "hyperparams": {
+      "d_model": 64,
+      "n_heads": 4,
+      "n_layers": 2,
+      "d_ff": 128,
+      "window_size": 6,
+      "epochs": 50,
+      "batch_size": 64,
+      "lambda_assoc": 1.0,
+      "lr": 0.001,
+      "seed": 42
+    },
+    "final_loss": 0.0871
+  },
+  "Beijing": {
+    "dataset": "Beijing Multi-Site (Dongsi)",
+    "auc": 0.6138,
+    "ci_95": [
+      0.6005,
+      0.6265
+    ],
+    "training_time_s": 204.9,
+    "inference_time_per_window_ms": 0.073,
+    "device": "mps",
+    "n_train_windows": 10569,
+    "n_test_windows": 15196,
+    "test_anomaly_frac": 0.2705,
+    "model_params": 68688,
+    "hyperparams": {
+      "d_model": 64,
+      "n_heads": 4,
+      "n_layers": 2,
+      "d_ff": 128,
+      "window_size": 6,
+      "epochs": 50,
+      "batch_size": 64,
+      "lambda_assoc": 1.0,
+      "lr": 0.001,
+      "seed": 42
+    },
+    "final_loss": 0.0004
+  }
+}

@@ -1,0 +1,754 @@
+[
+  {
+    "dataset": "UCI Air Quality (Italy)",
+    "n_sensors": 8,
+    "n_windows": 6936,
+    "feature_time_s": 520.6,
+    "sweep": [
+      {
+        "percentile": 90,
+        "anomaly_rate": 0.4485,
+        "n_anomalous": 3111,
+        "PBP_pair_auc": 0.873,
+        "PBP_pair_f1": 0.6193,
+        "PBP_pair_ci": [
+          0.8652,
+          0.881
+        ],
+        "IF_auc": 0.8478,
+        "IF_f1": 0.7377,
+        "SVM_auc": 0.8731,
+        "SVM_f1": 0.766,
+        "LOF_auc": 0.8735,
+        "LOF_f1": 0.7596,
+        "PBP_vs_IF": 0.0252
+      },
+      {
+        "percentile": 91,
+        "anomaly_rate": 0.42,
+        "n_anomalous": 2913,
+        "PBP_pair_auc": 0.8744,
+        "PBP_pair_f1": 0.7936,
+        "PBP_pair_ci": [
+          0.8661,
+          0.8827
+        ],
+        "IF_auc": 0.8647,
+        "IF_f1": 0.7336,
+        "SVM_auc": 0.8723,
+        "SVM_f1": 0.7429,
+        "LOF_auc": 0.8788,
+        "LOF_f1": 0.7545,
+        "PBP_vs_IF": 0.0097
+      },
+      {
+        "percentile": 92,
+        "anomaly_rate": 0.3943,
+        "n_anomalous": 2735,
+        "PBP_pair_auc": 0.8794,
+        "PBP_pair_f1": 0.7842,
+        "PBP_pair_ci": [
+          0.8711,
+          0.8879
+        ],
+        "IF_auc": 0.8553,
+        "IF_f1": 0.713,
+        "SVM_auc": 0.8735,
+        "SVM_f1": 0.7287,
+        "LOF_auc": 0.8789,
+        "LOF_f1": 0.7415,
+        "PBP_vs_IF": 0.0241
+      },
+      {
+        "percentile": 93,
+        "anomaly_rate": 0.3599,
+        "n_anomalous": 2496,
+        "PBP_pair_auc": 0.8864,
+        "PBP_pair_f1": 0.8056,
+        "PBP_pair_ci": [
+          0.8779,
+          0.8941
+        ],
+        "IF_auc": 0.8591,
+        "IF_f1": 0.6963,
+        "SVM_auc": 0.8736,
+        "SVM_f1": 0.7095,
+        "LOF_auc": 0.8733,
+        "LOF_f1": 0.7159,
+        "PBP_vs_IF": 0.0273
+      },
+      {
+        "percentile": 94,
+        "anomaly_rate": 0.328,
+        "n_anomalous": 2275,
+        "PBP_pair_auc": 0.8841,
+        "PBP_pair_f1": 0.7774,
+        "PBP_pair_ci": [
+          0.8754,
+          0.8926
+        ],
+        "IF_auc": 0.8562,
+        "IF_f1": 0.6703,
+        "SVM_auc": 0.8716,
+        "SVM_f1": 0.6905,
+        "LOF_auc": 0.8642,
+        "LOF_f1": 0.6835,
+        "PBP_vs_IF": 0.0279
+      },
+      {
+        "percentile": 95,
+        "anomaly_rate": 0.2984,
+        "n_anomalous": 2070,
+        "PBP_pair_auc": 0.8896,
+        "PBP_pair_f1": 0.7725,
+        "PBP_pair_ci": [
+          0.8806,
+          0.8981
+        ],
+        "IF_auc": 0.855,
+        "IF_f1": 0.6531,
+        "SVM_auc": 0.8765,
+        "SVM_f1": 0.6749,
+        "LOF_auc": 0.8701,
+        "LOF_f1": 0.6739,
+        "PBP_vs_IF": 0.0346
+      },
+      {
+        "percentile": 96,
+        "anomaly_rate": 0.2546,
+        "n_anomalous": 1766,
+        "PBP_pair_auc": 0.8941,
+        "PBP_pair_f1": 0.7524,
+        "PBP_pair_ci": [
+          0.8846,
+          0.9032
+        ],
+        "IF_auc": 0.8667,
+        "IF_f1": 0.6489,
+        "SVM_auc": 0.8849,
+        "SVM_f1": 0.6597,
+        "LOF_auc": 0.8745,
+        "LOF_f1": 0.6359,
+        "PBP_vs_IF": 0.0274
+      },
+      {
+        "percentile": 97,
+        "anomaly_rate": 0.2075,
+        "n_anomalous": 1439,
+        "PBP_pair_auc": 0.8896,
+        "PBP_pair_f1": 0.7052,
+        "PBP_pair_ci": [
+          0.8783,
+          0.9003
+        ],
+        "IF_auc": 0.8404,
+        "IF_f1": 0.5393,
+        "SVM_auc": 0.8868,
+        "SVM_f1": 0.6171,
+        "LOF_auc": 0.869,
+        "LOF_f1": 0.5817,
+        "PBP_vs_IF": 0.0492
+      },
+      {
+        "percentile": 98,
+        "anomaly_rate": 0.1525,
+        "n_anomalous": 1058,
+        "PBP_pair_auc": 0.8841,
+        "PBP_pair_f1": 0.6636,
+        "PBP_pair_ci": [
+          0.872,
+          0.8956
+        ],
+        "IF_auc": 0.8664,
+        "IF_f1": 0.5302,
+        "SVM_auc": 0.9124,
+        "SVM_f1": 0.6011,
+        "LOF_auc": 0.8747,
+        "LOF_f1": 0.5388,
+        "PBP_vs_IF": 0.0177
+      },
+      {
+        "percentile": 99,
+        "anomaly_rate": 0.0851,
+        "n_anomalous": 590,
+        "PBP_pair_auc": 0.8982,
+        "PBP_pair_f1": 0.4508,
+        "PBP_pair_ci": [
+          0.8887,
+          0.9082
+        ],
+        "IF_auc": 0.8847,
+        "IF_f1": 0.4356,
+        "SVM_auc": 0.9022,
+        "SVM_f1": 0.5288,
+        "LOF_auc": 0.8491,
+        "LOF_f1": 0.3763,
+        "PBP_vs_IF": 0.0135
+      }
+    ]
+  },
+  {
+    "dataset": "Beijing Multi-Site (Dongsi)",
+    "n_sensors": 10,
+    "n_windows": 30397,
+    "feature_time_s": 3771.1,
+    "sweep": [
+      {
+        "percentile": 90,
+        "anomaly_rate": 0.4603,
+        "n_anomalous": 13991,
+        "PBP_pair_auc": 0.9624,
+        "PBP_pair_f1": 0.6304,
+        "PBP_pair_ci": [
+          0.9601,
+          0.9644
+        ],
+        "IF_auc": 0.9256,
+        "IF_f1": 0.8209,
+        "SVM_auc": 0.9389,
+        "SVM_f1": 0.8529,
+        "LOF_auc": 0.9385,
+        "LOF_f1": 0.8491,
+        "PBP_vs_IF": 0.0368
+      },
+      {
+        "percentile": 91,
+        "anomaly_rate": 0.4323,
+        "n_anomalous": 13142,
+        "PBP_pair_auc": 0.9477,
+        "PBP_pair_f1": 0.6037,
+        "PBP_pair_ci": [
+          0.945,
+          0.9501
+        ],
+        "IF_auc": 0.9288,
+        "IF_f1": 0.8185,
+        "SVM_auc": 0.9403,
+        "SVM_f1": 0.8466,
+        "LOF_auc": 0.9396,
+        "LOF_f1": 0.8461,
+        "PBP_vs_IF": 0.0189
+      },
+      {
+        "percentile": 92,
+        "anomaly_rate": 0.398,
+        "n_anomalous": 12099,
+        "PBP_pair_auc": 0.9343,
+        "PBP_pair_f1": 0.9091,
+        "PBP_pair_ci": [
+          0.9313,
+          0.937
+        ],
+        "IF_auc": 0.9173,
+        "IF_f1": 0.7909,
+        "SVM_auc": 0.9439,
+        "SVM_f1": 0.8416,
+        "LOF_auc": 0.9375,
+        "LOF_f1": 0.8328,
+        "PBP_vs_IF": 0.017
+      },
+      {
+        "percentile": 93,
+        "anomaly_rate": 0.3621,
+        "n_anomalous": 11007,
+        "PBP_pair_auc": 0.9222,
+        "PBP_pair_f1": 0.8406,
+        "PBP_pair_ci": [
+          0.919,
+          0.9251
+        ],
+        "IF_auc": 0.9194,
+        "IF_f1": 0.7805,
+        "SVM_auc": 0.9459,
+        "SVM_f1": 0.8322,
+        "LOF_auc": 0.9345,
+        "LOF_f1": 0.8142,
+        "PBP_vs_IF": 0.0028
+      },
+      {
+        "percentile": 94,
+        "anomaly_rate": 0.3269,
+        "n_anomalous": 9937,
+        "PBP_pair_auc": 0.9131,
+        "PBP_pair_f1": 0.8199,
+        "PBP_pair_ci": [
+          0.9097,
+          0.9163
+        ],
+        "IF_auc": 0.9216,
+        "IF_f1": 0.765,
+        "SVM_auc": 0.9508,
+        "SVM_f1": 0.8295,
+        "LOF_auc": 0.9291,
+        "LOF_f1": 0.7964,
+        "PBP_vs_IF": -0.0085
+      },
+      {
+        "percentile": 95,
+        "anomaly_rate": 0.2883,
+        "n_anomalous": 8763,
+        "PBP_pair_auc": 0.9023,
+        "PBP_pair_f1": 0.7462,
+        "PBP_pair_ci": [
+          0.8988,
+          0.9055
+        ],
+        "IF_auc": 0.927,
+        "IF_f1": 0.7589,
+        "SVM_auc": 0.9522,
+        "SVM_f1": 0.8189,
+        "LOF_auc": 0.9136,
+        "LOF_f1": 0.7531,
+        "PBP_vs_IF": -0.0247
+      },
+      {
+        "percentile": 96,
+        "anomaly_rate": 0.2469,
+        "n_anomalous": 7504,
+        "PBP_pair_auc": 0.8941,
+        "PBP_pair_f1": 0.6681,
+        "PBP_pair_ci": [
+          0.8903,
+          0.8977
+        ],
+        "IF_auc": 0.9234,
+        "IF_f1": 0.7192,
+        "SVM_auc": 0.9536,
+        "SVM_f1": 0.7969,
+        "LOF_auc": 0.9063,
+        "LOF_f1": 0.7239,
+        "PBP_vs_IF": -0.0293
+      },
+      {
+        "percentile": 97,
+        "anomaly_rate": 0.1982,
+        "n_anomalous": 6026,
+        "PBP_pair_auc": 0.8826,
+        "PBP_pair_f1": 0.6042,
+        "PBP_pair_ci": [
+          0.8786,
+          0.8862
+        ],
+        "IF_auc": 0.9235,
+        "IF_f1": 0.686,
+        "SVM_auc": 0.9549,
+        "SVM_f1": 0.7796,
+        "LOF_auc": 0.9053,
+        "LOF_f1": 0.6912,
+        "PBP_vs_IF": -0.0409
+      },
+      {
+        "percentile": 98,
+        "anomaly_rate": 0.1492,
+        "n_anomalous": 4534,
+        "PBP_pair_auc": 0.8713,
+        "PBP_pair_f1": 0.5882,
+        "PBP_pair_ci": [
+          0.8659,
+          0.8763
+        ],
+        "IF_auc": 0.9244,
+        "IF_f1": 0.6383,
+        "SVM_auc": 0.9585,
+        "SVM_f1": 0.755,
+        "LOF_auc": 0.9004,
+        "LOF_f1": 0.6462,
+        "PBP_vs_IF": -0.0531
+      },
+      {
+        "percentile": 99,
+        "anomaly_rate": 0.0843,
+        "n_anomalous": 2562,
+        "PBP_pair_auc": 0.872,
+        "PBP_pair_f1": 0.4466,
+        "PBP_pair_ci": [
+          0.8666,
+          0.8778
+        ],
+        "IF_auc": 0.9243,
+        "IF_f1": 0.5617,
+        "SVM_auc": 0.9667,
+        "SVM_f1": 0.7322,
+        "LOF_auc": 0.8985,
+        "LOF_f1": 0.566,
+        "PBP_vs_IF": -0.0523
+      }
+    ]
+  },
+  {
+    "dataset": "S\u00e3o Paulo (CAMS)",
+    "n_sensors": 6,
+    "n_windows": 8755,
+    "feature_time_s": 380.4,
+    "sweep": [
+      {
+        "percentile": 90,
+        "anomaly_rate": 0.3934,
+        "n_anomalous": 3444,
+        "PBP_pair_auc": 0.9694,
+        "PBP_pair_f1": 0.5646,
+        "PBP_pair_ci": [
+          0.9653,
+          0.9731
+        ],
+        "IF_auc": 0.9589,
+        "IF_f1": 0.8606,
+        "SVM_auc": 0.9871,
+        "SVM_f1": 0.9207,
+        "LOF_auc": 0.9574,
+        "LOF_f1": 0.8606,
+        "PBP_vs_IF": 0.0105
+      },
+      {
+        "percentile": 91,
+        "anomaly_rate": 0.3615,
+        "n_anomalous": 3165,
+        "PBP_pair_auc": 0.964,
+        "PBP_pair_f1": 0.9419,
+        "PBP_pair_ci": [
+          0.9597,
+          0.9684
+        ],
+        "IF_auc": 0.9632,
+        "IF_f1": 0.8547,
+        "SVM_auc": 0.9878,
+        "SVM_f1": 0.9144,
+        "LOF_auc": 0.958,
+        "LOF_f1": 0.8499,
+        "PBP_vs_IF": 0.0008
+      },
+      {
+        "percentile": 92,
+        "anomaly_rate": 0.3347,
+        "n_anomalous": 2930,
+        "PBP_pair_auc": 0.9565,
+        "PBP_pair_f1": 0.8959,
+        "PBP_pair_ci": [
+          0.9517,
+          0.9611
+        ],
+        "IF_auc": 0.9625,
+        "IF_f1": 0.8433,
+        "SVM_auc": 0.9882,
+        "SVM_f1": 0.9167,
+        "LOF_auc": 0.9521,
+        "LOF_f1": 0.8334,
+        "PBP_vs_IF": -0.006
+      },
+      {
+        "percentile": 93,
+        "anomaly_rate": 0.2983,
+        "n_anomalous": 2612,
+        "PBP_pair_auc": 0.9495,
+        "PBP_pair_f1": 0.859,
+        "PBP_pair_ci": [
+          0.9448,
+          0.9545
+        ],
+        "IF_auc": 0.9542,
+        "IF_f1": 0.7963,
+        "SVM_auc": 0.9887,
+        "SVM_f1": 0.9012,
+        "LOF_auc": 0.9532,
+        "LOF_f1": 0.8204,
+        "PBP_vs_IF": -0.0047
+      },
+      {
+        "percentile": 94,
+        "anomaly_rate": 0.2611,
+        "n_anomalous": 2286,
+        "PBP_pair_auc": 0.9412,
+        "PBP_pair_f1": 0.8156,
+        "PBP_pair_ci": [
+          0.9366,
+          0.9462
+        ],
+        "IF_auc": 0.9588,
+        "IF_f1": 0.7983,
+        "SVM_auc": 0.9876,
+        "SVM_f1": 0.8955,
+        "LOF_auc": 0.9502,
+        "LOF_f1": 0.8097,
+        "PBP_vs_IF": -0.0176
+      },
+      {
+        "percentile": 95,
+        "anomaly_rate": 0.2214,
+        "n_anomalous": 1938,
+        "PBP_pair_auc": 0.9302,
+        "PBP_pair_f1": 0.7893,
+        "PBP_pair_ci": [
+          0.9248,
+          0.9356
+        ],
+        "IF_auc": 0.9517,
+        "IF_f1": 0.7461,
+        "SVM_auc": 0.9863,
+        "SVM_f1": 0.8695,
+        "LOF_auc": 0.9368,
+        "LOF_f1": 0.7709,
+        "PBP_vs_IF": -0.0215
+      },
+      {
+        "percentile": 96,
+        "anomaly_rate": 0.1844,
+        "n_anomalous": 1614,
+        "PBP_pair_auc": 0.921,
+        "PBP_pair_f1": 0.7397,
+        "PBP_pair_ci": [
+          0.9151,
+          0.9265
+        ],
+        "IF_auc": 0.9531,
+        "IF_f1": 0.7076,
+        "SVM_auc": 0.9879,
+        "SVM_f1": 0.8792,
+        "LOF_auc": 0.9409,
+        "LOF_f1": 0.7652,
+        "PBP_vs_IF": -0.0321
+      },
+      {
+        "percentile": 97,
+        "anomaly_rate": 0.1455,
+        "n_anomalous": 1274,
+        "PBP_pair_auc": 0.9128,
+        "PBP_pair_f1": 0.6465,
+        "PBP_pair_ci": [
+          0.9074,
+          0.9178
+        ],
+        "IF_auc": 0.958,
+        "IF_f1": 0.6884,
+        "SVM_auc": 0.9877,
+        "SVM_f1": 0.8501,
+        "LOF_auc": 0.9445,
+        "LOF_f1": 0.7198,
+        "PBP_vs_IF": -0.0452
+      },
+      {
+        "percentile": 98,
+        "anomaly_rate": 0.1028,
+        "n_anomalous": 900,
+        "PBP_pair_auc": 0.9002,
+        "PBP_pair_f1": 0.5294,
+        "PBP_pair_ci": [
+          0.8945,
+          0.9055
+        ],
+        "IF_auc": 0.9585,
+        "IF_f1": 0.6378,
+        "SVM_auc": 0.9876,
+        "SVM_f1": 0.8244,
+        "LOF_auc": 0.9401,
+        "LOF_f1": 0.6944,
+        "PBP_vs_IF": -0.0583
+      },
+      {
+        "percentile": 99,
+        "anomaly_rate": 0.0618,
+        "n_anomalous": 541,
+        "PBP_pair_auc": 0.9311,
+        "PBP_pair_f1": 0.3179,
+        "PBP_pair_ci": [
+          0.9249,
+          0.9369
+        ],
+        "IF_auc": 0.963,
+        "IF_f1": 0.6248,
+        "SVM_auc": 0.9922,
+        "SVM_f1": 0.8152,
+        "LOF_auc": 0.9442,
+        "LOF_f1": 0.5841,
+        "PBP_vs_IF": -0.0319
+      }
+    ]
+  },
+  {
+    "dataset": "Cape Town (CAMS)",
+    "n_sensors": 6,
+    "n_windows": 8755,
+    "feature_time_s": 313.4,
+    "sweep": [
+      {
+        "percentile": 90,
+        "anomaly_rate": 0.3516,
+        "n_anomalous": 3078,
+        "PBP_pair_auc": 0.988,
+        "PBP_pair_f1": 0.9253,
+        "PBP_pair_ci": [
+          0.9862,
+          0.9899
+        ],
+        "IF_auc": 0.9866,
+        "IF_f1": 0.9146,
+        "SVM_auc": 0.9964,
+        "SVM_f1": 0.9565,
+        "LOF_auc": 0.9785,
+        "LOF_f1": 0.8983,
+        "PBP_vs_IF": 0.0014
+      },
+      {
+        "percentile": 91,
+        "anomaly_rate": 0.3294,
+        "n_anomalous": 2884,
+        "PBP_pair_auc": 0.9922,
+        "PBP_pair_f1": 0.9494,
+        "PBP_pair_ci": [
+          0.9906,
+          0.9936
+        ],
+        "IF_auc": 0.9861,
+        "IF_f1": 0.9046,
+        "SVM_auc": 0.9965,
+        "SVM_f1": 0.9525,
+        "LOF_auc": 0.9783,
+        "LOF_f1": 0.8897,
+        "PBP_vs_IF": 0.0061
+      },
+      {
+        "percentile": 92,
+        "anomaly_rate": 0.3046,
+        "n_anomalous": 2667,
+        "PBP_pair_auc": 0.9871,
+        "PBP_pair_f1": 0.889,
+        "PBP_pair_ci": [
+          0.9854,
+          0.9887
+        ],
+        "IF_auc": 0.9864,
+        "IF_f1": 0.8965,
+        "SVM_auc": 0.9958,
+        "SVM_f1": 0.94,
+        "LOF_auc": 0.975,
+        "LOF_f1": 0.8736,
+        "PBP_vs_IF": 0.0007
+      },
+      {
+        "percentile": 93,
+        "anomaly_rate": 0.279,
+        "n_anomalous": 2443,
+        "PBP_pair_auc": 0.9817,
+        "PBP_pair_f1": 0.8621,
+        "PBP_pair_ci": [
+          0.9796,
+          0.9836
+        ],
+        "IF_auc": 0.9835,
+        "IF_f1": 0.8809,
+        "SVM_auc": 0.9958,
+        "SVM_f1": 0.9419,
+        "LOF_auc": 0.968,
+        "LOF_f1": 0.8485,
+        "PBP_vs_IF": -0.0018
+      },
+      {
+        "percentile": 94,
+        "anomaly_rate": 0.2501,
+        "n_anomalous": 2190,
+        "PBP_pair_auc": 0.9677,
+        "PBP_pair_f1": 0.8443,
+        "PBP_pair_ci": [
+          0.964,
+          0.9713
+        ],
+        "IF_auc": 0.9834,
+        "IF_f1": 0.8685,
+        "SVM_auc": 0.996,
+        "SVM_f1": 0.9356,
+        "LOF_auc": 0.9616,
+        "LOF_f1": 0.8228,
+        "PBP_vs_IF": -0.0157
+      },
+      {
+        "percentile": 95,
+        "anomaly_rate": 0.221,
+        "n_anomalous": 1935,
+        "PBP_pair_auc": 0.9666,
+        "PBP_pair_f1": 0.8279,
+        "PBP_pair_ci": [
+          0.9625,
+          0.9705
+        ],
+        "IF_auc": 0.9831,
+        "IF_f1": 0.8553,
+        "SVM_auc": 0.9962,
+        "SVM_f1": 0.9333,
+        "LOF_auc": 0.9549,
+        "LOF_f1": 0.8129,
+        "PBP_vs_IF": -0.0165
+      },
+      {
+        "percentile": 96,
+        "anomaly_rate": 0.1855,
+        "n_anomalous": 1624,
+        "PBP_pair_auc": 0.9618,
+        "PBP_pair_f1": 0.798,
+        "PBP_pair_ci": [
+          0.9569,
+          0.9665
+        ],
+        "IF_auc": 0.9843,
+        "IF_f1": 0.8491,
+        "SVM_auc": 0.9964,
+        "SVM_f1": 0.9323,
+        "LOF_auc": 0.9627,
+        "LOF_f1": 0.798,
+        "PBP_vs_IF": -0.0225
+      },
+      {
+        "percentile": 97,
+        "anomaly_rate": 0.1511,
+        "n_anomalous": 1323,
+        "PBP_pair_auc": 0.9646,
+        "PBP_pair_f1": 0.7921,
+        "PBP_pair_ci": [
+          0.9588,
+          0.9695
+        ],
+        "IF_auc": 0.9839,
+        "IF_f1": 0.8269,
+        "SVM_auc": 0.9969,
+        "SVM_f1": 0.9252,
+        "LOF_auc": 0.9532,
+        "LOF_f1": 0.7415,
+        "PBP_vs_IF": -0.0193
+      },
+      {
+        "percentile": 98,
+        "anomaly_rate": 0.1105,
+        "n_anomalous": 967,
+        "PBP_pair_auc": 0.9759,
+        "PBP_pair_f1": 0.7808,
+        "PBP_pair_ci": [
+          0.9707,
+          0.9803
+        ],
+        "IF_auc": 0.9865,
+        "IF_f1": 0.8159,
+        "SVM_auc": 0.9974,
+        "SVM_f1": 0.9255,
+        "LOF_auc": 0.949,
+        "LOF_f1": 0.7187,
+        "PBP_vs_IF": -0.0106
+      },
+      {
+        "percentile": 99,
+        "anomaly_rate": 0.0669,
+        "n_anomalous": 586,
+        "PBP_pair_auc": 0.9825,
+        "PBP_pair_f1": 0.6997,
+        "PBP_pair_ci": [
+          0.9798,
+          0.9852
+        ],
+        "IF_auc": 0.9866,
+        "IF_f1": 0.7389,
+        "SVM_auc": 0.9972,
+        "SVM_f1": 0.8993,
+        "LOF_auc": 0.968,
+        "LOF_f1": 0.6826,
+        "PBP_vs_IF": -0.0041
+      }
+    ]
+  }
+]

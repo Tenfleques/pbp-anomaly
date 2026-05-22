@@ -1,0 +1,364 @@
+{
+  "n_datasets": 5,
+  "datasets": [
+    "UCI Air Quality (Italy)",
+    "S\u00e3o Paulo (CAMS)",
+    "Cape Town (CAMS)",
+    "Beijing Multi-Site (Dongsi)",
+    "EPA AQS (LA, 2023)"
+  ],
+  "kendall_tau": {
+    "matrix": [
+      [
+        NaN,
+        1.0,
+        NaN,
+        NaN,
+        1.0
+      ],
+      [
+        1.0,
+        NaN,
+        0.04761904761904762,
+        0.6428571428571428,
+        0.3333333333333333
+      ],
+      [
+        NaN,
+        0.04761904761904762,
+        NaN,
+        0.14285714285714285,
+        0.33333333333333337
+      ],
+      [
+        NaN,
+        0.6428571428571428,
+        0.14285714285714285,
+        NaN,
+        0.3333333333333334
+      ],
+      [
+        1.0,
+        0.3333333333333333,
+        0.33333333333333337,
+        0.3333333333333334,
+        NaN
+      ]
+    ],
+    "pvalue_matrix": [
+      [
+        NaN,
+        0.3333333333333333,
+        NaN,
+        NaN,
+        0.3333333333333333
+      ],
+      [
+        0.3333333333333333,
+        NaN,
+        1.0,
+        0.03115079365079365,
+        0.46944444444444444
+      ],
+      [
+        NaN,
+        1.0,
+        NaN,
+        0.7195436507936508,
+        1.0
+      ],
+      [
+        NaN,
+        0.03115079365079365,
+        0.7195436507936508,
+        NaN,
+        0.75
+      ],
+      [
+        0.3333333333333333,
+        0.46944444444444444,
+        1.0,
+        0.75,
+        NaN
+      ]
+    ],
+    "dataset_order": [
+      "UCI Air Quality (Italy)",
+      "S\u00e3o Paulo (CAMS)",
+      "Cape Town (CAMS)",
+      "Beijing Multi-Site (Dongsi)",
+      "EPA AQS (LA, 2023)"
+    ]
+  },
+  "universal_pairs": [
+    {
+      "pair": [
+        "CO",
+        "O3"
+      ],
+      "interaction_type": [
+        "combustion",
+        "oxidant"
+      ],
+      "n_datasets": 5,
+      "mean_auc": 0.8688,
+      "std_auc": 0.035,
+      "datasets": [
+        "UCI Air Quality (Italy)",
+        "S\u00e3o Paulo (CAMS)",
+        "Cape Town (CAMS)",
+        "Beijing Multi-Site (Dongsi)",
+        "EPA AQS (LA, 2023)"
+      ]
+    },
+    {
+      "pair": [
+        "NO2",
+        "O3"
+      ],
+      "interaction_type": [
+        "oxidant",
+        "oxidant"
+      ],
+      "n_datasets": 4,
+      "mean_auc": 0.8511,
+      "std_auc": 0.0294,
+      "datasets": [
+        "UCI Air Quality (Italy)",
+        "S\u00e3o Paulo (CAMS)",
+        "Beijing Multi-Site (Dongsi)",
+        "EPA AQS (LA, 2023)"
+      ]
+    },
+    {
+      "pair": [
+        "O3",
+        "PM10"
+      ],
+      "interaction_type": [
+        "oxidant",
+        "particulate"
+      ],
+      "n_datasets": 3,
+      "mean_auc": 0.8845,
+      "std_auc": 0.0407,
+      "datasets": [
+        "S\u00e3o Paulo (CAMS)",
+        "Cape Town (CAMS)",
+        "Beijing Multi-Site (Dongsi)"
+      ]
+    },
+    {
+      "pair": [
+        "O3",
+        "PM2.5"
+      ],
+      "interaction_type": [
+        "oxidant",
+        "particulate"
+      ],
+      "n_datasets": 3,
+      "mean_auc": 0.8767,
+      "std_auc": 0.0526,
+      "datasets": [
+        "S\u00e3o Paulo (CAMS)",
+        "Cape Town (CAMS)",
+        "Beijing Multi-Site (Dongsi)"
+      ]
+    }
+  ],
+  "local_pairs": [
+    {
+      "pair": [
+        "PM2.5",
+        "SO2"
+      ],
+      "interaction_type": [
+        "combustion",
+        "particulate"
+      ],
+      "n_datasets": 1,
+      "mean_auc": 0.9146,
+      "std_auc": 0.0,
+      "datasets": [
+        "Cape Town (CAMS)"
+      ]
+    },
+    {
+      "pair": [
+        "NMHC",
+        "O3"
+      ],
+      "interaction_type": [
+        "hydrocarbon",
+        "oxidant"
+      ],
+      "n_datasets": 1,
+      "mean_auc": 0.8837,
+      "std_auc": 0.0,
+      "datasets": [
+        "UCI Air Quality (Italy)"
+      ]
+    },
+    {
+      "pair": [
+        "CO",
+        "NMHC"
+      ],
+      "interaction_type": [
+        "combustion",
+        "hydrocarbon"
+      ],
+      "n_datasets": 1,
+      "mean_auc": 0.8575,
+      "std_auc": 0.0,
+      "datasets": [
+        "UCI Air Quality (Italy)"
+      ]
+    },
+    {
+      "pair": [
+        "PM10",
+        "SO2"
+      ],
+      "interaction_type": [
+        "combustion",
+        "particulate"
+      ],
+      "n_datasets": 2,
+      "mean_auc": 0.854,
+      "std_auc": 0.0608,
+      "datasets": [
+        "Cape Town (CAMS)",
+        "Beijing Multi-Site (Dongsi)"
+      ]
+    },
+    {
+      "pair": [
+        "O3",
+        "SO2"
+      ],
+      "interaction_type": [
+        "combustion",
+        "oxidant"
+      ],
+      "n_datasets": 2,
+      "mean_auc": 0.8476,
+      "std_auc": 0.0335,
+      "datasets": [
+        "S\u00e3o Paulo (CAMS)",
+        "EPA AQS (LA, 2023)"
+      ]
+    },
+    {
+      "pair": [
+        "CO",
+        "SO2"
+      ],
+      "interaction_type": [
+        "combustion",
+        "combustion"
+      ],
+      "n_datasets": 1,
+      "mean_auc": 0.838,
+      "std_auc": 0.0,
+      "datasets": [
+        "EPA AQS (LA, 2023)"
+      ]
+    },
+    {
+      "pair": [
+        "NO2",
+        "SO2"
+      ],
+      "interaction_type": [
+        "combustion",
+        "oxidant"
+      ],
+      "n_datasets": 1,
+      "mean_auc": 0.8315,
+      "std_auc": 0.0,
+      "datasets": [
+        "EPA AQS (LA, 2023)"
+      ]
+    },
+    {
+      "pair": [
+        "NMHC",
+        "RH"
+      ],
+      "interaction_type": [
+        "hydrocarbon",
+        "meteorological"
+      ],
+      "n_datasets": 1,
+      "mean_auc": 0.8053,
+      "std_auc": 0.0,
+      "datasets": [
+        "UCI Air Quality (Italy)"
+      ]
+    }
+  ],
+  "interaction_type_summary": {
+    "hydrocarbon-oxidant": {
+      "n": 2,
+      "mean_auc": 0.8429,
+      "std_auc": 0.0408,
+      "max_auc": 0.8837
+    },
+    "combustion-hydrocarbon": {
+      "n": 1,
+      "mean_auc": 0.8575,
+      "std_auc": 0.0,
+      "max_auc": 0.8575
+    },
+    "combustion-oxidant": {
+      "n": 15,
+      "mean_auc": 0.8327,
+      "std_auc": 0.0477,
+      "max_auc": 0.9095
+    },
+    "oxidant-oxidant": {
+      "n": 6,
+      "mean_auc": 0.8463,
+      "std_auc": 0.0426,
+      "max_auc": 0.8973
+    },
+    "hydrocarbon-meteorological": {
+      "n": 1,
+      "mean_auc": 0.8053,
+      "std_auc": 0.0,
+      "max_auc": 0.8053
+    },
+    "meteorological-oxidant": {
+      "n": 2,
+      "mean_auc": 0.7884,
+      "std_auc": 0.016,
+      "max_auc": 0.8043
+    },
+    "oxidant-particulate": {
+      "n": 7,
+      "mean_auc": 0.8826,
+      "std_auc": 0.044,
+      "max_auc": 0.9261
+    },
+    "combustion-particulate": {
+      "n": 9,
+      "mean_auc": 0.8386,
+      "std_auc": 0.0652,
+      "max_auc": 0.9148
+    },
+    "combustion-combustion": {
+      "n": 2,
+      "mean_auc": 0.8068,
+      "std_auc": 0.0312,
+      "max_auc": 0.838
+    },
+    "meteorological-particulate": {
+      "n": 1,
+      "mean_auc": 0.7856,
+      "std_auc": 0.0,
+      "max_auc": 0.7856
+    }
+  }
+}

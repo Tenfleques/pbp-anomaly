@@ -1,0 +1,72 @@
+{
+  "LHR": {
+    "station": "London Heathrow",
+    "climate": "Maritime temperate",
+    "n_readings": 15248,
+    "one_tailed": {
+      "anomaly_rate": 0.2551,
+      "test_anomaly_rate": 0.2583,
+      "pbp_std": 0.9457,
+      "pbp_std_36": 0.6732,
+      "pbp_pair": 0.8185,
+      "delong_top5_vs_all36": {
+        "z": 40.3359,
+        "p": 0.0,
+        "delta": 0.2726
+      },
+      "IF": 0.788,
+      "OC-SVM": 0.9,
+      "LOF": 0.7878
+    },
+    "two_tailed": {
+      "anomaly_rate": 0.4856,
+      "test_anomaly_rate": 0.4855,
+      "pbp_std": 0.7783,
+      "pbp_std_36": 0.5151,
+      "pbp_pair": 0.6595,
+      "delong_top5_vs_all36": {
+        "z": 42.3215,
+        "p": 0.0,
+        "delta": 0.2632
+      },
+      "IF": 0.8399,
+      "OC-SVM": 0.9074,
+      "LOF": 0.8316
+    }
+  },
+  "NRT": {
+    "station": "Tokyo Narita",
+    "climate": "Humid subtropical",
+    "n_readings": 10712,
+    "one_tailed": {
+      "anomaly_rate": 0.3498,
+      "test_anomaly_rate": 0.2798,
+      "pbp_std": 0.9281,
+      "pbp_std_36": 0.7157,
+      "pbp_pair": 0.7967,
+      "delong_top5_vs_all36": {
+        "z": 31.3622,
+        "p": 6.643551875821e-216,
+        "delta": 0.2124
+      },
+      "IF": 0.7964,
+      "OC-SVM": 0.7855,
+      "LOF": 0.6406
+    },
+    "two_tailed": {
+      "anomaly_rate": 0.6053,
+      "test_anomaly_rate": 0.5719,
+      "pbp_std": 0.6933,
+      "pbp_std_36": 0.5628,
+      "pbp_pair": 0.635,
+      "delong_top5_vs_all36": {
+        "z": 20.9674,
+        "p": 1.3008188270954418e-97,
+        "delta": 0.1304
+      },
+      "IF": 0.7939,
+      "OC-SVM": 0.8219,
+      "LOF": 0.6975
+    }
+  }
+}

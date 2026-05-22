@@ -1,0 +1,686 @@
+[
+  {
+    "dataset": "UCI Air Quality (Italy)",
+    "n_samples": 6941,
+    "n_sensors": 8,
+    "quarterly_cv": [
+      {
+        "PBP single": 0.8153,
+        "PBP composite": 0.8144,
+        "PBP pair composite": 0.8995,
+        "Isolation Forest": 0.8414,
+        "One-Class SVM": 0.7737,
+        "LOF": 0.7109,
+        "test_anomaly_frac": 0.2899,
+        "train_size": 1735,
+        "test_size": 5206,
+        "fold": "train_Q1",
+        "time_s": 607.4
+      },
+      {
+        "PBP single": 0.8479,
+        "PBP composite": 0.8411,
+        "PBP pair composite": 0.8851,
+        "Isolation Forest": 0.8743,
+        "One-Class SVM": 0.8547,
+        "LOF": 0.8707,
+        "test_anomaly_frac": 0.2948,
+        "train_size": 1735,
+        "test_size": 5206,
+        "fold": "train_Q2",
+        "time_s": 873.7
+      },
+      {
+        "PBP single": 0.7309,
+        "PBP composite": 0.7143,
+        "PBP pair composite": 0.8546,
+        "Isolation Forest": 0.6056,
+        "One-Class SVM": 0.5982,
+        "LOF": 0.506,
+        "test_anomaly_frac": 0.3088,
+        "train_size": 1735,
+        "test_size": 5206,
+        "fold": "train_Q3",
+        "time_s": 807.3
+      },
+      {
+        "PBP single": 0.8106,
+        "PBP composite": 0.8002,
+        "PBP pair composite": 0.8924,
+        "Isolation Forest": 0.7049,
+        "One-Class SVM": 0.6514,
+        "LOF": 0.536,
+        "test_anomaly_frac": 0.2777,
+        "train_size": 1736,
+        "test_size": 5205,
+        "fold": "train_Q4",
+        "time_s": 670.9
+      }
+    ],
+    "seasonal_splits": {
+      "summer_train_winter_test": {
+        "PBP single": 0.8397,
+        "PBP composite": 0.8352,
+        "PBP pair composite": 0.8866,
+        "Isolation Forest": 0.8538,
+        "One-Class SVM": 0.8681,
+        "LOF": 0.7264,
+        "test_anomaly_frac": 0.313,
+        "train_size": 3470,
+        "test_size": 3471,
+        "split": "summer_train_winter_test",
+        "time_s": 720.5
+      },
+      "winter_train_summer_test": {
+        "PBP single": 0.8199,
+        "PBP composite": 0.8234,
+        "PBP pair composite": 0.9107,
+        "Isolation Forest": 0.832,
+        "One-Class SVM": 0.7505,
+        "LOF": 0.7409,
+        "test_anomaly_frac": 0.2693,
+        "train_size": 3471,
+        "test_size": 3470,
+        "split": "winter_train_summer_test",
+        "time_s": 728.0
+      }
+    },
+    "adaptive": {
+      "adaptive_thresholds": [
+        {
+          "PBP single": 0.8819,
+          "PBP composite": 0.8882,
+          "PBP pair composite": 0.9182,
+          "Isolation Forest": 0.7861,
+          "One-Class SVM": 0.6477,
+          "LOF": 0.6481,
+          "test_anomaly_frac": 0.2942,
+          "train_size": 1735,
+          "test_size": 1735,
+          "fold": "adaptive_Q2_thresh_Q1",
+          "time_s": 368.5
+        },
+        {
+          "PBP single": 0.8224,
+          "PBP composite": 0.8412,
+          "PBP pair composite": 0.8566,
+          "Isolation Forest": 0.8565,
+          "One-Class SVM": 0.8602,
+          "LOF": 0.7902,
+          "test_anomaly_frac": 0.2428,
+          "train_size": 3470,
+          "test_size": 1735,
+          "fold": "adaptive_Q3_thresh_Q2",
+          "time_s": 528.9
+        },
+        {
+          "PBP single": 0.8666,
+          "PBP composite": 0.8511,
+          "PBP pair composite": 0.8513,
+          "Isolation Forest": 0.8024,
+          "One-Class SVM": 0.825,
+          "LOF": 0.802,
+          "test_anomaly_frac": 0.3125,
+          "train_size": 5205,
+          "test_size": 1736,
+          "fold": "adaptive_Q4_thresh_Q3",
+          "time_s": 700.2
+        }
+      ],
+      "static_thresholds": [
+        {
+          "PBP single": 0.8819,
+          "PBP composite": 0.8882,
+          "PBP pair composite": 0.9182,
+          "Isolation Forest": 0.7861,
+          "One-Class SVM": 0.6477,
+          "LOF": 0.6481,
+          "test_anomaly_frac": 0.2942,
+          "train_size": 1735,
+          "test_size": 1735,
+          "fold": "static_Q2_thresh_all_train",
+          "time_s": 393.6
+        },
+        {
+          "PBP single": 0.8124,
+          "PBP composite": 0.8324,
+          "PBP pair composite": 0.8656,
+          "Isolation Forest": 0.8565,
+          "One-Class SVM": 0.8602,
+          "LOF": 0.7902,
+          "test_anomaly_frac": 0.2428,
+          "train_size": 3470,
+          "test_size": 1735,
+          "fold": "static_Q3_thresh_all_train",
+          "time_s": 535.4
+        },
+        {
+          "PBP single": 0.8854,
+          "PBP composite": 0.9091,
+          "PBP pair composite": 0.8856,
+          "Isolation Forest": 0.8024,
+          "One-Class SVM": 0.825,
+          "LOF": 0.802,
+          "test_anomaly_frac": 0.3125,
+          "train_size": 5205,
+          "test_size": 1736,
+          "fold": "static_Q4_thresh_all_train",
+          "time_s": 686.9
+        }
+      ]
+    }
+  },
+  {
+    "dataset": "Beijing Multi-Site (Dongsi)",
+    "n_samples": 30402,
+    "n_sensors": 10,
+    "quarterly_cv": [
+      {
+        "PBP single": 0.8762,
+        "PBP composite": 0.9268,
+        "PBP pair composite": 0.8952,
+        "Isolation Forest": 0.9056,
+        "One-Class SVM": 0.909,
+        "LOF": 0.8828,
+        "test_anomaly_frac": 0.2809,
+        "train_size": 7600,
+        "test_size": 22802,
+        "fold": "train_Q1",
+        "time_s": 5222.9
+      },
+      {
+        "PBP single": 0.9134,
+        "PBP composite": 0.952,
+        "PBP pair composite": 0.8807,
+        "Isolation Forest": 0.9327,
+        "One-Class SVM": 0.9642,
+        "LOF": 0.9089,
+        "test_anomaly_frac": 0.286,
+        "train_size": 7600,
+        "test_size": 22802,
+        "fold": "train_Q2",
+        "time_s": 4966.2
+      },
+      {
+        "PBP single": 0.9146,
+        "PBP composite": 0.9428,
+        "PBP pair composite": 0.9,
+        "Isolation Forest": 0.9034,
+        "One-Class SVM": 0.9477,
+        "LOF": 0.8888,
+        "test_anomaly_frac": 0.2934,
+        "train_size": 7600,
+        "test_size": 22802,
+        "fold": "train_Q3",
+        "time_s": 4734.1
+      },
+      {
+        "PBP single": 0.89,
+        "PBP composite": 0.9413,
+        "PBP pair composite": 0.8974,
+        "Isolation Forest": 0.8933,
+        "One-Class SVM": 0.9232,
+        "LOF": 0.866,
+        "test_anomaly_frac": 0.2948,
+        "train_size": 7602,
+        "test_size": 22800,
+        "fold": "train_Q4",
+        "time_s": 5232.2
+      }
+    ],
+    "seasonal_splits": {
+      "summer_train_winter_test": {
+        "PBP single": 0.9125,
+        "PBP composite": 0.9463,
+        "PBP pair composite": 0.8847,
+        "Isolation Forest": 0.9274,
+        "One-Class SVM": 0.9633,
+        "LOF": 0.9162,
+        "test_anomaly_frac": 0.2927,
+        "train_size": 15200,
+        "test_size": 15202,
+        "split": "summer_train_winter_test",
+        "time_s": 5647.8
+      },
+      "winter_train_summer_test": {
+        "PBP single": 0.879,
+        "PBP composite": 0.9442,
+        "PBP pair composite": 0.9319,
+        "Isolation Forest": 0.9,
+        "One-Class SVM": 0.9242,
+        "LOF": 0.8666,
+        "test_anomaly_frac": 0.2863,
+        "train_size": 15202,
+        "test_size": 15200,
+        "split": "winter_train_summer_test",
+        "time_s": 5222.2
+      }
+    },
+    "adaptive": {
+      "adaptive_thresholds": [
+        {
+          "PBP single": 0.8592,
+          "PBP composite": 0.9261,
+          "PBP pair composite": 0.8809,
+          "Isolation Forest": 0.8876,
+          "One-Class SVM": 0.9047,
+          "LOF": 0.8725,
+          "test_anomaly_frac": 0.2953,
+          "train_size": 7600,
+          "test_size": 7600,
+          "fold": "adaptive_Q2_thresh_Q1",
+          "time_s": 2696.6
+        },
+        {
+          "PBP single": 0.8921,
+          "PBP composite": 0.9451,
+          "PBP pair composite": 0.9108,
+          "Isolation Forest": 0.9264,
+          "One-Class SVM": 0.9249,
+          "LOF": 0.884,
+          "test_anomaly_frac": 0.2654,
+          "train_size": 15200,
+          "test_size": 7600,
+          "fold": "adaptive_Q3_thresh_Q2",
+          "time_s": 4017.7
+        },
+        {
+          "PBP single": 0.9062,
+          "PBP composite": 0.9494,
+          "PBP pair composite": 0.8978,
+          "Isolation Forest": 0.9356,
+          "One-Class SVM": 0.9548,
+          "LOF": 0.8945,
+          "test_anomaly_frac": 0.275,
+          "train_size": 22800,
+          "test_size": 7602,
+          "fold": "adaptive_Q4_thresh_Q3",
+          "time_s": 5372.2
+        }
+      ],
+      "static_thresholds": [
+        {
+          "PBP single": 0.8592,
+          "PBP composite": 0.9261,
+          "PBP pair composite": 0.8809,
+          "Isolation Forest": 0.8876,
+          "One-Class SVM": 0.9047,
+          "LOF": 0.8725,
+          "test_anomaly_frac": 0.2953,
+          "train_size": 7600,
+          "test_size": 7600,
+          "fold": "static_Q2_thresh_all_train",
+          "time_s": 2611.1
+        },
+        {
+          "PBP single": 0.8847,
+          "PBP composite": 0.9334,
+          "PBP pair composite": 0.9065,
+          "Isolation Forest": 0.9264,
+          "One-Class SVM": 0.9249,
+          "LOF": 0.884,
+          "test_anomaly_frac": 0.2654,
+          "train_size": 15200,
+          "test_size": 7600,
+          "fold": "static_Q3_thresh_all_train",
+          "time_s": 4194.2
+        },
+        {
+          "PBP single": 0.8713,
+          "PBP composite": 0.9304,
+          "PBP pair composite": 0.8957,
+          "Isolation Forest": 0.9356,
+          "One-Class SVM": 0.9548,
+          "LOF": 0.8945,
+          "test_anomaly_frac": 0.275,
+          "train_size": 22800,
+          "test_size": 7602,
+          "fold": "static_Q4_thresh_all_train",
+          "time_s": 5832.8
+        }
+      ]
+    }
+  },
+  {
+    "dataset": "Sao Paulo (CAMS)",
+    "n_samples": 8760,
+    "n_sensors": 6,
+    "quarterly_cv": [
+      {
+        "PBP single": 0.9684,
+        "PBP composite": 0.9474,
+        "PBP pair composite": 0.9168,
+        "Isolation Forest": 0.9451,
+        "One-Class SVM": 0.9772,
+        "LOF": 0.9661,
+        "test_anomaly_frac": 0.2123,
+        "train_size": 2190,
+        "test_size": 6570,
+        "fold": "train_Q1",
+        "time_s": 547.6
+      },
+      {
+        "PBP single": 0.6797,
+        "PBP composite": 0.8229,
+        "PBP pair composite": 0.6358,
+        "Isolation Forest": 0.8826,
+        "One-Class SVM": 0.8194,
+        "LOF": 0.8041,
+        "test_anomaly_frac": 0.2696,
+        "train_size": 2190,
+        "test_size": 6570,
+        "fold": "train_Q2",
+        "time_s": 519.8
+      },
+      {
+        "PBP single": 0.8373,
+        "PBP composite": 0.8892,
+        "PBP pair composite": 0.9324,
+        "Isolation Forest": 0.8855,
+        "One-Class SVM": 0.9057,
+        "LOF": 0.8203,
+        "test_anomaly_frac": 0.2251,
+        "train_size": 2190,
+        "test_size": 6570,
+        "fold": "train_Q3",
+        "time_s": 492.8
+      },
+      {
+        "PBP single": 0.7226,
+        "PBP composite": 0.8467,
+        "PBP pair composite": 0.8411,
+        "Isolation Forest": 0.8446,
+        "One-Class SVM": 0.8553,
+        "LOF": 0.8302,
+        "test_anomaly_frac": 0.2312,
+        "train_size": 2190,
+        "test_size": 6570,
+        "fold": "train_Q4",
+        "time_s": 514.1
+      }
+    ],
+    "seasonal_splits": {
+      "summer_train_winter_test": {
+        "PBP single": 0.8656,
+        "PBP composite": 0.8912,
+        "PBP pair composite": 0.9222,
+        "Isolation Forest": 0.8932,
+        "One-Class SVM": 0.9326,
+        "LOF": 0.905,
+        "test_anomaly_frac": 0.2208,
+        "train_size": 4380,
+        "test_size": 4380,
+        "split": "summer_train_winter_test",
+        "time_s": 518.4
+      },
+      "winter_train_summer_test": {
+        "PBP single": 0.7236,
+        "PBP composite": 0.9512,
+        "PBP pair composite": 0.78,
+        "Isolation Forest": 0.9511,
+        "One-Class SVM": 0.9234,
+        "LOF": 0.7814,
+        "test_anomaly_frac": 0.2647,
+        "train_size": 4380,
+        "test_size": 4380,
+        "split": "winter_train_summer_test",
+        "time_s": 505.8
+      }
+    },
+    "adaptive": {
+      "adaptive_thresholds": [
+        {
+          "PBP single": 0.8218,
+          "PBP composite": 0.8708,
+          "PBP pair composite": 0.9059,
+          "Isolation Forest": 0.8896,
+          "One-Class SVM": 0.9166,
+          "LOF": 0.8917,
+          "test_anomaly_frac": 0.2595,
+          "train_size": 2190,
+          "test_size": 2190,
+          "fold": "adaptive_Q2_thresh_Q1",
+          "time_s": 253.1
+        },
+        {
+          "PBP single": 0.6442,
+          "PBP composite": 0.7948,
+          "PBP pair composite": 0.6413,
+          "Isolation Forest": 0.909,
+          "One-Class SVM": 0.8187,
+          "LOF": 0.7912,
+          "test_anomaly_frac": 0.2751,
+          "train_size": 4380,
+          "test_size": 2190,
+          "fold": "adaptive_Q3_thresh_Q2",
+          "time_s": 383.7
+        },
+        {
+          "PBP single": 0.8107,
+          "PBP composite": 0.9535,
+          "PBP pair composite": 0.7356,
+          "Isolation Forest": 0.8377,
+          "One-Class SVM": 0.7547,
+          "LOF": 0.752,
+          "test_anomaly_frac": 0.2654,
+          "train_size": 6570,
+          "test_size": 2190,
+          "fold": "adaptive_Q4_thresh_Q3",
+          "time_s": 487.6
+        }
+      ],
+      "static_thresholds": [
+        {
+          "PBP single": 0.8218,
+          "PBP composite": 0.8708,
+          "PBP pair composite": 0.9059,
+          "Isolation Forest": 0.8896,
+          "One-Class SVM": 0.9166,
+          "LOF": 0.8917,
+          "test_anomaly_frac": 0.2595,
+          "train_size": 2190,
+          "test_size": 2190,
+          "fold": "static_Q2_thresh_all_train",
+          "time_s": 235.1
+        },
+        {
+          "PBP single": 0.6749,
+          "PBP composite": 0.9074,
+          "PBP pair composite": 0.6847,
+          "Isolation Forest": 0.909,
+          "One-Class SVM": 0.8187,
+          "LOF": 0.7912,
+          "test_anomaly_frac": 0.2751,
+          "train_size": 4380,
+          "test_size": 2190,
+          "fold": "static_Q3_thresh_all_train",
+          "time_s": 385.2
+        },
+        {
+          "PBP single": 0.6694,
+          "PBP composite": 0.831,
+          "PBP pair composite": 0.6853,
+          "Isolation Forest": 0.8377,
+          "One-Class SVM": 0.7547,
+          "LOF": 0.752,
+          "test_anomaly_frac": 0.2654,
+          "train_size": 6570,
+          "test_size": 2190,
+          "fold": "static_Q4_thresh_all_train",
+          "time_s": 517.6
+        }
+      ]
+    }
+  },
+  {
+    "dataset": "Cape Town (CAMS)",
+    "n_samples": 8760,
+    "n_sensors": 6,
+    "quarterly_cv": [
+      {
+        "PBP single": 0.9238,
+        "PBP composite": 0.9672,
+        "PBP pair composite": 0.9345,
+        "Isolation Forest": 0.969,
+        "One-Class SVM": 0.9715,
+        "LOF": 0.9396,
+        "test_anomaly_frac": 0.2227,
+        "train_size": 2190,
+        "test_size": 6570,
+        "fold": "train_Q1",
+        "time_s": 520.5
+      },
+      {
+        "PBP single": 0.9406,
+        "PBP composite": 0.9794,
+        "PBP pair composite": 0.9569,
+        "Isolation Forest": 0.9797,
+        "One-Class SVM": 0.9818,
+        "LOF": 0.9034,
+        "test_anomaly_frac": 0.2207,
+        "train_size": 2190,
+        "test_size": 6570,
+        "fold": "train_Q2",
+        "time_s": 529.8
+      },
+      {
+        "PBP single": 0.872,
+        "PBP composite": 0.9155,
+        "PBP pair composite": 0.9264,
+        "Isolation Forest": 0.9421,
+        "One-Class SVM": 0.9057,
+        "LOF": 0.6515,
+        "test_anomaly_frac": 0.2312,
+        "train_size": 2190,
+        "test_size": 6570,
+        "fold": "train_Q3",
+        "time_s": 506.5
+      },
+      {
+        "PBP single": 0.9466,
+        "PBP composite": 0.9742,
+        "PBP pair composite": 0.9225,
+        "Isolation Forest": 0.9678,
+        "One-Class SVM": 0.987,
+        "LOF": 0.9678,
+        "test_anomaly_frac": 0.205,
+        "train_size": 2190,
+        "test_size": 6570,
+        "fold": "train_Q4",
+        "time_s": 517.6
+      }
+    ],
+    "seasonal_splits": {
+      "summer_train_winter_test": {
+        "PBP single": 0.9419,
+        "PBP composite": 0.9701,
+        "PBP pair composite": 0.9633,
+        "Isolation Forest": 0.9699,
+        "One-Class SVM": 0.9836,
+        "LOF": 0.9762,
+        "test_anomaly_frac": 0.213,
+        "train_size": 4380,
+        "test_size": 4380,
+        "split": "summer_train_winter_test",
+        "time_s": 507.0
+      },
+      "winter_train_summer_test": {
+        "PBP single": 0.8256,
+        "PBP composite": 0.9717,
+        "PBP pair composite": 0.9229,
+        "Isolation Forest": 0.969,
+        "One-Class SVM": 0.9374,
+        "LOF": 0.7194,
+        "test_anomaly_frac": 0.2427,
+        "train_size": 4380,
+        "test_size": 4380,
+        "split": "winter_train_summer_test",
+        "time_s": 495.8
+      }
+    },
+    "adaptive": {
+      "adaptive_thresholds": [
+        {
+          "PBP single": 0.9553,
+          "PBP composite": 0.9691,
+          "PBP pair composite": 0.9425,
+          "Isolation Forest": 0.9639,
+          "One-Class SVM": 0.9821,
+          "LOF": 0.9504,
+          "test_anomaly_frac": 0.2188,
+          "train_size": 2190,
+          "test_size": 2190,
+          "fold": "adaptive_Q2_thresh_Q1",
+          "time_s": 249.9
+        },
+        {
+          "PBP single": 0.9514,
+          "PBP composite": 0.9663,
+          "PBP pair composite": 0.9623,
+          "Isolation Forest": 0.971,
+          "One-Class SVM": 0.9833,
+          "LOF": 0.984,
+          "test_anomaly_frac": 0.1785,
+          "train_size": 4380,
+          "test_size": 2190,
+          "fold": "adaptive_Q3_thresh_Q2",
+          "time_s": 380.6
+        },
+        {
+          "PBP single": 0.8892,
+          "PBP composite": 0.9695,
+          "PBP pair composite": 0.8623,
+          "Isolation Forest": 0.9873,
+          "One-Class SVM": 0.9759,
+          "LOF": 0.8695,
+          "test_anomaly_frac": 0.1977,
+          "train_size": 6570,
+          "test_size": 2190,
+          "fold": "adaptive_Q4_thresh_Q3",
+          "time_s": 512.7
+        }
+      ],
+      "static_thresholds": [
+        {
+          "PBP single": 0.9553,
+          "PBP composite": 0.9691,
+          "PBP pair composite": 0.9425,
+          "Isolation Forest": 0.9639,
+          "One-Class SVM": 0.9821,
+          "LOF": 0.9504,
+          "test_anomaly_frac": 0.2188,
+          "train_size": 2190,
+          "test_size": 2190,
+          "fold": "static_Q2_thresh_all_train",
+          "time_s": 255.3
+        },
+        {
+          "PBP single": 0.9082,
+          "PBP composite": 0.9534,
+          "PBP pair composite": 0.9514,
+          "Isolation Forest": 0.971,
+          "One-Class SVM": 0.9833,
+          "LOF": 0.984,
+          "test_anomaly_frac": 0.1785,
+          "train_size": 4380,
+          "test_size": 2190,
+          "fold": "static_Q3_thresh_all_train",
+          "time_s": 387.0
+        },
+        {
+          "PBP single": 0.8847,
+          "PBP composite": 0.9715,
+          "PBP pair composite": 0.8622,
+          "Isolation Forest": 0.9873,
+          "One-Class SVM": 0.9759,
+          "LOF": 0.8695,
+          "test_anomaly_frac": 0.1977,
+          "train_size": 6570,
+          "test_size": 2190,
+          "fold": "static_Q4_thresh_all_train",
+          "time_s": 513.5
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,2649 @@
+{
+  "metadata": {
+    "dataset": "UCI Air Quality (Italy)",
+    "n_sensors": 8,
+    "n_pairs": 28,
+    "sensor_cols": [
+      "PT08.S1(CO)",
+      "PT08.S2(NMHC)",
+      "PT08.S3(NOx)",
+      "PT08.S4(NO2)",
+      "PT08.S5(O3)",
+      "T",
+      "RH",
+      "AH"
+    ],
+    "ref_cols": [
+      "CO(GT)",
+      "C6H6(GT)",
+      "NOx(GT)",
+      "NO2(GT)"
+    ],
+    "window_size": 6,
+    "protocol": "Protocol B (temporal split, train on first half)",
+    "q90_thresholds": {
+      "PT08.S1(CO)": 1393.1,
+      "PT08.S2(NMHC)": 1303.0,
+      "PT08.S3(NOx)": 1171.0,
+      "PT08.S4(NO2)": 1987.1,
+      "PT08.S5(O3)": 1486.0,
+      "T": 34.3,
+      "RH": 62.81,
+      "AH": 1.632
+    },
+    "ref_p95_thresholds": {
+      "CO(GT)": 4.5,
+      "C6H6(GT)": 23.8,
+      "NOx(GT)": 350.55,
+      "NO2(GT)": 163.0
+    },
+    "n_train_windows": 3465,
+    "n_test_windows": 3466,
+    "n_baseline_normal": 200
+  },
+  "window_analyses": [
+    {
+      "rank": 1,
+      "window_idx_in_test": 99,
+      "composite_score": 4.6571,
+      "label": 1,
+      "exceedance_count": 6,
+      "exceeding_sensors": [
+        "PT08.S1(CO)",
+        "PT08.S2(NMHC)",
+        "PT08.S4(NO2)",
+        "PT08.S5(O3)",
+        "RH",
+        "AH"
+      ],
+      "reference_means": {
+        "CO(GT)": 5.417,
+        "C6H6(GT)": 27.583,
+        "NOx(GT)": 583.0,
+        "NO2(GT)": 126.167
+      },
+      "reference_maxes": {
+        "CO(GT)": 7.7,
+        "C6H6(GT)": 40.0,
+        "NOx(GT)": 826.0,
+        "NO2(GT)": 172.0
+      },
+      "reference_thresholds": {
+        "CO(GT)": 4.5,
+        "C6H6(GT)": 23.8,
+        "NOx(GT)": 350.55,
+        "NO2(GT)": 163.0
+      },
+      "pair_scores_ranked": [
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "AH"
+          ],
+          "pair_idx": [
+            1,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.25,
+          "baseline_l1_std": 0.4444,
+          "z_score": 3.938
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "AH"
+          ],
+          "pair_idx": [
+            4,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.255,
+          "baseline_l1_std": 0.4472,
+          "z_score": 3.902
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "AH"
+          ],
+          "pair_idx": [
+            0,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.28,
+          "baseline_l1_std": 0.449,
+          "z_score": 3.831
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "AH"
+          ],
+          "pair_idx": [
+            3,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.295,
+          "baseline_l1_std": 0.4669,
+          "z_score": 3.652
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "RH"
+          ],
+          "pair_idx": [
+            1,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.28,
+          "baseline_l1_std": 0.4812,
+          "z_score": 3.574
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "RH"
+          ],
+          "pair_idx": [
+            4,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.285,
+          "baseline_l1_std": 0.4937,
+          "z_score": 3.474
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S2(NMHC)"
+          ],
+          "pair_idx": [
+            0,
+            1
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.22,
+          "baseline_l1_std": 0.5212,
+          "z_score": 3.416
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            1,
+            4
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.195,
+          "baseline_l1_std": 0.545,
+          "z_score": 3.312
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "RH"
+          ],
+          "pair_idx": [
+            0,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.31,
+          "baseline_l1_std": 0.5234,
+          "z_score": 3.229
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "RH"
+          ],
+          "pair_idx": [
+            3,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.325,
+          "baseline_l1_std": 0.5379,
+          "z_score": 3.114
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            3,
+            4
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.24,
+          "baseline_l1_std": 0.5678,
+          "z_score": 3.1
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            0,
+            4
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.225,
+          "baseline_l1_std": 0.5783,
+          "z_score": 3.07
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            0,
+            3
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.265,
+          "baseline_l1_std": 0.5699,
+          "z_score": 3.044
+        },
+        {
+          "pair": [
+            "RH",
+            "AH"
+          ],
+          "pair_idx": [
+            6,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.34,
+          "baseline_l1_std": 0.5517,
+          "z_score": 3.009
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            1,
+            3
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.235,
+          "baseline_l1_std": 0.6081,
+          "z_score": 2.903
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "T"
+          ],
+          "pair_idx": [
+            1,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.285,
+          "baseline_l1_std": 0.4835,
+          "z_score": 1.479
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "T"
+          ],
+          "pair_idx": [
+            4,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.29,
+          "baseline_l1_std": 0.4857,
+          "z_score": 1.462
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "T"
+          ],
+          "pair_idx": [
+            0,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.315,
+          "baseline_l1_std": 0.4752,
+          "z_score": 1.442
+        },
+        {
+          "pair": [
+            "T",
+            "RH"
+          ],
+          "pair_idx": [
+            5,
+            6
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.375,
+          "baseline_l1_std": 0.4841,
+          "z_score": 1.291
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "T"
+          ],
+          "pair_idx": [
+            3,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.33,
+          "baseline_l1_std": 0.5302,
+          "z_score": 1.264
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S3(NOx)"
+          ],
+          "pair_idx": [
+            1,
+            2
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.365,
+          "baseline_l1_std": 0.5308,
+          "z_score": 1.196
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            2,
+            4
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.37,
+          "baseline_l1_std": 0.5321,
+          "z_score": 1.184
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "AH"
+          ],
+          "pair_idx": [
+            2,
+            7
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.425,
+          "baseline_l1_std": 0.5142,
+          "z_score": 1.118
+        },
+        {
+          "pair": [
+            "T",
+            "AH"
+          ],
+          "pair_idx": [
+            5,
+            7
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.345,
+          "baseline_l1_std": 0.5882,
+          "z_score": 1.114
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S3(NOx)"
+          ],
+          "pair_idx": [
+            0,
+            2
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.395,
+          "baseline_l1_std": 0.5559,
+          "z_score": 1.088
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            2,
+            3
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.41,
+          "baseline_l1_std": 0.5674,
+          "z_score": 1.04
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "RH"
+          ],
+          "pair_idx": [
+            2,
+            6
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.455,
+          "baseline_l1_std": 0.6618,
+          "z_score": 0.824
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "T"
+          ],
+          "pair_idx": [
+            2,
+            5
+          ],
+          "l1_norm": 0.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.46,
+          "baseline_l1_std": 0.5181,
+          "z_score": -0.888
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "window_idx_in_test": 337,
+      "composite_score": 4.6571,
+      "label": 1,
+      "exceedance_count": 6,
+      "exceeding_sensors": [
+        "PT08.S1(CO)",
+        "PT08.S2(NMHC)",
+        "PT08.S4(NO2)",
+        "PT08.S5(O3)",
+        "RH",
+        "AH"
+      ],
+      "reference_means": {
+        "CO(GT)": 3.583,
+        "C6H6(GT)": 17.633,
+        "NOx(GT)": 399.833,
+        "NO2(GT)": 88.167
+      },
+      "reference_maxes": {
+        "CO(GT)": 6.6,
+        "C6H6(GT)": 30.3,
+        "NOx(GT)": 544.0,
+        "NO2(GT)": 106.0
+      },
+      "reference_thresholds": {
+        "CO(GT)": 4.5,
+        "C6H6(GT)": 23.8,
+        "NOx(GT)": 350.55,
+        "NO2(GT)": 163.0
+      },
+      "pair_scores_ranked": [
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "AH"
+          ],
+          "pair_idx": [
+            1,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.25,
+          "baseline_l1_std": 0.4444,
+          "z_score": 3.938
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "AH"
+          ],
+          "pair_idx": [
+            4,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.255,
+          "baseline_l1_std": 0.4472,
+          "z_score": 3.902
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "AH"
+          ],
+          "pair_idx": [
+            0,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.28,
+          "baseline_l1_std": 0.449,
+          "z_score": 3.831
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "AH"
+          ],
+          "pair_idx": [
+            3,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.295,
+          "baseline_l1_std": 0.4669,
+          "z_score": 3.652
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "RH"
+          ],
+          "pair_idx": [
+            1,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.28,
+          "baseline_l1_std": 0.4812,
+          "z_score": 3.574
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "RH"
+          ],
+          "pair_idx": [
+            4,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.285,
+          "baseline_l1_std": 0.4937,
+          "z_score": 3.474
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S2(NMHC)"
+          ],
+          "pair_idx": [
+            0,
+            1
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.22,
+          "baseline_l1_std": 0.5212,
+          "z_score": 3.416
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            1,
+            4
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.195,
+          "baseline_l1_std": 0.545,
+          "z_score": 3.312
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "RH"
+          ],
+          "pair_idx": [
+            0,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.31,
+          "baseline_l1_std": 0.5234,
+          "z_score": 3.229
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "RH"
+          ],
+          "pair_idx": [
+            3,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.325,
+          "baseline_l1_std": 0.5379,
+          "z_score": 3.114
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            3,
+            4
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.24,
+          "baseline_l1_std": 0.5678,
+          "z_score": 3.1
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            0,
+            4
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.225,
+          "baseline_l1_std": 0.5783,
+          "z_score": 3.07
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            0,
+            3
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.265,
+          "baseline_l1_std": 0.5699,
+          "z_score": 3.044
+        },
+        {
+          "pair": [
+            "RH",
+            "AH"
+          ],
+          "pair_idx": [
+            6,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.34,
+          "baseline_l1_std": 0.5517,
+          "z_score": 3.009
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            1,
+            3
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.235,
+          "baseline_l1_std": 0.6081,
+          "z_score": 2.903
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "T"
+          ],
+          "pair_idx": [
+            1,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.285,
+          "baseline_l1_std": 0.4835,
+          "z_score": 1.479
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "T"
+          ],
+          "pair_idx": [
+            4,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.29,
+          "baseline_l1_std": 0.4857,
+          "z_score": 1.462
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "T"
+          ],
+          "pair_idx": [
+            0,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.315,
+          "baseline_l1_std": 0.4752,
+          "z_score": 1.442
+        },
+        {
+          "pair": [
+            "T",
+            "RH"
+          ],
+          "pair_idx": [
+            5,
+            6
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.375,
+          "baseline_l1_std": 0.4841,
+          "z_score": 1.291
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "T"
+          ],
+          "pair_idx": [
+            3,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.33,
+          "baseline_l1_std": 0.5302,
+          "z_score": 1.264
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S3(NOx)"
+          ],
+          "pair_idx": [
+            1,
+            2
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.365,
+          "baseline_l1_std": 0.5308,
+          "z_score": 1.196
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            2,
+            4
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.37,
+          "baseline_l1_std": 0.5321,
+          "z_score": 1.184
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "AH"
+          ],
+          "pair_idx": [
+            2,
+            7
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.425,
+          "baseline_l1_std": 0.5142,
+          "z_score": 1.118
+        },
+        {
+          "pair": [
+            "T",
+            "AH"
+          ],
+          "pair_idx": [
+            5,
+            7
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.345,
+          "baseline_l1_std": 0.5882,
+          "z_score": 1.114
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S3(NOx)"
+          ],
+          "pair_idx": [
+            0,
+            2
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.395,
+          "baseline_l1_std": 0.5559,
+          "z_score": 1.088
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            2,
+            3
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.41,
+          "baseline_l1_std": 0.5674,
+          "z_score": 1.04
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "RH"
+          ],
+          "pair_idx": [
+            2,
+            6
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.455,
+          "baseline_l1_std": 0.6618,
+          "z_score": 0.824
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "T"
+          ],
+          "pair_idx": [
+            2,
+            5
+          ],
+          "l1_norm": 0.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.46,
+          "baseline_l1_std": 0.5181,
+          "z_score": -0.888
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "window_idx_in_test": 101,
+      "composite_score": 4.4571,
+      "label": 1,
+      "exceedance_count": 6,
+      "exceeding_sensors": [
+        "PT08.S1(CO)",
+        "PT08.S2(NMHC)",
+        "PT08.S4(NO2)",
+        "PT08.S5(O3)",
+        "RH",
+        "AH"
+      ],
+      "reference_means": {
+        "CO(GT)": 4.283,
+        "C6H6(GT)": 21.217,
+        "NOx(GT)": 474.167,
+        "NO2(GT)": 107.833
+      },
+      "reference_maxes": {
+        "CO(GT)": 6.0,
+        "C6H6(GT)": 30.1,
+        "NOx(GT)": 629.0,
+        "NO2(GT)": 130.0
+      },
+      "reference_thresholds": {
+        "CO(GT)": 4.5,
+        "C6H6(GT)": 23.8,
+        "NOx(GT)": 350.55,
+        "NO2(GT)": 163.0
+      },
+      "pair_scores_ranked": [
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "AH"
+          ],
+          "pair_idx": [
+            1,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.25,
+          "baseline_l1_std": 0.4444,
+          "z_score": 3.938
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "AH"
+          ],
+          "pair_idx": [
+            4,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.255,
+          "baseline_l1_std": 0.4472,
+          "z_score": 3.902
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "AH"
+          ],
+          "pair_idx": [
+            0,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.28,
+          "baseline_l1_std": 0.449,
+          "z_score": 3.831
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "AH"
+          ],
+          "pair_idx": [
+            3,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.295,
+          "baseline_l1_std": 0.4669,
+          "z_score": 3.652
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "RH"
+          ],
+          "pair_idx": [
+            1,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.28,
+          "baseline_l1_std": 0.4812,
+          "z_score": 3.574
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "RH"
+          ],
+          "pair_idx": [
+            4,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.285,
+          "baseline_l1_std": 0.4937,
+          "z_score": 3.474
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S2(NMHC)"
+          ],
+          "pair_idx": [
+            0,
+            1
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.22,
+          "baseline_l1_std": 0.5212,
+          "z_score": 3.416
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            1,
+            4
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.195,
+          "baseline_l1_std": 0.545,
+          "z_score": 3.312
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "RH"
+          ],
+          "pair_idx": [
+            0,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.31,
+          "baseline_l1_std": 0.5234,
+          "z_score": 3.229
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "RH"
+          ],
+          "pair_idx": [
+            3,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.325,
+          "baseline_l1_std": 0.5379,
+          "z_score": 3.114
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            3,
+            4
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.24,
+          "baseline_l1_std": 0.5678,
+          "z_score": 3.1
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            0,
+            4
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.225,
+          "baseline_l1_std": 0.5783,
+          "z_score": 3.07
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            0,
+            3
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.265,
+          "baseline_l1_std": 0.5699,
+          "z_score": 3.044
+        },
+        {
+          "pair": [
+            "RH",
+            "AH"
+          ],
+          "pair_idx": [
+            6,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.34,
+          "baseline_l1_std": 0.5517,
+          "z_score": 3.009
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            1,
+            3
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.235,
+          "baseline_l1_std": 0.6081,
+          "z_score": 2.903
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "T"
+          ],
+          "pair_idx": [
+            1,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.285,
+          "baseline_l1_std": 0.4835,
+          "z_score": 1.479
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "T"
+          ],
+          "pair_idx": [
+            4,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.29,
+          "baseline_l1_std": 0.4857,
+          "z_score": 1.462
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "T"
+          ],
+          "pair_idx": [
+            0,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.315,
+          "baseline_l1_std": 0.4752,
+          "z_score": 1.442
+        },
+        {
+          "pair": [
+            "T",
+            "RH"
+          ],
+          "pair_idx": [
+            5,
+            6
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.375,
+          "baseline_l1_std": 0.4841,
+          "z_score": 1.291
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "T"
+          ],
+          "pair_idx": [
+            3,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.33,
+          "baseline_l1_std": 0.5302,
+          "z_score": 1.264
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S3(NOx)"
+          ],
+          "pair_idx": [
+            1,
+            2
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.365,
+          "baseline_l1_std": 0.5308,
+          "z_score": 1.196
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            2,
+            4
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.37,
+          "baseline_l1_std": 0.5321,
+          "z_score": 1.184
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "AH"
+          ],
+          "pair_idx": [
+            2,
+            7
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.425,
+          "baseline_l1_std": 0.5142,
+          "z_score": 1.118
+        },
+        {
+          "pair": [
+            "T",
+            "AH"
+          ],
+          "pair_idx": [
+            5,
+            7
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.345,
+          "baseline_l1_std": 0.5882,
+          "z_score": 1.114
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S3(NOx)"
+          ],
+          "pair_idx": [
+            0,
+            2
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.395,
+          "baseline_l1_std": 0.5559,
+          "z_score": 1.088
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            2,
+            3
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.41,
+          "baseline_l1_std": 0.5674,
+          "z_score": 1.04
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "RH"
+          ],
+          "pair_idx": [
+            2,
+            6
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.455,
+          "baseline_l1_std": 0.6618,
+          "z_score": 0.824
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "T"
+          ],
+          "pair_idx": [
+            2,
+            5
+          ],
+          "l1_norm": 0.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.46,
+          "baseline_l1_std": 0.5181,
+          "z_score": -0.888
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "window_idx_in_test": 100,
+      "composite_score": 4.4571,
+      "label": 1,
+      "exceedance_count": 6,
+      "exceeding_sensors": [
+        "PT08.S1(CO)",
+        "PT08.S2(NMHC)",
+        "PT08.S4(NO2)",
+        "PT08.S5(O3)",
+        "RH",
+        "AH"
+      ],
+      "reference_means": {
+        "CO(GT)": 4.867,
+        "C6H6(GT)": 24.633,
+        "NOx(GT)": 526.333,
+        "NO2(GT)": 115.0
+      },
+      "reference_maxes": {
+        "CO(GT)": 6.8,
+        "C6H6(GT)": 35.9,
+        "NOx(GT)": 648.0,
+        "NO2(GT)": 134.0
+      },
+      "reference_thresholds": {
+        "CO(GT)": 4.5,
+        "C6H6(GT)": 23.8,
+        "NOx(GT)": 350.55,
+        "NO2(GT)": 163.0
+      },
+      "pair_scores_ranked": [
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "AH"
+          ],
+          "pair_idx": [
+            1,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.25,
+          "baseline_l1_std": 0.4444,
+          "z_score": 3.938
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "AH"
+          ],
+          "pair_idx": [
+            4,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.255,
+          "baseline_l1_std": 0.4472,
+          "z_score": 3.902
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "AH"
+          ],
+          "pair_idx": [
+            0,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.28,
+          "baseline_l1_std": 0.449,
+          "z_score": 3.831
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "AH"
+          ],
+          "pair_idx": [
+            3,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.295,
+          "baseline_l1_std": 0.4669,
+          "z_score": 3.652
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "RH"
+          ],
+          "pair_idx": [
+            1,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.28,
+          "baseline_l1_std": 0.4812,
+          "z_score": 3.574
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "RH"
+          ],
+          "pair_idx": [
+            4,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.285,
+          "baseline_l1_std": 0.4937,
+          "z_score": 3.474
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S2(NMHC)"
+          ],
+          "pair_idx": [
+            0,
+            1
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.22,
+          "baseline_l1_std": 0.5212,
+          "z_score": 3.416
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            1,
+            4
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.195,
+          "baseline_l1_std": 0.545,
+          "z_score": 3.312
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "RH"
+          ],
+          "pair_idx": [
+            0,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.31,
+          "baseline_l1_std": 0.5234,
+          "z_score": 3.229
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "RH"
+          ],
+          "pair_idx": [
+            3,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.325,
+          "baseline_l1_std": 0.5379,
+          "z_score": 3.114
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            3,
+            4
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.24,
+          "baseline_l1_std": 0.5678,
+          "z_score": 3.1
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            0,
+            4
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.225,
+          "baseline_l1_std": 0.5783,
+          "z_score": 3.07
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            0,
+            3
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.265,
+          "baseline_l1_std": 0.5699,
+          "z_score": 3.044
+        },
+        {
+          "pair": [
+            "RH",
+            "AH"
+          ],
+          "pair_idx": [
+            6,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.34,
+          "baseline_l1_std": 0.5517,
+          "z_score": 3.009
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            1,
+            3
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.235,
+          "baseline_l1_std": 0.6081,
+          "z_score": 2.903
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "T"
+          ],
+          "pair_idx": [
+            1,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.285,
+          "baseline_l1_std": 0.4835,
+          "z_score": 1.479
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "T"
+          ],
+          "pair_idx": [
+            4,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.29,
+          "baseline_l1_std": 0.4857,
+          "z_score": 1.462
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "T"
+          ],
+          "pair_idx": [
+            0,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.315,
+          "baseline_l1_std": 0.4752,
+          "z_score": 1.442
+        },
+        {
+          "pair": [
+            "T",
+            "RH"
+          ],
+          "pair_idx": [
+            5,
+            6
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.375,
+          "baseline_l1_std": 0.4841,
+          "z_score": 1.291
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "T"
+          ],
+          "pair_idx": [
+            3,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.33,
+          "baseline_l1_std": 0.5302,
+          "z_score": 1.264
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S3(NOx)"
+          ],
+          "pair_idx": [
+            1,
+            2
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.365,
+          "baseline_l1_std": 0.5308,
+          "z_score": 1.196
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            2,
+            4
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.37,
+          "baseline_l1_std": 0.5321,
+          "z_score": 1.184
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "AH"
+          ],
+          "pair_idx": [
+            2,
+            7
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.425,
+          "baseline_l1_std": 0.5142,
+          "z_score": 1.118
+        },
+        {
+          "pair": [
+            "T",
+            "AH"
+          ],
+          "pair_idx": [
+            5,
+            7
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.345,
+          "baseline_l1_std": 0.5882,
+          "z_score": 1.114
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S3(NOx)"
+          ],
+          "pair_idx": [
+            0,
+            2
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.395,
+          "baseline_l1_std": 0.5559,
+          "z_score": 1.088
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            2,
+            3
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.41,
+          "baseline_l1_std": 0.5674,
+          "z_score": 1.04
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "RH"
+          ],
+          "pair_idx": [
+            2,
+            6
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.455,
+          "baseline_l1_std": 0.6618,
+          "z_score": 0.824
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "T"
+          ],
+          "pair_idx": [
+            2,
+            5
+          ],
+          "l1_norm": 0.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.46,
+          "baseline_l1_std": 0.5181,
+          "z_score": -0.888
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "window_idx_in_test": 98,
+      "composite_score": 4.4571,
+      "label": 1,
+      "exceedance_count": 6,
+      "exceeding_sensors": [
+        "PT08.S1(CO)",
+        "PT08.S2(NMHC)",
+        "PT08.S4(NO2)",
+        "PT08.S5(O3)",
+        "RH",
+        "AH"
+      ],
+      "reference_means": {
+        "CO(GT)": 6.1,
+        "C6H6(GT)": 31.617,
+        "NOx(GT)": 655.333,
+        "NO2(GT)": 140.333
+      },
+      "reference_maxes": {
+        "CO(GT)": 8.0,
+        "C6H6(GT)": 43.7,
+        "NOx(GT)": 895.0,
+        "NO2(GT)": 194.0
+      },
+      "reference_thresholds": {
+        "CO(GT)": 4.5,
+        "C6H6(GT)": 23.8,
+        "NOx(GT)": 350.55,
+        "NO2(GT)": 163.0
+      },
+      "pair_scores_ranked": [
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "AH"
+          ],
+          "pair_idx": [
+            1,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.25,
+          "baseline_l1_std": 0.4444,
+          "z_score": 3.938
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "AH"
+          ],
+          "pair_idx": [
+            4,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.255,
+          "baseline_l1_std": 0.4472,
+          "z_score": 3.902
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "AH"
+          ],
+          "pair_idx": [
+            0,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.28,
+          "baseline_l1_std": 0.449,
+          "z_score": 3.831
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "AH"
+          ],
+          "pair_idx": [
+            3,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.295,
+          "baseline_l1_std": 0.4669,
+          "z_score": 3.652
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "RH"
+          ],
+          "pair_idx": [
+            1,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.28,
+          "baseline_l1_std": 0.4812,
+          "z_score": 3.574
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "RH"
+          ],
+          "pair_idx": [
+            4,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.285,
+          "baseline_l1_std": 0.4937,
+          "z_score": 3.474
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S2(NMHC)"
+          ],
+          "pair_idx": [
+            0,
+            1
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.22,
+          "baseline_l1_std": 0.5212,
+          "z_score": 3.416
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            1,
+            4
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.195,
+          "baseline_l1_std": 0.545,
+          "z_score": 3.312
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "RH"
+          ],
+          "pair_idx": [
+            0,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.31,
+          "baseline_l1_std": 0.5234,
+          "z_score": 3.229
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "RH"
+          ],
+          "pair_idx": [
+            3,
+            6
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.325,
+          "baseline_l1_std": 0.5379,
+          "z_score": 3.114
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            3,
+            4
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.24,
+          "baseline_l1_std": 0.5678,
+          "z_score": 3.1
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            0,
+            4
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.225,
+          "baseline_l1_std": 0.5783,
+          "z_score": 3.07
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            0,
+            3
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.265,
+          "baseline_l1_std": 0.5699,
+          "z_score": 3.044
+        },
+        {
+          "pair": [
+            "RH",
+            "AH"
+          ],
+          "pair_idx": [
+            6,
+            7
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.34,
+          "baseline_l1_std": 0.5517,
+          "z_score": 3.009
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            1,
+            3
+          ],
+          "l1_norm": 2.0,
+          "entropy": 0.6931,
+          "baseline_l1_mean": 0.235,
+          "baseline_l1_std": 0.6081,
+          "z_score": 2.903
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "T"
+          ],
+          "pair_idx": [
+            1,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.285,
+          "baseline_l1_std": 0.4835,
+          "z_score": 1.479
+        },
+        {
+          "pair": [
+            "PT08.S5(O3)",
+            "T"
+          ],
+          "pair_idx": [
+            4,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.29,
+          "baseline_l1_std": 0.4857,
+          "z_score": 1.462
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "T"
+          ],
+          "pair_idx": [
+            0,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.315,
+          "baseline_l1_std": 0.4752,
+          "z_score": 1.442
+        },
+        {
+          "pair": [
+            "T",
+            "RH"
+          ],
+          "pair_idx": [
+            5,
+            6
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.375,
+          "baseline_l1_std": 0.4841,
+          "z_score": 1.291
+        },
+        {
+          "pair": [
+            "PT08.S4(NO2)",
+            "T"
+          ],
+          "pair_idx": [
+            3,
+            5
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.33,
+          "baseline_l1_std": 0.5302,
+          "z_score": 1.264
+        },
+        {
+          "pair": [
+            "PT08.S2(NMHC)",
+            "PT08.S3(NOx)"
+          ],
+          "pair_idx": [
+            1,
+            2
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.365,
+          "baseline_l1_std": 0.5308,
+          "z_score": 1.196
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "PT08.S5(O3)"
+          ],
+          "pair_idx": [
+            2,
+            4
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.37,
+          "baseline_l1_std": 0.5321,
+          "z_score": 1.184
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "AH"
+          ],
+          "pair_idx": [
+            2,
+            7
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.425,
+          "baseline_l1_std": 0.5142,
+          "z_score": 1.118
+        },
+        {
+          "pair": [
+            "T",
+            "AH"
+          ],
+          "pair_idx": [
+            5,
+            7
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.345,
+          "baseline_l1_std": 0.5882,
+          "z_score": 1.114
+        },
+        {
+          "pair": [
+            "PT08.S1(CO)",
+            "PT08.S3(NOx)"
+          ],
+          "pair_idx": [
+            0,
+            2
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.395,
+          "baseline_l1_std": 0.5559,
+          "z_score": 1.088
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "PT08.S4(NO2)"
+          ],
+          "pair_idx": [
+            2,
+            3
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.41,
+          "baseline_l1_std": 0.5674,
+          "z_score": 1.04
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "RH"
+          ],
+          "pair_idx": [
+            2,
+            6
+          ],
+          "l1_norm": 1.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.455,
+          "baseline_l1_std": 0.6618,
+          "z_score": 0.824
+        },
+        {
+          "pair": [
+            "PT08.S3(NOx)",
+            "T"
+          ],
+          "pair_idx": [
+            2,
+            5
+          ],
+          "l1_norm": 0.0,
+          "entropy": 0.0,
+          "baseline_l1_mean": 0.46,
+          "baseline_l1_std": 0.5181,
+          "z_score": -0.888
+        }
+      ]
+    }
+  ],
+  "exceedance_vs_pbp": [
+    {
+      "rank": 1,
+      "exceedance_says": "6/8 sensors exceeded Q90",
+      "pbp_says": "Top pair PT08.S2(NMHC)xAH (z=3.94) dominates; z-score range across pairs: 4.83",
+      "exceedance_count": 6,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "top_pair_z": 3.938,
+      "z_range": 4.826
+    },
+    {
+      "rank": 2,
+      "exceedance_says": "6/8 sensors exceeded Q90",
+      "pbp_says": "Top pair PT08.S2(NMHC)xAH (z=3.94) dominates; z-score range across pairs: 4.83",
+      "exceedance_count": 6,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "top_pair_z": 3.938,
+      "z_range": 4.826
+    },
+    {
+      "rank": 3,
+      "exceedance_says": "6/8 sensors exceeded Q90",
+      "pbp_says": "Top pair PT08.S2(NMHC)xAH (z=3.94) dominates; z-score range across pairs: 4.83",
+      "exceedance_count": 6,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "top_pair_z": 3.938,
+      "z_range": 4.826
+    },
+    {
+      "rank": 4,
+      "exceedance_says": "6/8 sensors exceeded Q90",
+      "pbp_says": "Top pair PT08.S2(NMHC)xAH (z=3.94) dominates; z-score range across pairs: 4.83",
+      "exceedance_count": 6,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "top_pair_z": 3.938,
+      "z_range": 4.826
+    },
+    {
+      "rank": 5,
+      "exceedance_says": "6/8 sensors exceeded Q90",
+      "pbp_says": "Top pair PT08.S2(NMHC)xAH (z=3.94) dominates; z-score range across pairs: 4.83",
+      "exceedance_count": 6,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "top_pair_z": 3.938,
+      "z_range": 4.826
+    }
+  ],
+  "specificity_examples": [
+    {
+      "type": "partial_exceedance_pair_dominance",
+      "description": "Only 6/8 sensors exceed Q90, but pair PT08.S2(NMHC)xAH has z=3.94, revealing a specific co-exceedance pattern invisible to scalar count",
+      "window_rank": 1,
+      "exceedance_count": 6,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "top_pair_z": 3.938
+    },
+    {
+      "type": "partial_exceedance_pair_dominance",
+      "description": "Only 6/8 sensors exceed Q90, but pair PT08.S2(NMHC)xAH has z=3.94, revealing a specific co-exceedance pattern invisible to scalar count",
+      "window_rank": 2,
+      "exceedance_count": 6,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "top_pair_z": 3.938
+    },
+    {
+      "type": "partial_exceedance_pair_dominance",
+      "description": "Only 6/8 sensors exceed Q90, but pair PT08.S2(NMHC)xAH has z=3.94, revealing a specific co-exceedance pattern invisible to scalar count",
+      "window_rank": 3,
+      "exceedance_count": 6,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "top_pair_z": 3.938
+    },
+    {
+      "type": "partial_exceedance_pair_dominance",
+      "description": "Only 6/8 sensors exceed Q90, but pair PT08.S2(NMHC)xAH has z=3.94, revealing a specific co-exceedance pattern invisible to scalar count",
+      "window_rank": 4,
+      "exceedance_count": 6,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "top_pair_z": 3.938
+    },
+    {
+      "type": "partial_exceedance_pair_dominance",
+      "description": "Only 6/8 sensors exceed Q90, but pair PT08.S2(NMHC)xAH has z=3.94, revealing a specific co-exceedance pattern invisible to scalar count",
+      "window_rank": 5,
+      "exceedance_count": 6,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "top_pair_z": 3.938
+    },
+    {
+      "type": "broad_exceedance_unequal_pairs",
+      "description": "6/8 sensors exceed (exceedance count says 'broad event'), but PBP pair z-scores range 4.83 (PT08.S2(NMHC)xAH dominates at z=3.94). PBP reveals the anomaly is driven by a specific sensor combination.",
+      "window_rank": 1,
+      "exceedance_count": 6,
+      "z_range": 4.826,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "top_pair_z": 3.938
+    },
+    {
+      "type": "broad_exceedance_unequal_pairs",
+      "description": "6/8 sensors exceed (exceedance count says 'broad event'), but PBP pair z-scores range 4.83 (PT08.S2(NMHC)xAH dominates at z=3.94). PBP reveals the anomaly is driven by a specific sensor combination.",
+      "window_rank": 2,
+      "exceedance_count": 6,
+      "z_range": 4.826,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "top_pair_z": 3.938
+    },
+    {
+      "type": "broad_exceedance_unequal_pairs",
+      "description": "6/8 sensors exceed (exceedance count says 'broad event'), but PBP pair z-scores range 4.83 (PT08.S2(NMHC)xAH dominates at z=3.94). PBP reveals the anomaly is driven by a specific sensor combination.",
+      "window_rank": 3,
+      "exceedance_count": 6,
+      "z_range": 4.826,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "top_pair_z": 3.938
+    },
+    {
+      "type": "broad_exceedance_unequal_pairs",
+      "description": "6/8 sensors exceed (exceedance count says 'broad event'), but PBP pair z-scores range 4.83 (PT08.S2(NMHC)xAH dominates at z=3.94). PBP reveals the anomaly is driven by a specific sensor combination.",
+      "window_rank": 4,
+      "exceedance_count": 6,
+      "z_range": 4.826,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "top_pair_z": 3.938
+    },
+    {
+      "type": "broad_exceedance_unequal_pairs",
+      "description": "6/8 sensors exceed (exceedance count says 'broad event'), but PBP pair z-scores range 4.83 (PT08.S2(NMHC)xAH dominates at z=3.94). PBP reveals the anomaly is driven by a specific sensor combination.",
+      "window_rank": 5,
+      "exceedance_count": 6,
+      "z_range": 4.826,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "top_pair_z": 3.938
+    },
+    {
+      "type": "subtle_coexceedance",
+      "description": "Window 112: only 2/8 sensors exceed Q90, but pair PT08.S2(NMHC)xAH has z=3.94 \u2014 a highly anomalous co-exceedance invisible to exceedance count (which just reports '2 exceeded').",
+      "window_idx": 112,
+      "exceedance_count": 2,
+      "pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "z_score": 3.938,
+      "label": 1
+    }
+  ],
+  "reference_validation": [
+    {
+      "rank": 1,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "reference_validation": {
+        "PT08.S2(NMHC)": {
+          "analyte": "C6H6(GT)",
+          "mean_value": 27.583,
+          "threshold_p95": 23.8,
+          "exceeds": true
+        }
+      },
+      "all_reference_means": {
+        "CO(GT)": 5.417,
+        "C6H6(GT)": 27.583,
+        "NOx(GT)": 583.0,
+        "NO2(GT)": 126.167
+      },
+      "all_reference_thresholds": {
+        "CO(GT)": 4.5,
+        "C6H6(GT)": 23.8,
+        "NOx(GT)": 350.55,
+        "NO2(GT)": 163.0
+      }
+    },
+    {
+      "rank": 2,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "reference_validation": {
+        "PT08.S2(NMHC)": {
+          "analyte": "C6H6(GT)",
+          "mean_value": 17.633,
+          "threshold_p95": 23.8,
+          "exceeds": false
+        }
+      },
+      "all_reference_means": {
+        "CO(GT)": 3.583,
+        "C6H6(GT)": 17.633,
+        "NOx(GT)": 399.833,
+        "NO2(GT)": 88.167
+      },
+      "all_reference_thresholds": {
+        "CO(GT)": 4.5,
+        "C6H6(GT)": 23.8,
+        "NOx(GT)": 350.55,
+        "NO2(GT)": 163.0
+      }
+    },
+    {
+      "rank": 3,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "reference_validation": {
+        "PT08.S2(NMHC)": {
+          "analyte": "C6H6(GT)",
+          "mean_value": 21.217,
+          "threshold_p95": 23.8,
+          "exceeds": false
+        }
+      },
+      "all_reference_means": {
+        "CO(GT)": 4.283,
+        "C6H6(GT)": 21.217,
+        "NOx(GT)": 474.167,
+        "NO2(GT)": 107.833
+      },
+      "all_reference_thresholds": {
+        "CO(GT)": 4.5,
+        "C6H6(GT)": 23.8,
+        "NOx(GT)": 350.55,
+        "NO2(GT)": 163.0
+      }
+    },
+    {
+      "rank": 4,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "reference_validation": {
+        "PT08.S2(NMHC)": {
+          "analyte": "C6H6(GT)",
+          "mean_value": 24.633,
+          "threshold_p95": 23.8,
+          "exceeds": true
+        }
+      },
+      "all_reference_means": {
+        "CO(GT)": 4.867,
+        "C6H6(GT)": 24.633,
+        "NOx(GT)": 526.333,
+        "NO2(GT)": 115.0
+      },
+      "all_reference_thresholds": {
+        "CO(GT)": 4.5,
+        "C6H6(GT)": 23.8,
+        "NOx(GT)": 350.55,
+        "NO2(GT)": 163.0
+      }
+    },
+    {
+      "rank": 5,
+      "top_pair": [
+        "PT08.S2(NMHC)",
+        "AH"
+      ],
+      "reference_validation": {
+        "PT08.S2(NMHC)": {
+          "analyte": "C6H6(GT)",
+          "mean_value": 31.617,
+          "threshold_p95": 23.8,
+          "exceeds": true
+        }
+      },
+      "all_reference_means": {
+        "CO(GT)": 6.1,
+        "C6H6(GT)": 31.617,
+        "NOx(GT)": 655.333,
+        "NO2(GT)": 140.333
+      },
+      "all_reference_thresholds": {
+        "CO(GT)": 4.5,
+        "C6H6(GT)": 23.8,
+        "NOx(GT)": 350.55,
+        "NO2(GT)": 163.0
+      }
+    }
+  ]
+}

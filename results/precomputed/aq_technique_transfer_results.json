@@ -1,0 +1,1591 @@
+{
+  "UCI": {
+    "dataset": "UCI Air Quality (Italy)",
+    "n_readings": 6941,
+    "n_sensors": 8,
+    "sensor_cols": [
+      "PT08.S1(CO)",
+      "PT08.S2(NMHC)",
+      "PT08.S3(NOx)",
+      "PT08.S4(NO2)",
+      "PT08.S5(O3)",
+      "T",
+      "RH",
+      "AH"
+    ],
+    "window_sweep_one_tailed": {
+      "6": {
+        "n_windows": 6936,
+        "anomaly_frac": 0.2984,
+        "pbp_std": {
+          "method": "PBP standard",
+          "precision": 0.6821,
+          "recall": 0.6831,
+          "f1": 0.6826,
+          "auc_roc": 0.824,
+          "ci_95": [
+            0.812,
+            0.8357
+          ]
+        },
+        "pbp_pair": {
+          "method": "PBP pair",
+          "precision": 0.7499,
+          "recall": 0.7966,
+          "f1": 0.7725,
+          "auc_roc": 0.8896,
+          "ci_95": [
+            0.8806,
+            0.8986
+          ]
+        },
+        "baselines": {
+          "IF": {
+            "method": "IF",
+            "precision": 0.6531,
+            "recall": 0.6531,
+            "f1": 0.6531,
+            "auc_roc": 0.855,
+            "ci_95": [
+              0.8461,
+              0.864
+            ]
+          },
+          "OC-SVM": {
+            "method": "OC-SVM",
+            "precision": 0.6749,
+            "recall": 0.6749,
+            "f1": 0.6749,
+            "auc_roc": 0.8765,
+            "ci_95": [
+              0.8686,
+              0.8844
+            ]
+          },
+          "LOF": {
+            "method": "LOF",
+            "precision": 0.6739,
+            "recall": 0.6739,
+            "f1": 0.6739,
+            "auc_roc": 0.8701,
+            "ci_95": [
+              0.8614,
+              0.8786
+            ]
+          }
+        },
+        "time_std_s": 204.3,
+        "time_pair_s": 1818.7
+      },
+      "12": {
+        "n_windows": 6930,
+        "anomaly_frac": 0.4618,
+        "pbp_std": {
+          "method": "PBP standard",
+          "precision": 0.6897,
+          "recall": 0.7419,
+          "f1": 0.7148,
+          "auc_roc": 0.8092,
+          "ci_95": [
+            0.7989,
+            0.8199
+          ]
+        },
+        "pbp_pair": {
+          "method": "PBP pair",
+          "precision": 0.8022,
+          "recall": 0.8481,
+          "f1": 0.8245,
+          "auc_roc": 0.8974,
+          "ci_95": [
+            0.8896,
+            0.9053
+          ]
+        },
+        "baselines": {
+          "IF": {
+            "method": "IF",
+            "precision": 0.7284,
+            "recall": 0.7284,
+            "f1": 0.7284,
+            "auc_roc": 0.8312,
+            "ci_95": [
+              0.8217,
+              0.8407
+            ]
+          },
+          "OC-SVM": {
+            "method": "OC-SVM",
+            "precision": 0.7434,
+            "recall": 0.7434,
+            "f1": 0.7434,
+            "auc_roc": 0.8465,
+            "ci_95": [
+              0.8375,
+              0.8558
+            ]
+          },
+          "LOF": {
+            "method": "LOF",
+            "precision": 0.7344,
+            "recall": 0.7344,
+            "f1": 0.7344,
+            "auc_roc": 0.8392,
+            "ci_95": [
+              0.8301,
+              0.8478
+            ]
+          }
+        },
+        "time_std_s": 195.2,
+        "time_pair_s": 1893.9
+      },
+      "24": {
+        "n_windows": 6918,
+        "anomaly_frac": 0.609,
+        "pbp_std": {
+          "method": "PBP standard",
+          "precision": 0.7821,
+          "recall": 0.7838,
+          "f1": 0.7829,
+          "auc_roc": 0.8214,
+          "ci_95": [
+            0.8117,
+            0.8314
+          ]
+        },
+        "pbp_pair": {
+          "method": "PBP pair",
+          "precision": 0.8277,
+          "recall": 0.9157,
+          "f1": 0.8695,
+          "auc_roc": 0.912,
+          "ci_95": [
+            0.9054,
+            0.9189
+          ]
+        },
+        "baselines": {
+          "IF": {
+            "method": "IF",
+            "precision": 0.8132,
+            "recall": 0.8132,
+            "f1": 0.8132,
+            "auc_roc": 0.8402,
+            "ci_95": [
+              0.8308,
+              0.8496
+            ]
+          },
+          "OC-SVM": {
+            "method": "OC-SVM",
+            "precision": 0.8253,
+            "recall": 0.8253,
+            "f1": 0.8253,
+            "auc_roc": 0.8435,
+            "ci_95": [
+              0.8335,
+              0.8531
+            ]
+          },
+          "LOF": {
+            "method": "LOF",
+            "precision": 0.7852,
+            "recall": 0.7852,
+            "f1": 0.7852,
+            "auc_roc": 0.8018,
+            "ci_95": [
+              0.7903,
+              0.8126
+            ]
+          }
+        },
+        "time_std_s": 171.6,
+        "time_pair_s": 2134.8
+      }
+    },
+    "two_tailed_w6": {
+      "anomaly_frac": 0.5512,
+      "pbp_std": {
+        "method": "PBP standard",
+        "precision": 0.7321,
+        "recall": 0.7321,
+        "f1": 0.7321,
+        "auc_roc": 0.7809,
+        "ci_95": [
+          0.7698,
+          0.7914
+        ]
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.7693,
+        "recall": 0.7693,
+        "f1": 0.7693,
+        "auc_roc": 0.8259,
+        "ci_95": [
+          0.8166,
+          0.8353
+        ]
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.751,
+          "recall": 0.751,
+          "f1": 0.751,
+          "auc_roc": 0.7978,
+          "ci_95": [
+            0.7875,
+            0.8082
+          ]
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.7607,
+          "recall": 0.7607,
+          "f1": 0.7607,
+          "auc_roc": 0.8069,
+          "ci_95": [
+            0.7967,
+            0.8175
+          ]
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.775,
+          "recall": 0.775,
+          "f1": 0.775,
+          "auc_roc": 0.8301,
+          "ci_95": [
+            0.8201,
+            0.8394
+          ]
+        }
+      }
+    },
+    "temporal_split": {
+      "train_anom_frac": 0.2949,
+      "test_anom_frac": 0.2977,
+      "pbp_std": {
+        "method": "PBP standard",
+        "precision": 0.7191,
+        "recall": 0.7219,
+        "f1": 0.7205,
+        "auc_roc": 0.8607
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.6656,
+        "recall": 0.8198,
+        "f1": 0.7347,
+        "auc_roc": 0.8829
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.6967,
+          "recall": 0.6967,
+          "f1": 0.6967,
+          "auc_roc": 0.8778,
+          "ci_95": [
+            0.8648,
+            0.8899
+          ]
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.625,
+          "recall": 0.625,
+          "f1": 0.625,
+          "auc_roc": 0.8328,
+          "ci_95": [
+            0.8189,
+            0.8458
+          ]
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.4777,
+          "recall": 0.4777,
+          "f1": 0.4777,
+          "auc_roc": 0.7077,
+          "ci_95": [
+            0.6897,
+            0.7259
+          ]
+        }
+      }
+    }
+  },
+  "Beijing": {
+    "dataset": "Beijing Multi-Site (Dongsi)",
+    "n_readings": 30402,
+    "n_sensors": 10,
+    "sensor_cols": [
+      "PM2.5",
+      "PM10",
+      "SO2",
+      "NO2",
+      "CO",
+      "O3",
+      "TEMP",
+      "PRES",
+      "DEWP",
+      "WSPM"
+    ],
+    "window_sweep_one_tailed": {
+      "6": {
+        "n_windows": 30397,
+        "anomaly_frac": 0.2883,
+        "pbp_std": {
+          "method": "PBP standard",
+          "precision": 0.8062,
+          "recall": 0.8173,
+          "f1": 0.8117,
+          "auc_roc": 0.9587,
+          "ci_95": [
+            0.9566,
+            0.9605
+          ]
+        },
+        "pbp_pair": {
+          "method": "PBP pair",
+          "precision": 0.7314,
+          "recall": 0.7615,
+          "f1": 0.7462,
+          "auc_roc": 0.9023,
+          "ci_95": [
+            0.8989,
+            0.9059
+          ]
+        },
+        "baselines": {
+          "IF": {
+            "method": "IF",
+            "precision": 0.7589,
+            "recall": 0.7589,
+            "f1": 0.7589,
+            "auc_roc": 0.927,
+            "ci_95": [
+              0.9237,
+              0.9301
+            ]
+          },
+          "OC-SVM": {
+            "method": "OC-SVM",
+            "precision": 0.8189,
+            "recall": 0.8189,
+            "f1": 0.8189,
+            "auc_roc": 0.9522,
+            "ci_95": [
+              0.9497,
+              0.9546
+            ]
+          },
+          "LOF": {
+            "method": "LOF",
+            "precision": 0.7531,
+            "recall": 0.7531,
+            "f1": 0.7531,
+            "auc_roc": 0.9136,
+            "ci_95": [
+              0.9098,
+              0.9171
+            ]
+          }
+        },
+        "time_std_s": 937.8,
+        "time_pair_s": 8818.9
+      },
+      "12": {
+        "n_windows": 30391,
+        "anomaly_frac": 0.392,
+        "pbp_std": {
+          "method": "PBP standard",
+          "precision": 0.8153,
+          "recall": 0.8158,
+          "f1": 0.8156,
+          "auc_roc": 0.9292,
+          "ci_95": [
+            0.9265,
+            0.932
+          ]
+        },
+        "pbp_pair": {
+          "method": "PBP pair",
+          "precision": 0.7593,
+          "recall": 0.8094,
+          "f1": 0.7835,
+          "auc_roc": 0.8848,
+          "ci_95": [
+            0.8811,
+            0.8887
+          ]
+        },
+        "baselines": {
+          "IF": {
+            "method": "IF",
+            "precision": 0.7586,
+            "recall": 0.7586,
+            "f1": 0.7586,
+            "auc_roc": 0.8904,
+            "ci_95": [
+              0.8867,
+              0.894
+            ]
+          },
+          "OC-SVM": {
+            "method": "OC-SVM",
+            "precision": 0.813,
+            "recall": 0.813,
+            "f1": 0.813,
+            "auc_roc": 0.928,
+            "ci_95": [
+              0.9251,
+              0.9307
+            ]
+          },
+          "LOF": {
+            "method": "LOF",
+            "precision": 0.7912,
+            "recall": 0.7912,
+            "f1": 0.7912,
+            "auc_roc": 0.9122,
+            "ci_95": [
+              0.909,
+              0.9154
+            ]
+          }
+        },
+        "time_std_s": 314.7,
+        "time_pair_s": 9276.5
+      },
+      "24": {
+        "n_windows": 30379,
+        "anomaly_frac": 0.531,
+        "pbp_std": {
+          "method": "PBP standard",
+          "precision": 0.8197,
+          "recall": 0.9116,
+          "f1": 0.8632,
+          "auc_roc": 0.9335,
+          "ci_95": [
+            0.931,
+            0.936
+          ]
+        },
+        "pbp_pair": {
+          "method": "PBP pair",
+          "precision": 0.8083,
+          "recall": 0.8083,
+          "f1": 0.8083,
+          "auc_roc": 0.8809,
+          "ci_95": [
+            0.877,
+            0.8847
+          ]
+        },
+        "baselines": {
+          "IF": {
+            "method": "IF",
+            "precision": 0.816,
+            "recall": 0.816,
+            "f1": 0.816,
+            "auc_roc": 0.8926,
+            "ci_95": [
+              0.889,
+              0.8961
+            ]
+          },
+          "OC-SVM": {
+            "method": "OC-SVM",
+            "precision": 0.8468,
+            "recall": 0.8468,
+            "f1": 0.8468,
+            "auc_roc": 0.922,
+            "ci_95": [
+              0.9191,
+              0.9248
+            ]
+          },
+          "LOF": {
+            "method": "LOF",
+            "precision": 0.8318,
+            "recall": 0.8318,
+            "f1": 0.8318,
+            "auc_roc": 0.9117,
+            "ci_95": [
+              0.9085,
+              0.9147
+            ]
+          }
+        },
+        "time_std_s": 563.8,
+        "time_pair_s": 3188.9
+      }
+    },
+    "two_tailed_w6": {
+      "anomaly_frac": 0.5016,
+      "pbp_std": {
+        "method": "PBP standard",
+        "precision": 0.7132,
+        "recall": 0.8131,
+        "f1": 0.7599,
+        "auc_roc": 0.7999,
+        "ci_95": [
+          0.7951,
+          0.8049
+        ]
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.7101,
+        "recall": 0.7101,
+        "f1": 0.7101,
+        "auc_roc": 0.7975,
+        "ci_95": [
+          0.7929,
+          0.8024
+        ]
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.7544,
+          "recall": 0.7544,
+          "f1": 0.7544,
+          "auc_roc": 0.8431,
+          "ci_95": [
+            0.8388,
+            0.8472
+          ]
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.7955,
+          "recall": 0.7955,
+          "f1": 0.7955,
+          "auc_roc": 0.8863,
+          "ci_95": [
+            0.8828,
+            0.8899
+          ]
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.7401,
+          "recall": 0.7401,
+          "f1": 0.7401,
+          "auc_roc": 0.823,
+          "ci_95": [
+            0.8184,
+            0.8277
+          ]
+        }
+      }
+    },
+    "temporal_split": {
+      "train_anom_frac": 0.3045,
+      "test_anom_frac": 0.2705,
+      "pbp_std": {
+        "method": "PBP standard",
+        "precision": 0.7615,
+        "recall": 0.7675,
+        "f1": 0.7645,
+        "auc_roc": 0.9318
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.7043,
+        "recall": 0.7283,
+        "f1": 0.7161,
+        "auc_roc": 0.9059
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.7633,
+          "recall": 0.7633,
+          "f1": 0.7633,
+          "auc_roc": 0.9313,
+          "ci_95": [
+            0.927,
+            0.9355
+          ]
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.8047,
+          "recall": 0.8047,
+          "f1": 0.8047,
+          "auc_roc": 0.9386,
+          "ci_95": [
+            0.9341,
+            0.9429
+          ]
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.7234,
+          "recall": 0.7234,
+          "f1": 0.7234,
+          "auc_roc": 0.8978,
+          "ci_95": [
+            0.8918,
+            0.9033
+          ]
+        }
+      }
+    }
+  },
+  "EPA_LA": {
+    "dataset": "EPA AQS (LA, 2023)",
+    "n_readings": 8424,
+    "n_sensors": 4,
+    "sensor_cols": [
+      "O3",
+      "SO2",
+      "CO",
+      "NO2"
+    ],
+    "window_sweep_one_tailed": {
+      "6": {
+        "n_windows": 8419,
+        "anomaly_frac": 0.2933,
+        "pbp_std": {
+          "method": "PBP standard",
+          "precision": 0.8685,
+          "recall": 0.9068,
+          "f1": 0.8873,
+          "auc_roc": 0.9843,
+          "ci_95": [
+            0.9825,
+            0.9861
+          ]
+        },
+        "pbp_pair": {
+          "method": "PBP pair",
+          "precision": 0.7236,
+          "recall": 0.8323,
+          "f1": 0.7742,
+          "auc_roc": 0.942,
+          "ci_95": [
+            0.9372,
+            0.9464
+          ]
+        },
+        "baselines": {
+          "IF": {
+            "method": "IF",
+            "precision": 0.7736,
+            "recall": 0.7736,
+            "f1": 0.7736,
+            "auc_roc": 0.9254,
+            "ci_95": [
+              0.9189,
+              0.9311
+            ]
+          },
+          "OC-SVM": {
+            "method": "OC-SVM",
+            "precision": 0.8631,
+            "recall": 0.8631,
+            "f1": 0.8631,
+            "auc_roc": 0.9731,
+            "ci_95": [
+              0.9699,
+              0.9759
+            ]
+          },
+          "LOF": {
+            "method": "LOF",
+            "precision": 0.791,
+            "recall": 0.791,
+            "f1": 0.791,
+            "auc_roc": 0.9353,
+            "ci_95": [
+              0.9292,
+              0.9411
+            ]
+          }
+        },
+        "time_std_s": 138.1,
+        "time_pair_s": 260.7
+      },
+      "12": {
+        "n_windows": 8413,
+        "anomaly_frac": 0.414,
+        "pbp_std": {
+          "method": "PBP standard",
+          "precision": 0.9167,
+          "recall": 0.9167,
+          "f1": 0.9167,
+          "auc_roc": 0.9875,
+          "ci_95": [
+            0.9859,
+            0.9891
+          ]
+        },
+        "pbp_pair": {
+          "method": "PBP pair",
+          "precision": 0.8211,
+          "recall": 0.8211,
+          "f1": 0.8211,
+          "auc_roc": 0.9311,
+          "ci_95": [
+            0.9261,
+            0.9362
+          ]
+        },
+        "baselines": {
+          "IF": {
+            "method": "IF",
+            "precision": 0.7927,
+            "recall": 0.7927,
+            "f1": 0.7927,
+            "auc_roc": 0.9167,
+            "ci_95": [
+              0.9108,
+              0.922
+            ]
+          },
+          "OC-SVM": {
+            "method": "OC-SVM",
+            "precision": 0.8389,
+            "recall": 0.8389,
+            "f1": 0.8389,
+            "auc_roc": 0.9496,
+            "ci_95": [
+              0.9456,
+              0.9536
+            ]
+          },
+          "LOF": {
+            "method": "LOF",
+            "precision": 0.7984,
+            "recall": 0.7984,
+            "f1": 0.7984,
+            "auc_roc": 0.9129,
+            "ci_95": [
+              0.9068,
+              0.9192
+            ]
+          }
+        },
+        "time_std_s": 128.9,
+        "time_pair_s": 277.2
+      },
+      "24": {
+        "n_windows": 8401,
+        "anomaly_frac": 0.5458,
+        "pbp_std": {
+          "method": "PBP standard",
+          "precision": 0.933,
+          "recall": 0.933,
+          "f1": 0.933,
+          "auc_roc": 0.9859,
+          "ci_95": [
+            0.9841,
+            0.9876
+          ]
+        },
+        "pbp_pair": {
+          "method": "PBP pair",
+          "precision": 0.8711,
+          "recall": 0.8711,
+          "f1": 0.8711,
+          "auc_roc": 0.932,
+          "ci_95": [
+            0.9267,
+            0.9372
+          ]
+        },
+        "baselines": {
+          "IF": {
+            "method": "IF",
+            "precision": 0.8312,
+            "recall": 0.8312,
+            "f1": 0.8312,
+            "auc_roc": 0.9004,
+            "ci_95": [
+              0.8939,
+              0.9065
+            ]
+          },
+          "OC-SVM": {
+            "method": "OC-SVM",
+            "precision": 0.8506,
+            "recall": 0.8506,
+            "f1": 0.8506,
+            "auc_roc": 0.9224,
+            "ci_95": [
+              0.9172,
+              0.9276
+            ]
+          },
+          "LOF": {
+            "method": "LOF",
+            "precision": 0.8349,
+            "recall": 0.8349,
+            "f1": 0.8349,
+            "auc_roc": 0.9078,
+            "ci_95": [
+              0.9021,
+              0.9137
+            ]
+          }
+        },
+        "time_std_s": 153.2,
+        "time_pair_s": 275.5
+      }
+    },
+    "two_tailed_w6": {
+      "anomaly_frac": 0.4729,
+      "pbp_std": {
+        "method": "PBP standard",
+        "precision": 0.6581,
+        "recall": 0.6589,
+        "f1": 0.6585,
+        "auc_roc": 0.7594,
+        "ci_95": [
+          0.7495,
+          0.7688
+        ]
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.6687,
+        "recall": 0.6687,
+        "f1": 0.6687,
+        "auc_roc": 0.7675,
+        "ci_95": [
+          0.7575,
+          0.7774
+        ]
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.6307,
+          "recall": 0.6307,
+          "f1": 0.6307,
+          "auc_roc": 0.746,
+          "ci_95": [
+            0.7356,
+            0.7554
+          ]
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.7028,
+          "recall": 0.7028,
+          "f1": 0.7028,
+          "auc_roc": 0.8261,
+          "ci_95": [
+            0.8174,
+            0.834
+          ]
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.7822,
+          "recall": 0.7822,
+          "f1": 0.7822,
+          "auc_roc": 0.8742,
+          "ci_95": [
+            0.8665,
+            0.8813
+          ]
+        }
+      }
+    },
+    "temporal_split": {
+      "train_anom_frac": 0.2874,
+      "test_anom_frac": 0.3306,
+      "pbp_std": {
+        "method": "PBP standard",
+        "precision": 0.7821,
+        "recall": 0.7872,
+        "f1": 0.7847,
+        "auc_roc": 0.9335
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.6265,
+        "recall": 0.8066,
+        "f1": 0.7052,
+        "auc_roc": 0.858
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.7484,
+          "recall": 0.7484,
+          "f1": 0.7484,
+          "auc_roc": 0.9004,
+          "ci_95": [
+            0.8903,
+            0.9097
+          ]
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.8799,
+          "recall": 0.8799,
+          "f1": 0.8799,
+          "auc_roc": 0.9779,
+          "ci_95": [
+            0.9743,
+            0.9813
+          ]
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.8922,
+          "recall": 0.8922,
+          "f1": 0.8922,
+          "auc_roc": 0.9805,
+          "ci_95": [
+            0.9774,
+            0.9834
+          ]
+        }
+      }
+    }
+  },
+  "SaoPaulo": {
+    "dataset": "S\u00e3o Paulo (CAMS)",
+    "n_readings": 8760,
+    "n_sensors": 6,
+    "sensor_cols": [
+      "PM10",
+      "PM2.5",
+      "CO",
+      "NO2",
+      "SO2",
+      "O3"
+    ],
+    "window_sweep_one_tailed": {
+      "6": {
+        "n_windows": 8755,
+        "anomaly_frac": 0.2214,
+        "pbp_std": {
+          "method": "PBP standard",
+          "precision": 0.7228,
+          "recall": 0.7642,
+          "f1": 0.7429,
+          "auc_roc": 0.9638,
+          "ci_95": [
+            0.9605,
+            0.9669
+          ]
+        },
+        "pbp_pair": {
+          "method": "PBP pair",
+          "precision": 0.7001,
+          "recall": 0.9045,
+          "f1": 0.7893,
+          "auc_roc": 0.9302,
+          "ci_95": [
+            0.9247,
+            0.9357
+          ]
+        },
+        "baselines": {
+          "IF": {
+            "method": "IF",
+            "precision": 0.7461,
+            "recall": 0.7461,
+            "f1": 0.7461,
+            "auc_roc": 0.9517,
+            "ci_95": [
+              0.9474,
+              0.9557
+            ]
+          },
+          "OC-SVM": {
+            "method": "OC-SVM",
+            "precision": 0.8695,
+            "recall": 0.8695,
+            "f1": 0.8695,
+            "auc_roc": 0.9863,
+            "ci_95": [
+              0.9845,
+              0.988
+            ]
+          },
+          "LOF": {
+            "method": "LOF",
+            "precision": 0.7709,
+            "recall": 0.7709,
+            "f1": 0.7709,
+            "auc_roc": 0.9368,
+            "ci_95": [
+              0.9307,
+              0.9429
+            ]
+          }
+        },
+        "time_std_s": 57.5,
+        "time_pair_s": 275.4
+      },
+      "12": {
+        "n_windows": 8749,
+        "anomaly_frac": 0.3055,
+        "pbp_std": {
+          "method": "PBP standard",
+          "precision": 0.791,
+          "recall": 0.8156,
+          "f1": 0.8031,
+          "auc_roc": 0.9528,
+          "ci_95": [
+            0.9492,
+            0.9564
+          ]
+        },
+        "pbp_pair": {
+          "method": "PBP pair",
+          "precision": 0.7236,
+          "recall": 0.939,
+          "f1": 0.8173,
+          "auc_roc": 0.9209,
+          "ci_95": [
+            0.9158,
+            0.9262
+          ]
+        },
+        "baselines": {
+          "IF": {
+            "method": "IF",
+            "precision": 0.7763,
+            "recall": 0.7763,
+            "f1": 0.7763,
+            "auc_roc": 0.9362,
+            "ci_95": [
+              0.9316,
+              0.9412
+            ]
+          },
+          "OC-SVM": {
+            "method": "OC-SVM",
+            "precision": 0.8627,
+            "recall": 0.8627,
+            "f1": 0.8627,
+            "auc_roc": 0.9778,
+            "ci_95": [
+              0.9752,
+              0.9802
+            ]
+          },
+          "LOF": {
+            "method": "LOF",
+            "precision": 0.7666,
+            "recall": 0.7666,
+            "f1": 0.7666,
+            "auc_roc": 0.9247,
+            "ci_95": [
+              0.919,
+              0.9304
+            ]
+          }
+        },
+        "time_std_s": 60.1,
+        "time_pair_s": 282.2
+      },
+      "24": {
+        "n_windows": 8737,
+        "anomaly_frac": 0.4261,
+        "pbp_std": {
+          "method": "PBP standard",
+          "precision": 0.8437,
+          "recall": 0.8437,
+          "f1": 0.8437,
+          "auc_roc": 0.9585,
+          "ci_95": [
+            0.9549,
+            0.9621
+          ]
+        },
+        "pbp_pair": {
+          "method": "PBP pair",
+          "precision": 0.8295,
+          "recall": 0.8297,
+          "f1": 0.8296,
+          "auc_roc": 0.9383,
+          "ci_95": [
+            0.9334,
+            0.9428
+          ]
+        },
+        "baselines": {
+          "IF": {
+            "method": "IF",
+            "precision": 0.7953,
+            "recall": 0.7953,
+            "f1": 0.7953,
+            "auc_roc": 0.9174,
+            "ci_95": [
+              0.912,
+              0.9228
+            ]
+          },
+          "OC-SVM": {
+            "method": "OC-SVM",
+            "precision": 0.8721,
+            "recall": 0.8721,
+            "f1": 0.8721,
+            "auc_roc": 0.9661,
+            "ci_95": [
+              0.963,
+              0.9691
+            ]
+          },
+          "LOF": {
+            "method": "LOF",
+            "precision": 0.7964,
+            "recall": 0.7964,
+            "f1": 0.7964,
+            "auc_roc": 0.911,
+            "ci_95": [
+              0.9052,
+              0.9167
+            ]
+          }
+        },
+        "time_std_s": 62.1,
+        "time_pair_s": 290.3
+      }
+    },
+    "two_tailed_w6": {
+      "anomaly_frac": 0.4458,
+      "pbp_std": {
+        "method": "PBP standard",
+        "precision": 0.7743,
+        "recall": 0.7743,
+        "f1": 0.7743,
+        "auc_roc": 0.8901,
+        "ci_95": [
+          0.8836,
+          0.8968
+        ]
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.7428,
+        "recall": 0.7428,
+        "f1": 0.7428,
+        "auc_roc": 0.847,
+        "ci_95": [
+          0.8389,
+          0.8546
+        ]
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.754,
+          "recall": 0.754,
+          "f1": 0.754,
+          "auc_roc": 0.8613,
+          "ci_95": [
+            0.8537,
+            0.8688
+          ]
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.742,
+          "recall": 0.742,
+          "f1": 0.742,
+          "auc_roc": 0.8727,
+          "ci_95": [
+            0.8656,
+            0.8796
+          ]
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.7351,
+          "recall": 0.7351,
+          "f1": 0.7351,
+          "auc_roc": 0.8396,
+          "ci_95": [
+            0.831,
+            0.8479
+          ]
+        }
+      }
+    },
+    "temporal_split": {
+      "train_anom_frac": 0.2391,
+      "test_anom_frac": 0.2519,
+      "pbp_std": {
+        "method": "PBP standard",
+        "precision": 0.5064,
+        "recall": 0.686,
+        "f1": 0.5827,
+        "auc_roc": 0.8826
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.452,
+        "recall": 0.5517,
+        "f1": 0.4969,
+        "auc_roc": 0.6817
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.6878,
+          "recall": 0.6878,
+          "f1": 0.6878,
+          "auc_roc": 0.8944,
+          "ci_95": [
+            0.8845,
+            0.9043
+          ]
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.6198,
+          "recall": 0.6198,
+          "f1": 0.6198,
+          "auc_roc": 0.8023,
+          "ci_95": [
+            0.7849,
+            0.8189
+          ]
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.5463,
+          "recall": 0.5463,
+          "f1": 0.5463,
+          "auc_roc": 0.7967,
+          "ci_95": [
+            0.7815,
+            0.8117
+          ]
+        }
+      }
+    }
+  },
+  "CapeTown": {
+    "dataset": "Cape Town (CAMS)",
+    "n_readings": 8760,
+    "n_sensors": 6,
+    "sensor_cols": [
+      "PM10",
+      "PM2.5",
+      "CO",
+      "NO2",
+      "SO2",
+      "O3"
+    ],
+    "window_sweep_one_tailed": {
+      "6": {
+        "n_windows": 8755,
+        "anomaly_frac": 0.221,
+        "pbp_std": {
+          "method": "PBP standard",
+          "precision": 0.8574,
+          "recall": 0.9354,
+          "f1": 0.8947,
+          "auc_roc": 0.9916,
+          "ci_95": [
+            0.9903,
+            0.9928
+          ]
+        },
+        "pbp_pair": {
+          "method": "PBP pair",
+          "precision": 0.8279,
+          "recall": 0.8279,
+          "f1": 0.8279,
+          "auc_roc": 0.9666,
+          "ci_95": [
+            0.9627,
+            0.9705
+          ]
+        },
+        "baselines": {
+          "IF": {
+            "method": "IF",
+            "precision": 0.8553,
+            "recall": 0.8553,
+            "f1": 0.8553,
+            "auc_roc": 0.9831,
+            "ci_95": [
+              0.9811,
+              0.9851
+            ]
+          },
+          "OC-SVM": {
+            "method": "OC-SVM",
+            "precision": 0.9333,
+            "recall": 0.9333,
+            "f1": 0.9333,
+            "auc_roc": 0.9962,
+            "ci_95": [
+              0.9955,
+              0.9968
+            ]
+          },
+          "LOF": {
+            "method": "LOF",
+            "precision": 0.8129,
+            "recall": 0.8129,
+            "f1": 0.8129,
+            "auc_roc": 0.9549,
+            "ci_95": [
+              0.9496,
+              0.9598
+            ]
+          }
+        },
+        "time_std_s": 56.1,
+        "time_pair_s": 279.4
+      },
+      "12": {
+        "n_windows": 8749,
+        "anomaly_frac": 0.313,
+        "pbp_std": {
+          "method": "PBP standard",
+          "precision": 0.9167,
+          "recall": 0.9167,
+          "f1": 0.9167,
+          "auc_roc": 0.9925,
+          "ci_95": [
+            0.9913,
+            0.9936
+          ]
+        },
+        "pbp_pair": {
+          "method": "PBP pair",
+          "precision": 0.8594,
+          "recall": 0.8598,
+          "f1": 0.8596,
+          "auc_roc": 0.9669,
+          "ci_95": [
+            0.9635,
+            0.9702
+          ]
+        },
+        "baselines": {
+          "IF": {
+            "method": "IF",
+            "precision": 0.8682,
+            "recall": 0.8682,
+            "f1": 0.8682,
+            "auc_roc": 0.9751,
+            "ci_95": [
+              0.9725,
+              0.9777
+            ]
+          },
+          "OC-SVM": {
+            "method": "OC-SVM",
+            "precision": 0.9248,
+            "recall": 0.9248,
+            "f1": 0.9248,
+            "auc_roc": 0.9923,
+            "ci_95": [
+              0.9911,
+              0.9934
+            ]
+          },
+          "LOF": {
+            "method": "LOF",
+            "precision": 0.8411,
+            "recall": 0.8411,
+            "f1": 0.8411,
+            "auc_roc": 0.954,
+            "ci_95": [
+              0.9493,
+              0.9584
+            ]
+          }
+        },
+        "time_std_s": 59.1,
+        "time_pair_s": 283.3
+      },
+      "24": {
+        "n_windows": 8737,
+        "anomaly_frac": 0.4539,
+        "pbp_std": {
+          "method": "PBP standard",
+          "precision": 0.9228,
+          "recall": 0.9228,
+          "f1": 0.9228,
+          "auc_roc": 0.9875,
+          "ci_95": [
+            0.9859,
+            0.9889
+          ]
+        },
+        "pbp_pair": {
+          "method": "PBP pair",
+          "precision": 0.9053,
+          "recall": 0.906,
+          "f1": 0.9056,
+          "auc_roc": 0.977,
+          "ci_95": [
+            0.9747,
+            0.9792
+          ]
+        },
+        "baselines": {
+          "IF": {
+            "method": "IF",
+            "precision": 0.8795,
+            "recall": 0.8795,
+            "f1": 0.8795,
+            "auc_roc": 0.9632,
+            "ci_95": [
+              0.9599,
+              0.9665
+            ]
+          },
+          "OC-SVM": {
+            "method": "OC-SVM",
+            "precision": 0.9218,
+            "recall": 0.9218,
+            "f1": 0.9218,
+            "auc_roc": 0.9868,
+            "ci_95": [
+              0.9852,
+              0.9883
+            ]
+          },
+          "LOF": {
+            "method": "LOF",
+            "precision": 0.8833,
+            "recall": 0.8833,
+            "f1": 0.8833,
+            "auc_roc": 0.9538,
+            "ci_95": [
+              0.9494,
+              0.9582
+            ]
+          }
+        },
+        "time_std_s": 62.5,
+        "time_pair_s": 290.4
+      }
+    },
+    "two_tailed_w6": {
+      "anomaly_frac": 0.4943,
+      "pbp_std": {
+        "method": "PBP standard",
+        "precision": 0.7708,
+        "recall": 0.7708,
+        "f1": 0.7708,
+        "auc_roc": 0.858,
+        "ci_95": [
+          0.85,
+          0.8659
+        ]
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.6855,
+        "recall": 0.6855,
+        "f1": 0.6855,
+        "auc_roc": 0.7729,
+        "ci_95": [
+          0.763,
+          0.7823
+        ]
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.7056,
+          "recall": 0.7056,
+          "f1": 0.7056,
+          "auc_roc": 0.8155,
+          "ci_95": [
+            0.8068,
+            0.8236
+          ]
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.689,
+          "recall": 0.689,
+          "f1": 0.689,
+          "auc_roc": 0.8087,
+          "ci_95": [
+            0.7997,
+            0.8171
+          ]
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.7629,
+          "recall": 0.7629,
+          "f1": 0.7629,
+          "auc_roc": 0.8564,
+          "ci_95": [
+            0.8487,
+            0.8638
+          ]
+        }
+      }
+    },
+    "temporal_split": {
+      "train_anom_frac": 0.2283,
+      "test_anom_frac": 0.1904,
+      "pbp_std": {
+        "method": "PBP standard",
+        "precision": 0.77,
+        "recall": 0.8199,
+        "f1": 0.7942,
+        "auc_roc": 0.9729
+      },
+      "pbp_pair": {
+        "method": "PBP pair",
+        "precision": 0.7207,
+        "recall": 0.9292,
+        "f1": 0.8117,
+        "auc_roc": 0.9705
+      },
+      "baselines": {
+        "IF": {
+          "method": "IF",
+          "precision": 0.8055,
+          "recall": 0.8055,
+          "f1": 0.8055,
+          "auc_roc": 0.9749,
+          "ci_95": [
+            0.9708,
+            0.9786
+          ]
+        },
+        "OC-SVM": {
+          "method": "OC-SVM",
+          "precision": 0.8992,
+          "recall": 0.8992,
+          "f1": 0.8992,
+          "auc_roc": 0.9918,
+          "ci_95": [
+            0.9897,
+            0.9937
+          ]
+        },
+        "LOF": {
+          "method": "LOF",
+          "precision": 0.9088,
+          "recall": 0.9088,
+          "f1": 0.9088,
+          "auc_roc": 0.9934,
+          "ci_95": [
+            0.9915,
+            0.9952
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+dataset,domain,method_pbp,method_bl,auc_pbp,ci_pbp_lower,ci_pbp_upper,auc_bl,ci_bl_lower,ci_bl_upper,diff_point,diff_ci_lower,diff_ci_upper,ci_includes_zero,n_test,anomaly_rate
+UCI,air_quality,PBP std,IF,0.8607,0.829,0.8899,0.8778,0.8542,0.8987,-0.0172,-0.0496,0.0129,True,3466,0.2977
+Beijing,air_quality,PBP std,OC-SVM,0.9318,0.9215,0.9412,0.9386,0.9287,0.9484,-0.0069,-0.0142,0.0011,True,15196,0.2705
+SaoPaulo,air_quality,PBP std,IF,0.8826,0.8609,0.9018,0.8944,0.8717,0.9166,-0.0117,-0.0275,0.0034,True,4375,0.2519
+CapeTown,air_quality,PBP std,LOF,0.9729,0.9635,0.981,0.9934,0.9899,0.9963,-0.0206,-0.0285,-0.0135,False,4375,0.1904
+ORD,weather,PBP std,OC-SVM,0.8854,0.8683,0.9024,0.9038,0.8899,0.9175,-0.0183,-0.0389,0.0009,True,8748,0.4198
+MIA,weather,PBP std,OC-SVM,0.8597,0.842,0.8771,0.8904,0.8758,0.9044,-0.0307,-0.0509,-0.0115,False,8741,0.5226
+SFO,weather,PBP std,OC-SVM,0.8535,0.8347,0.8716,0.892,0.8759,0.9067,-0.0385,-0.0556,-0.0195,False,8746,0.5199
+FAI,weather,PBP std,OC-SVM,0.8266,0.8039,0.8476,0.9101,0.8954,0.924,-0.0835,-0.1069,-0.0619,False,8619,0.4851

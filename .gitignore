@@ -6,3 +6,16 @@ dist/
 build/
 *.dylib
 *.so
+
+# Downloaded datasets (large)
+data/beijing_multisite/
+data/noaa_isd_*/
+data/epa_aqs*/
+
+# Generated figures
+figures/*.pdf
+figures/*.png
+figures/*.jpg
+
+# Local replication results
+results/local/

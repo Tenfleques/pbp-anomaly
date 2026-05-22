@@ -231,6 +231,131 @@ def load_open_meteo_csv(csv_path, city_name='City'):
 
 # ─── Generic CSV loader ────────────────────────────────────────────────
 
+# ─── EPA AQS (US air quality) ──────────────────────────────────────────
+
+def load_epa_aqs(data_dir, year=2023, site_state='06', site_county='037', site_num='1103'):
+    """Load US EPA AQS hourly data for a single site by streaming from ZIP files.
+
+    Default: Los Angeles site 06-037-1103 (multi-pollutant urban).
+    Reads directly from ZIP using chunked iteration to avoid loading 2GB CSVs into RAM.
+
+    Pollutant parameter codes:
+      44201=O3, 42401=SO2, 42101=CO, 42602=NO2, 88101=PM2.5
+
+    Args:
+        data_dir: directory to store/find downloaded ZIPs
+        year: data year
+        site_state: 2-digit FIPS state code
+        site_county: 3-digit county code
+        site_num: 4-digit site number
+
+    Returns:
+        dict with name, data, sensor_cols, ref_cols
+    """
+    import zipfile
+    import urllib.request
+
+    epa_dir = os.path.join(data_dir, f'epa_aqs_{year}')
+    os.makedirs(epa_dir, exist_ok=True)
+
+    params = {
+        'O3': '44201',
+        'SO2': '42401',
+        'CO': '42101',
+        'NO2': '42602',
+        'PM2.5': '88101',
+    }
+
+    dfs = {}
+    for name, code in params.items():
+        zip_path = os.path.join(epa_dir, f'hourly_{code}_{year}.zip')
+
+        if not os.path.exists(zip_path):
+            url = f"https://aqs.epa.gov/aqsweb/airdata/hourly_{code}_{year}.zip"
+            print(f"  Downloading EPA {name} ({code})...")
+            try:
+                urllib.request.urlretrieve(url, zip_path)
+            except Exception as e:
+                print(f"  WARNING: Could not download {name}: {e}")
+                continue
+
+        if not os.path.exists(zip_path):
+            continue
+
+        try:
+            with zipfile.ZipFile(zip_path) as zf:
+                csv_name = None
+                for member in zf.namelist():
+                    if member.endswith('.csv'):
+                        csv_name = member
+                        break
+                if csv_name is None:
+                    print(f"  WARNING: No CSV found in {zip_path}")
+                    continue
+
+                print(f"  Reading EPA {name} from ZIP (filtering site "
+                      f"{site_state}-{site_county}-{site_num})...")
+                site_rows = []
+                chunks = pd.read_csv(
+                    zf.open(csv_name),
+                    chunksize=50000,
+                    dtype={'State Code': str, 'County Code': str, 'Site Num': str},
+                    low_memory=False,
+                )
+                for chunk in chunks:
+                    filtered = chunk[
+                        (chunk['State Code'] == site_state) &
+                        (chunk['County Code'] == site_county) &
+                        (chunk['Site Num'] == site_num)
+                    ]
+                    if len(filtered) > 0:
+                        site_rows.append(filtered)
+
+                if not site_rows:
+                    print(f"  EPA {name}: site not found in data")
+                    continue
+
+                site_df = pd.concat(site_rows, ignore_index=True)
+                site_df['datetime'] = pd.to_datetime(
+                    site_df['Date Local'] + ' ' + site_df['Time Local']
+                )
+                site_df = site_df[['datetime', 'Sample Measurement']].rename(
+                    columns={'Sample Measurement': name}
+                )
+                site_df = site_df.groupby('datetime').mean().reset_index()
+                dfs[name] = site_df
+                print(f"  EPA {name}: {len(site_df)} hourly readings")
+
+        except Exception as e:
+            print(f"  WARNING: Error reading {name} from ZIP: {e}")
+            continue
+
+    if len(dfs) < 3:
+        raise ValueError(f"Only {len(dfs)} pollutants found for site. Need at least 3.")
+
+    merged = None
+    for name, df in dfs.items():
+        if merged is None:
+            merged = df
+        else:
+            merged = merged.merge(df, on='datetime', how='inner')
+
+    merged = merged.sort_values('datetime').reset_index(drop=True)
+    merged = merged.dropna()
+
+    sensor_cols = [c for c in merged.columns if c != 'datetime']
+    ref_cols = sensor_cols.copy()
+
+    return {
+        'name': f'EPA AQS (LA, {year})',
+        'data': merged[sensor_cols],
+        'sensor_cols': sensor_cols,
+        'ref_cols': ref_cols,
+    }
+
+
+# ─── Generic CSV loader ────────────────────────────────────────────────
+
 def load_csv(csv_path, sensor_cols, ref_cols=None, name='Custom'):
     """Load any CSV with specified sensor columns.
 

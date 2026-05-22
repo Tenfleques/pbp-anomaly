@@ -1,0 +1,1362 @@
+{
+  "UCI__Q2": {
+    "dataset": "UCI",
+    "Q": 2,
+    "auc_top5": 0.8707,
+    "auc_all36": 0.8378,
+    "supervised_gap": 0.033,
+    "n_test": 3466,
+    "anom_frac": 0.2977,
+    "top5_indices": [
+      4,
+      28,
+      34,
+      22,
+      25
+    ],
+    "baselines": {
+      "IF": 0.72,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "UCI__Q3": {
+    "dataset": "UCI",
+    "Q": 3,
+    "auc_top5": 0.8789,
+    "auc_all36": 0.8571,
+    "supervised_gap": 0.0218,
+    "n_test": 3466,
+    "anom_frac": 0.2977,
+    "top5_indices": [
+      4,
+      28,
+      22,
+      23,
+      34
+    ]
+  },
+  "UCI__Q5": {
+    "dataset": "UCI",
+    "Q": 5,
+    "auc_top5": 0.8661,
+    "auc_all36": 0.8144,
+    "supervised_gap": 0.0517,
+    "n_test": 3466,
+    "anom_frac": 0.2977,
+    "top5_indices": [
+      4,
+      22,
+      28,
+      34,
+      29
+    ]
+  },
+  "UCI__Q10": {
+    "dataset": "UCI",
+    "Q": 10,
+    "auc_top5": 0.8317,
+    "auc_all36": 0.7875,
+    "supervised_gap": 0.0442,
+    "n_test": 3466,
+    "anom_frac": 0.2977,
+    "top5_indices": [
+      4,
+      28,
+      22,
+      34,
+      16
+    ]
+  },
+  "UCI__Q20": {
+    "dataset": "UCI",
+    "Q": 20,
+    "auc_top5": 0.831,
+    "auc_all36": 0.7783,
+    "supervised_gap": 0.0527,
+    "n_test": 3466,
+    "anom_frac": 0.2977,
+    "top5_indices": [
+      4,
+      28,
+      22,
+      34,
+      16
+    ]
+  },
+  "Beijing__Q2": {
+    "dataset": "Beijing",
+    "Q": 2,
+    "auc_top5": 0.9491,
+    "auc_all36": 0.8907,
+    "supervised_gap": 0.0583,
+    "n_test": 15196,
+    "anom_frac": 0.2705,
+    "top5_indices": [
+      34,
+      31,
+      28,
+      22,
+      4
+    ],
+    "baselines": {
+      "IF": 0.8092,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "Beijing__Q3": {
+    "dataset": "Beijing",
+    "Q": 3,
+    "auc_top5": 0.9307,
+    "auc_all36": 0.932,
+    "supervised_gap": -0.0013,
+    "n_test": 15196,
+    "anom_frac": 0.2705,
+    "top5_indices": [
+      28,
+      34,
+      31,
+      22,
+      25
+    ]
+  },
+  "Beijing__Q5": {
+    "dataset": "Beijing",
+    "Q": 5,
+    "auc_top5": 0.9442,
+    "auc_all36": 0.9088,
+    "supervised_gap": 0.0354,
+    "n_test": 15196,
+    "anom_frac": 0.2705,
+    "top5_indices": [
+      28,
+      34,
+      22,
+      23,
+      29
+    ]
+  },
+  "Beijing__Q10": {
+    "dataset": "Beijing",
+    "Q": 10,
+    "auc_top5": 0.94,
+    "auc_all36": 0.9048,
+    "supervised_gap": 0.0352,
+    "n_test": 15196,
+    "anom_frac": 0.2705,
+    "top5_indices": [
+      28,
+      34,
+      22,
+      23,
+      29
+    ]
+  },
+  "Beijing__Q20": {
+    "dataset": "Beijing",
+    "Q": 20,
+    "auc_top5": 0.9476,
+    "auc_all36": 0.9067,
+    "supervised_gap": 0.0409,
+    "n_test": 15196,
+    "anom_frac": 0.2705,
+    "top5_indices": [
+      28,
+      34,
+      22,
+      23,
+      4
+    ]
+  },
+  "SaoPaulo__Q2": {
+    "dataset": "SaoPaulo",
+    "Q": 2,
+    "auc_top5": 0.8826,
+    "auc_all36": 0.9075,
+    "supervised_gap": -0.0248,
+    "n_test": 4375,
+    "anom_frac": 0.2519,
+    "top5_indices": [
+      34,
+      31,
+      28,
+      25,
+      22
+    ],
+    "baselines": {
+      "IF": 0.7612,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "SaoPaulo__Q3": {
+    "dataset": "SaoPaulo",
+    "Q": 3,
+    "auc_top5": 0.7216,
+    "auc_all36": 0.9319,
+    "supervised_gap": -0.2103,
+    "n_test": 4375,
+    "anom_frac": 0.2519,
+    "top5_indices": [
+      34,
+      31,
+      28,
+      25,
+      26
+    ]
+  },
+  "SaoPaulo__Q5": {
+    "dataset": "SaoPaulo",
+    "Q": 5,
+    "auc_top5": 0.9478,
+    "auc_all36": 0.9081,
+    "supervised_gap": 0.0397,
+    "n_test": 4375,
+    "anom_frac": 0.2519,
+    "top5_indices": [
+      34,
+      28,
+      22,
+      31,
+      35
+    ]
+  },
+  "SaoPaulo__Q10": {
+    "dataset": "SaoPaulo",
+    "Q": 10,
+    "auc_top5": 0.9551,
+    "auc_all36": 0.9367,
+    "supervised_gap": 0.0184,
+    "n_test": 4375,
+    "anom_frac": 0.2519,
+    "top5_indices": [
+      28,
+      34,
+      22,
+      16,
+      10
+    ]
+  },
+  "SaoPaulo__Q20": {
+    "dataset": "SaoPaulo",
+    "Q": 20,
+    "auc_top5": 0.9563,
+    "auc_all36": 0.9364,
+    "supervised_gap": 0.0199,
+    "n_test": 4375,
+    "anom_frac": 0.2519,
+    "top5_indices": [
+      28,
+      34,
+      22,
+      16,
+      10
+    ]
+  },
+  "CapeTown__Q2": {
+    "dataset": "CapeTown",
+    "Q": 2,
+    "auc_top5": 0.971,
+    "auc_all36": 0.9078,
+    "supervised_gap": 0.0633,
+    "n_test": 4375,
+    "anom_frac": 0.1904,
+    "top5_indices": [
+      34,
+      31,
+      4,
+      28,
+      25
+    ],
+    "baselines": {
+      "IF": 0.9684,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "CapeTown__Q3": {
+    "dataset": "CapeTown",
+    "Q": 3,
+    "auc_top5": 0.9767,
+    "auc_all36": 0.9526,
+    "supervised_gap": 0.0242,
+    "n_test": 4375,
+    "anom_frac": 0.1904,
+    "top5_indices": [
+      34,
+      31,
+      28,
+      4,
+      25
+    ]
+  },
+  "CapeTown__Q5": {
+    "dataset": "CapeTown",
+    "Q": 5,
+    "auc_top5": 0.9872,
+    "auc_all36": 0.9437,
+    "supervised_gap": 0.0435,
+    "n_test": 4375,
+    "anom_frac": 0.1904,
+    "top5_indices": [
+      34,
+      4,
+      28,
+      22,
+      3
+    ]
+  },
+  "CapeTown__Q10": {
+    "dataset": "CapeTown",
+    "Q": 10,
+    "auc_top5": 0.9885,
+    "auc_all36": 0.9387,
+    "supervised_gap": 0.0498,
+    "n_test": 4375,
+    "anom_frac": 0.1904,
+    "top5_indices": [
+      4,
+      28,
+      34,
+      22,
+      3
+    ]
+  },
+  "CapeTown__Q20": {
+    "dataset": "CapeTown",
+    "Q": 20,
+    "auc_top5": 0.9891,
+    "auc_all36": 0.9454,
+    "supervised_gap": 0.0437,
+    "n_test": 4375,
+    "anom_frac": 0.1904,
+    "top5_indices": [
+      4,
+      28,
+      34,
+      22,
+      3
+    ]
+  },
+  "Weather_ORD_1tail__Q2": {
+    "dataset": "Weather_ORD_1tail",
+    "Q": 2,
+    "auc_top5": 0.9787,
+    "auc_all36": 0.7465,
+    "supervised_gap": 0.2322,
+    "n_test": 8748,
+    "anom_frac": 0.2734,
+    "top5_indices": [
+      31,
+      34,
+      28,
+      25,
+      22
+    ],
+    "baselines": {
+      "IF": 0.8203,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "Weather_ORD_1tail__Q3": {
+    "dataset": "Weather_ORD_1tail",
+    "Q": 3,
+    "auc_top5": 0.9099,
+    "auc_all36": 0.7208,
+    "supervised_gap": 0.1891,
+    "n_test": 8748,
+    "anom_frac": 0.2734,
+    "top5_indices": [
+      31,
+      35,
+      33,
+      28,
+      34
+    ]
+  },
+  "Weather_ORD_1tail__Q5": {
+    "dataset": "Weather_ORD_1tail",
+    "Q": 5,
+    "auc_top5": 0.8007,
+    "auc_all36": 0.6906,
+    "supervised_gap": 0.1102,
+    "n_test": 8748,
+    "anom_frac": 0.2734,
+    "top5_indices": [
+      31,
+      28,
+      32,
+      34,
+      25
+    ]
+  },
+  "Weather_ORD_1tail__Q10": {
+    "dataset": "Weather_ORD_1tail",
+    "Q": 10,
+    "auc_top5": 0.7455,
+    "auc_all36": 0.6554,
+    "supervised_gap": 0.0901,
+    "n_test": 8748,
+    "anom_frac": 0.2734,
+    "top5_indices": [
+      31,
+      28,
+      34,
+      25,
+      32
+    ]
+  },
+  "Weather_ORD_1tail__Q20": {
+    "dataset": "Weather_ORD_1tail",
+    "Q": 20,
+    "auc_top5": 0.7323,
+    "auc_all36": 0.6503,
+    "supervised_gap": 0.082,
+    "n_test": 8748,
+    "anom_frac": 0.2734,
+    "top5_indices": [
+      28,
+      31,
+      34,
+      25,
+      32
+    ]
+  },
+  "Weather_ORD_2tail__Q2": {
+    "dataset": "Weather_ORD_2tail",
+    "Q": 2,
+    "auc_top5": 0.8878,
+    "auc_all36": 0.5627,
+    "supervised_gap": 0.325,
+    "n_test": 8748,
+    "anom_frac": 0.4198,
+    "top5_indices": [
+      31,
+      34,
+      28,
+      25,
+      2
+    ],
+    "baselines": {
+      "IF": 0.7307,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "Weather_ORD_2tail__Q3": {
+    "dataset": "Weather_ORD_2tail",
+    "Q": 3,
+    "auc_top5": 0.6835,
+    "auc_all36": 0.5656,
+    "supervised_gap": 0.1179,
+    "n_test": 8748,
+    "anom_frac": 0.4198,
+    "top5_indices": [
+      35,
+      33,
+      31,
+      32,
+      28
+    ]
+  },
+  "Weather_ORD_2tail__Q5": {
+    "dataset": "Weather_ORD_2tail",
+    "Q": 5,
+    "auc_top5": 0.6605,
+    "auc_all36": 0.5229,
+    "supervised_gap": 0.1376,
+    "n_test": 8748,
+    "anom_frac": 0.4198,
+    "top5_indices": [
+      31,
+      32,
+      26,
+      25,
+      2
+    ]
+  },
+  "Weather_ORD_2tail__Q10": {
+    "dataset": "Weather_ORD_2tail",
+    "Q": 10,
+    "auc_top5": 0.665,
+    "auc_all36": 0.4717,
+    "supervised_gap": 0.1933,
+    "n_test": 8748,
+    "anom_frac": 0.4198,
+    "top5_indices": [
+      32,
+      31,
+      26,
+      2,
+      1
+    ]
+  },
+  "Weather_ORD_2tail__Q20": {
+    "dataset": "Weather_ORD_2tail",
+    "Q": 20,
+    "auc_top5": 0.6612,
+    "auc_all36": 0.4655,
+    "supervised_gap": 0.1957,
+    "n_test": 8748,
+    "anom_frac": 0.4198,
+    "top5_indices": [
+      32,
+      26,
+      2,
+      31,
+      25
+    ]
+  },
+  "Weather_MIA_1tail__Q2": {
+    "dataset": "Weather_MIA_1tail",
+    "Q": 2,
+    "auc_top5": 0.9473,
+    "auc_all36": 0.8031,
+    "supervised_gap": 0.1442,
+    "n_test": 8741,
+    "anom_frac": 0.3091,
+    "top5_indices": [
+      31,
+      34,
+      28,
+      25,
+      22
+    ],
+    "baselines": {
+      "IF": 0.8535,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "Weather_MIA_1tail__Q3": {
+    "dataset": "Weather_MIA_1tail",
+    "Q": 3,
+    "auc_top5": 0.8608,
+    "auc_all36": 0.7545,
+    "supervised_gap": 0.1062,
+    "n_test": 8741,
+    "anom_frac": 0.3091,
+    "top5_indices": [
+      34,
+      31,
+      28,
+      33,
+      35
+    ]
+  },
+  "Weather_MIA_1tail__Q5": {
+    "dataset": "Weather_MIA_1tail",
+    "Q": 5,
+    "auc_top5": 0.8092,
+    "auc_all36": 0.7221,
+    "supervised_gap": 0.0871,
+    "n_test": 8741,
+    "anom_frac": 0.3091,
+    "top5_indices": [
+      28,
+      34,
+      31,
+      22,
+      25
+    ]
+  },
+  "Weather_MIA_1tail__Q10": {
+    "dataset": "Weather_MIA_1tail",
+    "Q": 10,
+    "auc_top5": 0.7651,
+    "auc_all36": 0.6953,
+    "supervised_gap": 0.0697,
+    "n_test": 8741,
+    "anom_frac": 0.3091,
+    "top5_indices": [
+      28,
+      34,
+      22,
+      16,
+      23
+    ]
+  },
+  "Weather_MIA_1tail__Q20": {
+    "dataset": "Weather_MIA_1tail",
+    "Q": 20,
+    "auc_top5": 0.7642,
+    "auc_all36": 0.6978,
+    "supervised_gap": 0.0663,
+    "n_test": 8741,
+    "anom_frac": 0.3091,
+    "top5_indices": [
+      28,
+      34,
+      22,
+      16,
+      23
+    ]
+  },
+  "Weather_MIA_2tail__Q2": {
+    "dataset": "Weather_MIA_2tail",
+    "Q": 2,
+    "auc_top5": 0.7974,
+    "auc_all36": 0.6438,
+    "supervised_gap": 0.1536,
+    "n_test": 8741,
+    "anom_frac": 0.5226,
+    "top5_indices": [
+      31,
+      34,
+      28,
+      25,
+      2
+    ],
+    "baselines": {
+      "IF": 0.7455,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "Weather_MIA_2tail__Q3": {
+    "dataset": "Weather_MIA_2tail",
+    "Q": 3,
+    "auc_top5": 0.6873,
+    "auc_all36": 0.6136,
+    "supervised_gap": 0.0737,
+    "n_test": 8741,
+    "anom_frac": 0.5226,
+    "top5_indices": [
+      31,
+      33,
+      32,
+      34,
+      35
+    ]
+  },
+  "Weather_MIA_2tail__Q5": {
+    "dataset": "Weather_MIA_2tail",
+    "Q": 5,
+    "auc_top5": 0.6791,
+    "auc_all36": 0.5796,
+    "supervised_gap": 0.0995,
+    "n_test": 8741,
+    "anom_frac": 0.5226,
+    "top5_indices": [
+      31,
+      32,
+      25,
+      26,
+      28
+    ]
+  },
+  "Weather_MIA_2tail__Q10": {
+    "dataset": "Weather_MIA_2tail",
+    "Q": 10,
+    "auc_top5": 0.6586,
+    "auc_all36": 0.5334,
+    "supervised_gap": 0.1252,
+    "n_test": 8741,
+    "anom_frac": 0.5226,
+    "top5_indices": [
+      32,
+      2,
+      1,
+      26,
+      31
+    ]
+  },
+  "Weather_MIA_2tail__Q20": {
+    "dataset": "Weather_MIA_2tail",
+    "Q": 20,
+    "auc_top5": 0.6709,
+    "auc_all36": 0.5225,
+    "supervised_gap": 0.1484,
+    "n_test": 8741,
+    "anom_frac": 0.5226,
+    "top5_indices": [
+      32,
+      26,
+      2,
+      1,
+      28
+    ]
+  },
+  "Weather_SFO_1tail__Q2": {
+    "dataset": "Weather_SFO_1tail",
+    "Q": 2,
+    "auc_top5": 0.9566,
+    "auc_all36": 0.7789,
+    "supervised_gap": 0.1777,
+    "n_test": 8746,
+    "anom_frac": 0.3028,
+    "top5_indices": [
+      31,
+      34,
+      28,
+      25,
+      22
+    ],
+    "baselines": {
+      "IF": 0.7864,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "Weather_SFO_1tail__Q3": {
+    "dataset": "Weather_SFO_1tail",
+    "Q": 3,
+    "auc_top5": 0.9008,
+    "auc_all36": 0.7587,
+    "supervised_gap": 0.1421,
+    "n_test": 8746,
+    "anom_frac": 0.3028,
+    "top5_indices": [
+      35,
+      34,
+      33,
+      28,
+      31
+    ]
+  },
+  "Weather_SFO_1tail__Q5": {
+    "dataset": "Weather_SFO_1tail",
+    "Q": 5,
+    "auc_top5": 0.826,
+    "auc_all36": 0.7443,
+    "supervised_gap": 0.0817,
+    "n_test": 8746,
+    "anom_frac": 0.3028,
+    "top5_indices": [
+      34,
+      28,
+      31,
+      22,
+      25
+    ]
+  },
+  "Weather_SFO_1tail__Q10": {
+    "dataset": "Weather_SFO_1tail",
+    "Q": 10,
+    "auc_top5": 0.7474,
+    "auc_all36": 0.7155,
+    "supervised_gap": 0.0319,
+    "n_test": 8746,
+    "anom_frac": 0.3028,
+    "top5_indices": [
+      34,
+      28,
+      22,
+      31,
+      4
+    ]
+  },
+  "Weather_SFO_1tail__Q20": {
+    "dataset": "Weather_SFO_1tail",
+    "Q": 20,
+    "auc_top5": 0.7507,
+    "auc_all36": 0.7247,
+    "supervised_gap": 0.0261,
+    "n_test": 8746,
+    "anom_frac": 0.3028,
+    "top5_indices": [
+      34,
+      28,
+      22,
+      4,
+      23
+    ]
+  },
+  "Weather_SFO_2tail__Q2": {
+    "dataset": "Weather_SFO_2tail",
+    "Q": 2,
+    "auc_top5": 0.7324,
+    "auc_all36": 0.5747,
+    "supervised_gap": 0.1577,
+    "n_test": 8746,
+    "anom_frac": 0.5199,
+    "top5_indices": [
+      31,
+      34,
+      28,
+      25,
+      22
+    ],
+    "baselines": {
+      "IF": 0.7038,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "Weather_SFO_2tail__Q3": {
+    "dataset": "Weather_SFO_2tail",
+    "Q": 3,
+    "auc_top5": 0.673,
+    "auc_all36": 0.5859,
+    "supervised_gap": 0.0871,
+    "n_test": 8746,
+    "anom_frac": 0.5199,
+    "top5_indices": [
+      35,
+      33,
+      31,
+      34,
+      32
+    ]
+  },
+  "Weather_SFO_2tail__Q5": {
+    "dataset": "Weather_SFO_2tail",
+    "Q": 5,
+    "auc_top5": 0.6513,
+    "auc_all36": 0.5574,
+    "supervised_gap": 0.0939,
+    "n_test": 8746,
+    "anom_frac": 0.5199,
+    "top5_indices": [
+      31,
+      32,
+      34,
+      28,
+      1
+    ]
+  },
+  "Weather_SFO_2tail__Q10": {
+    "dataset": "Weather_SFO_2tail",
+    "Q": 10,
+    "auc_top5": 0.6051,
+    "auc_all36": 0.5161,
+    "supervised_gap": 0.089,
+    "n_test": 8746,
+    "anom_frac": 0.5199,
+    "top5_indices": [
+      32,
+      1,
+      2,
+      31,
+      26
+    ]
+  },
+  "Weather_SFO_2tail__Q20": {
+    "dataset": "Weather_SFO_2tail",
+    "Q": 20,
+    "auc_top5": 0.6186,
+    "auc_all36": 0.5161,
+    "supervised_gap": 0.1025,
+    "n_test": 8746,
+    "anom_frac": 0.5199,
+    "top5_indices": [
+      32,
+      1,
+      2,
+      26,
+      34
+    ]
+  },
+  "Weather_FAI_1tail__Q2": {
+    "dataset": "Weather_FAI_1tail",
+    "Q": 2,
+    "auc_top5": 0.9427,
+    "auc_all36": 0.7757,
+    "supervised_gap": 0.167,
+    "n_test": 8619,
+    "anom_frac": 0.2586,
+    "top5_indices": [
+      34,
+      31,
+      28,
+      25,
+      22
+    ],
+    "baselines": {
+      "IF": 0.9026,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "Weather_FAI_1tail__Q3": {
+    "dataset": "Weather_FAI_1tail",
+    "Q": 3,
+    "auc_top5": 0.8536,
+    "auc_all36": 0.7394,
+    "supervised_gap": 0.1143,
+    "n_test": 8619,
+    "anom_frac": 0.2586,
+    "top5_indices": [
+      28,
+      31,
+      34,
+      35,
+      33
+    ]
+  },
+  "Weather_FAI_1tail__Q5": {
+    "dataset": "Weather_FAI_1tail",
+    "Q": 5,
+    "auc_top5": 0.8149,
+    "auc_all36": 0.7233,
+    "supervised_gap": 0.0916,
+    "n_test": 8619,
+    "anom_frac": 0.2586,
+    "top5_indices": [
+      28,
+      34,
+      22,
+      31,
+      23
+    ]
+  },
+  "Weather_FAI_1tail__Q10": {
+    "dataset": "Weather_FAI_1tail",
+    "Q": 10,
+    "auc_top5": 0.789,
+    "auc_all36": 0.7195,
+    "supervised_gap": 0.0695,
+    "n_test": 8619,
+    "anom_frac": 0.2586,
+    "top5_indices": [
+      28,
+      34,
+      22,
+      23,
+      21
+    ]
+  },
+  "Weather_FAI_1tail__Q20": {
+    "dataset": "Weather_FAI_1tail",
+    "Q": 20,
+    "auc_top5": 0.7832,
+    "auc_all36": 0.7313,
+    "supervised_gap": 0.0519,
+    "n_test": 8619,
+    "anom_frac": 0.2586,
+    "top5_indices": [
+      28,
+      34,
+      22,
+      23,
+      29
+    ]
+  },
+  "Weather_FAI_2tail__Q2": {
+    "dataset": "Weather_FAI_2tail",
+    "Q": 2,
+    "auc_top5": 0.6584,
+    "auc_all36": 0.514,
+    "supervised_gap": 0.1444,
+    "n_test": 8619,
+    "anom_frac": 0.4851,
+    "top5_indices": [
+      31,
+      34,
+      28,
+      25,
+      22
+    ],
+    "baselines": {
+      "IF": 0.7022,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "Weather_FAI_2tail__Q3": {
+    "dataset": "Weather_FAI_2tail",
+    "Q": 3,
+    "auc_top5": 0.6198,
+    "auc_all36": 0.5308,
+    "supervised_gap": 0.089,
+    "n_test": 8619,
+    "anom_frac": 0.4851,
+    "top5_indices": [
+      35,
+      33,
+      28,
+      32,
+      34
+    ]
+  },
+  "Weather_FAI_2tail__Q5": {
+    "dataset": "Weather_FAI_2tail",
+    "Q": 5,
+    "auc_top5": 0.6269,
+    "auc_all36": 0.4986,
+    "supervised_gap": 0.1283,
+    "n_test": 8619,
+    "anom_frac": 0.4851,
+    "top5_indices": [
+      31,
+      32,
+      28,
+      34,
+      2
+    ]
+  },
+  "Weather_FAI_2tail__Q10": {
+    "dataset": "Weather_FAI_2tail",
+    "Q": 10,
+    "auc_top5": 0.614,
+    "auc_all36": 0.4649,
+    "supervised_gap": 0.1491,
+    "n_test": 8619,
+    "anom_frac": 0.4851,
+    "top5_indices": [
+      32,
+      2,
+      26,
+      28,
+      31
+    ]
+  },
+  "Weather_FAI_2tail__Q20": {
+    "dataset": "Weather_FAI_2tail",
+    "Q": 20,
+    "auc_top5": 0.6262,
+    "auc_all36": 0.4695,
+    "supervised_gap": 0.1567,
+    "n_test": 8619,
+    "anom_frac": 0.4851,
+    "top5_indices": [
+      32,
+      26,
+      2,
+      28,
+      34
+    ]
+  },
+  "Weather_LHR_1tail__Q2": {
+    "dataset": "Weather_LHR_1tail",
+    "Q": 2,
+    "auc_top5": 0.9457,
+    "auc_all36": 0.6732,
+    "supervised_gap": 0.2726,
+    "n_test": 7619,
+    "anom_frac": 0.2583,
+    "top5_indices": [
+      31,
+      34,
+      28,
+      25,
+      22
+    ],
+    "baselines": {
+      "IF": 0.8095,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "Weather_LHR_1tail__Q3": {
+    "dataset": "Weather_LHR_1tail",
+    "Q": 3,
+    "auc_top5": 0.8509,
+    "auc_all36": 0.6191,
+    "supervised_gap": 0.2317,
+    "n_test": 7619,
+    "anom_frac": 0.2583,
+    "top5_indices": [
+      35,
+      33,
+      34,
+      28,
+      31
+    ]
+  },
+  "Weather_LHR_1tail__Q5": {
+    "dataset": "Weather_LHR_1tail",
+    "Q": 5,
+    "auc_top5": 0.7288,
+    "auc_all36": 0.5963,
+    "supervised_gap": 0.1325,
+    "n_test": 7619,
+    "anom_frac": 0.2583,
+    "top5_indices": [
+      34,
+      28,
+      31,
+      32,
+      25
+    ]
+  },
+  "Weather_LHR_1tail__Q10": {
+    "dataset": "Weather_LHR_1tail",
+    "Q": 10,
+    "auc_top5": 0.6794,
+    "auc_all36": 0.5818,
+    "supervised_gap": 0.0976,
+    "n_test": 7619,
+    "anom_frac": 0.2583,
+    "top5_indices": [
+      28,
+      34,
+      31,
+      22,
+      25
+    ]
+  },
+  "Weather_LHR_1tail__Q20": {
+    "dataset": "Weather_LHR_1tail",
+    "Q": 20,
+    "auc_top5": 0.6936,
+    "auc_all36": 0.5917,
+    "supervised_gap": 0.1019,
+    "n_test": 7619,
+    "anom_frac": 0.2583,
+    "top5_indices": [
+      34,
+      28,
+      22,
+      31,
+      1
+    ]
+  },
+  "Weather_LHR_2tail__Q2": {
+    "dataset": "Weather_LHR_2tail",
+    "Q": 2,
+    "auc_top5": 0.7783,
+    "auc_all36": 0.5151,
+    "supervised_gap": 0.2632,
+    "n_test": 7619,
+    "anom_frac": 0.4855,
+    "top5_indices": [
+      31,
+      34,
+      28,
+      25,
+      2
+    ],
+    "baselines": {
+      "IF": 0.7,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "Weather_LHR_2tail__Q3": {
+    "dataset": "Weather_LHR_2tail",
+    "Q": 3,
+    "auc_top5": 0.722,
+    "auc_all36": 0.5,
+    "supervised_gap": 0.222,
+    "n_test": 7619,
+    "anom_frac": 0.4855,
+    "top5_indices": [
+      35,
+      33,
+      34,
+      31,
+      2
+    ]
+  },
+  "Weather_LHR_2tail__Q5": {
+    "dataset": "Weather_LHR_2tail",
+    "Q": 5,
+    "auc_top5": 0.6106,
+    "auc_all36": 0.4729,
+    "supervised_gap": 0.1377,
+    "n_test": 7619,
+    "anom_frac": 0.4855,
+    "top5_indices": [
+      32,
+      31,
+      2,
+      8,
+      26
+    ]
+  },
+  "Weather_LHR_2tail__Q10": {
+    "dataset": "Weather_LHR_2tail",
+    "Q": 10,
+    "auc_top5": 0.6038,
+    "auc_all36": 0.435,
+    "supervised_gap": 0.1687,
+    "n_test": 7619,
+    "anom_frac": 0.4855,
+    "top5_indices": [
+      8,
+      32,
+      2,
+      26,
+      1
+    ]
+  },
+  "Weather_LHR_2tail__Q20": {
+    "dataset": "Weather_LHR_2tail",
+    "Q": 20,
+    "auc_top5": 0.6072,
+    "auc_all36": 0.4335,
+    "supervised_gap": 0.1737,
+    "n_test": 7619,
+    "anom_frac": 0.4855,
+    "top5_indices": [
+      8,
+      32,
+      2,
+      26,
+      1
+    ]
+  },
+  "Weather_NRT_1tail__Q2": {
+    "dataset": "Weather_NRT_1tail",
+    "Q": 2,
+    "auc_top5": 0.9281,
+    "auc_all36": 0.7157,
+    "supervised_gap": 0.2124,
+    "n_test": 5351,
+    "anom_frac": 0.2798,
+    "top5_indices": [
+      31,
+      34,
+      28,
+      25,
+      22
+    ],
+    "baselines": {
+      "IF": 0.7834,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "Weather_NRT_1tail__Q3": {
+    "dataset": "Weather_NRT_1tail",
+    "Q": 3,
+    "auc_top5": 0.8805,
+    "auc_all36": 0.7484,
+    "supervised_gap": 0.1321,
+    "n_test": 5351,
+    "anom_frac": 0.2798,
+    "top5_indices": [
+      34,
+      32,
+      31,
+      28,
+      22
+    ]
+  },
+  "Weather_NRT_1tail__Q5": {
+    "dataset": "Weather_NRT_1tail",
+    "Q": 5,
+    "auc_top5": 0.8326,
+    "auc_all36": 0.6945,
+    "supervised_gap": 0.1381,
+    "n_test": 5351,
+    "anom_frac": 0.2798,
+    "top5_indices": [
+      34,
+      28,
+      22,
+      31,
+      29
+    ]
+  },
+  "Weather_NRT_1tail__Q10": {
+    "dataset": "Weather_NRT_1tail",
+    "Q": 10,
+    "auc_top5": 0.7782,
+    "auc_all36": 0.6755,
+    "supervised_gap": 0.1027,
+    "n_test": 5351,
+    "anom_frac": 0.2798,
+    "top5_indices": [
+      34,
+      28,
+      22,
+      23,
+      29
+    ]
+  },
+  "Weather_NRT_1tail__Q20": {
+    "dataset": "Weather_NRT_1tail",
+    "Q": 20,
+    "auc_top5": 0.7758,
+    "auc_all36": 0.6819,
+    "supervised_gap": 0.0939,
+    "n_test": 5351,
+    "anom_frac": 0.2798,
+    "top5_indices": [
+      34,
+      28,
+      22,
+      23,
+      29
+    ]
+  },
+  "Weather_NRT_2tail__Q2": {
+    "dataset": "Weather_NRT_2tail",
+    "Q": 2,
+    "auc_top5": 0.6933,
+    "auc_all36": 0.5628,
+    "supervised_gap": 0.1304,
+    "n_test": 5351,
+    "anom_frac": 0.5719,
+    "top5_indices": [
+      31,
+      34,
+      28,
+      25,
+      22
+    ],
+    "baselines": {
+      "IF": 0.6818,
+      "OC-SVM": null,
+      "LOF": null
+    }
+  },
+  "Weather_NRT_2tail__Q3": {
+    "dataset": "Weather_NRT_2tail",
+    "Q": 3,
+    "auc_top5": 0.6581,
+    "auc_all36": 0.5904,
+    "supervised_gap": 0.0677,
+    "n_test": 5351,
+    "anom_frac": 0.5719,
+    "top5_indices": [
+      34,
+      32,
+      31,
+      28,
+      35
+    ]
+  },
+  "Weather_NRT_2tail__Q5": {
+    "dataset": "Weather_NRT_2tail",
+    "Q": 5,
+    "auc_top5": 0.6539,
+    "auc_all36": 0.5397,
+    "supervised_gap": 0.1142,
+    "n_test": 5351,
+    "anom_frac": 0.5719,
+    "top5_indices": [
+      34,
+      32,
+      28,
+      31,
+      2
+    ]
+  },
+  "Weather_NRT_2tail__Q10": {
+    "dataset": "Weather_NRT_2tail",
+    "Q": 10,
+    "auc_top5": 0.6604,
+    "auc_all36": 0.5205,
+    "supervised_gap": 0.1399,
+    "n_test": 5351,
+    "anom_frac": 0.5719,
+    "top5_indices": [
+      32,
+      26,
+      2,
+      8,
+      34
+    ]
+  },
+  "Weather_NRT_2tail__Q20": {
+    "dataset": "Weather_NRT_2tail",
+    "Q": 20,
+    "auc_top5": 0.67,
+    "auc_all36": 0.517,
+    "supervised_gap": 0.1529,
+    "n_test": 5351,
+    "anom_frac": 0.5719,
+    "top5_indices": [
+      32,
+      26,
+      8,
+      2,
+      34
+    ]
+  }
+}

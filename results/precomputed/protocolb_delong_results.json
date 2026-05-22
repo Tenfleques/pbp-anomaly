@@ -1,0 +1,82 @@
+{
+  "UCI": {
+    "auc_top5": 0.8707,
+    "auc_all36": 0.8378,
+    "delta": 0.033,
+    "delong_z": 9.2021,
+    "delong_p": 3.511072070580976e-20,
+    "significant_bonferroni": 1,
+    "n_test": 3466,
+    "anom_frac_test": 0.2977
+  },
+  "Beijing": {
+    "auc_top5": 0.9491,
+    "auc_all36": 0.8907,
+    "delta": 0.0583,
+    "delong_z": 22.5938,
+    "delong_p": 4.987834533320867e-113,
+    "significant_bonferroni": 1,
+    "n_test": 15196,
+    "anom_frac_test": 0.2705
+  },
+  "SaoPaulo": {
+    "auc_top5": 0.8826,
+    "auc_all36": 0.9075,
+    "delta": -0.0248,
+    "delong_z": -5.1718,
+    "delong_p": 2.318446888507956e-07,
+    "significant_bonferroni": 1,
+    "n_test": 4375,
+    "anom_frac_test": 0.2519
+  },
+  "CapeTown": {
+    "auc_top5": 0.971,
+    "auc_all36": 0.9078,
+    "delta": 0.0633,
+    "delong_z": 15.1571,
+    "delong_p": 6.80521927564886e-52,
+    "significant_bonferroni": 1,
+    "n_test": 4375,
+    "anom_frac_test": 0.1904
+  },
+  "Weather_ORD": {
+    "auc_top5": 0.8878,
+    "auc_all36": 0.5627,
+    "delta": 0.325,
+    "delong_z": 55.8255,
+    "delong_p": 0.0,
+    "significant_bonferroni": 1,
+    "n_test": 8748,
+    "anom_frac_test": 0.4198
+  },
+  "Weather_MIA": {
+    "auc_top5": 0.7974,
+    "auc_all36": 0.6438,
+    "delta": 0.1536,
+    "delong_z": 34.7942,
+    "delong_p": 2.978751838130939e-265,
+    "significant_bonferroni": 1,
+    "n_test": 8741,
+    "anom_frac_test": 0.5226
+  },
+  "Weather_SFO": {
+    "auc_top5": 0.7324,
+    "auc_all36": 0.5747,
+    "delta": 0.1577,
+    "delong_z": 33.3092,
+    "delong_p": 2.8378708107960765e-243,
+    "significant_bonferroni": 1,
+    "n_test": 8746,
+    "anom_frac_test": 0.5199
+  },
+  "Weather_FAI": {
+    "auc_top5": 0.6584,
+    "auc_all36": 0.514,
+    "delta": 0.1444,
+    "delong_z": 32.5763,
+    "delong_p": 8.878806885245235e-233,
+    "significant_bonferroni": 1,
+    "n_test": 8619,
+    "anom_frac_test": 0.4851
+  }
+}
