@@ -7,7 +7,7 @@ name = "pbp-anomaly"
 version = "0.2.0"
 description = "Training-free anomaly detection via pseudo-Boolean polynomial decomposition"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
     {name = "Tendai Chikake", email = "tendaichikake@gmail.com"},
@@ -19,7 +19,7 @@ dependencies = [
     "pandas>=1.3",
     "scipy>=1.7",
     "scikit-learn>=1.0",
-    "tmc-pbp @ git+https://github.com/Tenfleques/tmc-pbp.git",
+    "tmc-pbp>=0.1.0",
 ]
 
 [project.optional-dependencies]

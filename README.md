@@ -2,11 +2,21 @@
 
 Training-free anomaly detection in environmental sensor networks via pseudo-Boolean polynomial (PBP) decomposition.
 
-Companion code for:
+Reference implementation of the PBP anomaly scoring described in:
 
-> T. Chikake and B. Goldengorin, "Training-free environmental anomaly detection with sensor-pair diagnostics," *Nature*, 2026. (Under review)
+> T. M. Chikake and B. Goldengorin, "Pseudo-Boolean polynomial anomaly scoring for intelligent multisensor environmental monitoring," in *International Conference on Advanced Sensing and Intelligent Systems (ICASIS 2026)*, Proc. SPIE 14309, 2026. https://doi.org/10.1117/12.3121130
 
-## Quick start
+The repository also contains the multi-dataset experiments of an extended study.
+
+## Install
+
+```bash
+pip install pbp-anomaly
+```
+
+This also installs the PBP core, [`tmc-pbp`](https://pypi.org/project/tmc-pbp/) (imported as `pbp`).
+
+## Quick start (reproducing the experiments)
 
 ```bash
 git clone https://github.com/Tenfleques/pbp-anomaly.git
@@ -117,7 +127,7 @@ pytest tests/ -v
 
 ## Dependencies
 
-Core: numpy, pandas, scipy, scikit-learn, [tmc-pbp](https://github.com/Tenfleques/tmc-pbp)
+Core: numpy, pandas, scipy, scikit-learn, [tmc-pbp](https://github.com/Tenfleques/tmc-pbp) (Python >= 3.10)
 
 Optional: matplotlib (figures), requests (NOAA download), pytest (tests)
 
@@ -126,12 +136,15 @@ All installed automatically via `pip install -e ".[all]"`.
 ## Citation
 
 ```bibtex
-@article{Chikake2026anomaly,
-  author  = {Chikake, Tendai and Goldengorin, Boris},
-  title   = {Training-free environmental anomaly detection with sensor-pair diagnostics},
-  journal = {Nature},
-  year    = {2026},
-  note    = {Under review}
+@inproceedings{Chikake2026icasis,
+  author    = {Chikake, Tendai M. and Goldengorin, Boris},
+  title     = {Pseudo-Boolean polynomial anomaly scoring for intelligent multisensor environmental monitoring},
+  booktitle = {International Conference on Advanced Sensing and Intelligent Systems (ICASIS 2026)},
+  series    = {Proc. SPIE},
+  volume    = {14309},
+  publisher = {SPIE},
+  year      = {2026},
+  doi       = {10.1117/12.3121130}
 }
 ```
 
